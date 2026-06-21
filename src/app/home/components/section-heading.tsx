@@ -20,7 +20,7 @@ export function SectionHeading({
           {eyebrow}
         </p>
       ) : null}
-      <h2 className="m-0 text-[clamp(2rem,4.5vw,4rem)] leading-[1.05] font-semibold tracking-normal text-[#23443D]">
+      <h2 className="m-0 text-[clamp(2rem,4.5vw,4rem)] leading-[1.05] font-semibold tracking-normal text-[#3F6F63]">
         {title}
       </h2>
       {description ? (

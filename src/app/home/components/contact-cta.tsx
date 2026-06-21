@@ -10,7 +10,7 @@ export function ContactCta() {
     >
       {/* --- THE COMPACT FLOATING CARD --- */}
       {/* Reduced vertical padding here (py-[clamp(48px,6vw,72px)]) for a sleeker look */}
-      <div className="relative mx-auto w-full max-w-[1200px] overflow-hidden rounded-[2rem] bg-[#11221E] px-6 py-[clamp(48px,6vw,72px)] text-center shadow-2xl shadow-[#23443D]/15 md:px-12 lg:rounded-[3rem]">
+      <div className="relative mx-auto w-full max-w-[1200px] overflow-hidden rounded-[2rem] bg-[#244C43] px-6 py-[clamp(48px,6vw,72px)] text-center shadow-2xl shadow-[#3F6F63]/15 md:px-12 lg:rounded-[3rem]">
         
         {/* Cinematic Background Texture */}
         <div className="absolute inset-0 z-0 pointer-events-none">
@@ -20,7 +20,7 @@ export function ContactCta() {
             fill
             className="object-cover opacity-[0.12] mix-blend-luminosity"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#11221E] via-transparent to-[#11221E]/80" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#244C43] via-transparent to-[#244C43]/80" />
         </div>
 
         {/* Ambient Gold Glow */}
@@ -51,7 +51,7 @@ export function ContactCta() {
           {/* Animated Pill Button */}
           <a
             href="mailto:info@maxwellhospitality.com"
-            className="group relative inline-flex items-center justify-center overflow-hidden rounded-full bg-[#C9A86A] px-10 py-4 font-bold tracking-[0.1em] text-[#11221E] uppercase transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(201,168,106,0.25)] max-[640px]:w-full"
+            className="group relative inline-flex items-center justify-center overflow-hidden rounded-full bg-[#C9A86A] px-10 py-4 font-bold tracking-[0.1em] text-[#244C43] uppercase transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(201,168,106,0.25)] max-[640px]:w-full"
           >
             <span className="relative z-10 flex items-center gap-3">
               Get In Touch

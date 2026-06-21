@@ -51,7 +51,7 @@ export function ServiceVerticals() {
           <span className="mb-3 block text-sm font-bold tracking-[0.15em] text-[#C9A86A] uppercase">
             What We Do
           </span>
-          <h2 className="mx-auto max-w-[800px] text-[clamp(2rem,4vw,3.5rem)] font-bold leading-[1.1] text-[#23443D]">
+          <h2 className="mx-auto max-w-[800px] text-[clamp(2rem,4vw,3.5rem)] font-bold leading-[1.1] text-[#3F6F63]">
             Custom food service programs for evolving spaces
           </h2>
         </div>
@@ -104,7 +104,7 @@ export function ServiceVerticals() {
                 />
 
                 <div 
-                  className={`absolute inset-0 bg-gradient-to-t from-[#23443D]/95 via-[#23443D]/30 to-transparent transition-opacity duration-500 ease-in-out ${
+                  className={`absolute inset-0 bg-gradient-to-t from-[#3F6F63]/92 via-[#3F6F63]/28 to-transparent transition-opacity duration-500 ease-in-out ${
                     isActive ? "opacity-100" : "opacity-0"
                   }`} 
                 />
@@ -140,7 +140,7 @@ export function ServiceVerticals() {
                 className="object-cover"
                 sizes="100vw"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#23443D]/90 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#3F6F63]/88 via-transparent to-transparent" />
               
               <div className="absolute inset-x-0 bottom-0 p-6 text-white">
                 <h3 className="mb-2 text-2xl font-bold leading-[1.2]">

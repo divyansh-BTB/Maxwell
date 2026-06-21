@@ -74,7 +74,7 @@ export function AboutPreview() {
           <span className="mb-3 block text-sm font-bold tracking-[0.15em] text-[#C9A86A] uppercase">
             Who We Are
           </span>
-          <h2 className="mx-auto max-w-[800px] text-[clamp(2rem,4vw,3.5rem)] font-bold leading-[1.1] text-[#23443D]">
+          <h2 className="mx-auto max-w-[800px] text-[clamp(2rem,4vw,3.5rem)] font-bold leading-[1.1] text-[#3F6F63]">
             Purposeful hospitality for institutions, diners, and events
           </h2>
         </div>
@@ -93,7 +93,7 @@ export function AboutPreview() {
                   className={`h-2 w-2 rounded-full transition-all duration-500 ${
                     activeIndex === idx
                       ? "h-8 bg-[#C9A86A]" 
-                      : "bg-[#23443D]/20"
+                      : "bg-[#3F6F63]/20"
                   }`}
                 />
               ))}
@@ -112,7 +112,7 @@ export function AboutPreview() {
                   <span className="mb-4 block text-sm font-bold tracking-[0.12em] text-[#C9A86A] uppercase">
                     {feature.eyebrow}
                   </span>
-                  <h3 className="mb-6 text-[clamp(1.8rem,2.5vw,2.5rem)] font-bold leading-[1.1] text-[#23443D]">
+                  <h3 className="mb-6 text-[clamp(1.8rem,2.5vw,2.5rem)] font-bold leading-[1.1] text-[#3F6F63]">
                     {feature.title}
                   </h3>
                   <p className="mb-8 text-[1.05rem] leading-[1.8] text-[#6D706B] max-w-[90%]">
@@ -123,7 +123,7 @@ export function AboutPreview() {
                     <div>
                       {/* Premium Sliding Underline Link using Next.js Link */}
                       <Link
-                        className="group relative inline-flex overflow-hidden pb-[5px] text-[1.05rem] font-bold text-[#23443D] transition-opacity hover:opacity-80"
+                        className="group relative inline-flex overflow-hidden pb-[5px] text-[1.05rem] font-bold text-[#3F6F63] transition-opacity hover:opacity-80"
                         href="#services"
                       >
                         Learn More
@@ -147,13 +147,13 @@ export function AboutPreview() {
                 ref={(el) => { imageRefs.current[idx] = el; }}
                 className="flex h-screen items-center justify-center py-10"
               >
-                <div className="relative h-[70vh] w-full overflow-hidden rounded-[2rem] bg-[#1f3d37] shadow-2xl transition-transform duration-700 hover:scale-[1.02]">
+                <div className="relative h-[70vh] w-full overflow-hidden rounded-[2rem] bg-[#3F6F63] shadow-2xl transition-transform duration-700 hover:scale-[1.02]">
                   <img
                     src={feature.image}
                     alt={feature.title}
                     className="h-full w-full object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#23443D]/40 to-transparent mix-blend-multiply" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#3F6F63]/35 to-transparent mix-blend-multiply" />
                 </div>
               </div>
             ))}
@@ -164,7 +164,7 @@ export function AboutPreview() {
         <div className="flex flex-col gap-[80px] md:hidden">
           {features.map((feature, idx) => (
             <div key={feature.id} className="flex flex-col gap-6">
-              <div className="relative h-[400px] w-full overflow-hidden rounded-[1.5rem] bg-[#1f3d37] shadow-xl">
+              <div className="relative h-[400px] w-full overflow-hidden rounded-[1.5rem] bg-[#3F6F63] shadow-xl">
                 <img
                   src={feature.image}
                   alt={feature.title}
@@ -175,7 +175,7 @@ export function AboutPreview() {
                 <span className="mb-3 block text-xs font-bold tracking-[0.12em] text-[#C9A86A] uppercase">
                   {feature.eyebrow}
                 </span>
-                <h3 className="mb-4 text-[1.8rem] font-bold leading-[1.2] text-[#23443D]">
+                <h3 className="mb-4 text-[1.8rem] font-bold leading-[1.2] text-[#3F6F63]">
                   {feature.title}
                 </h3>
                 <p className="text-[1.02rem] leading-[1.8] text-[#6D706B]">
@@ -185,7 +185,7 @@ export function AboutPreview() {
                   <div className="mt-6">
                     {/* Premium Sliding Underline Link using Next.js Link (Mobile) */}
                     <Link
-                      className="group relative inline-flex overflow-hidden pb-[5px] text-[1.05rem] font-bold text-[#23443D] transition-opacity hover:opacity-80"
+                      className="group relative inline-flex overflow-hidden pb-[5px] text-[1.05rem] font-bold text-[#3F6F63] transition-opacity hover:opacity-80"
                       href="#services"
                     >
                       Learn More

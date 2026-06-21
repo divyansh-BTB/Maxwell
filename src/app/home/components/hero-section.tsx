@@ -24,7 +24,7 @@ export function HeroSection() {
         <p className="mb-6 text-[0.82rem] font-black tracking-[0.28em] text-[#F5F1EA] uppercase">
           Premium Hospitality
         </p>
-        <h1 className="m-0 text-[clamp(3rem,6.5vw,6.6rem)] leading-[0.94] font-medium tracking-normal text-white [font-family:Georgia,serif]">
+        <h1 className="m-0 text-[clamp(3rem,6.5vw,6.6rem)] leading-[0.94] font-medium tracking-normal text-white">
           Delivering Exceptional{" "}
           <em className="font-normal text-[#F5F1EA]">Hospitality & Food</em>{" "}
           Experiences

@@ -37,7 +37,7 @@ export function RecognitionSection() {
 
   return (
     <section
-      className="bg-[#23443D] px-[clamp(20px,5vw,72px)] py-[clamp(72px,10vw,132px)] text-white"
+      className="bg-[#3F6F63] px-[clamp(20px,5vw,72px)] py-[clamp(72px,10vw,132px)] text-white"
       id="recognition"
     >
       <div className="mx-auto max-w-[1280px]">
@@ -127,7 +127,7 @@ export function RecognitionSection() {
 
           {/* Right Side: The Sticky Image Viewer (Desktop Only) */}
           <div className="hidden sticky top-32 lg:block">
-            <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[2rem] bg-[#162c27] shadow-2xl">
+            <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[2rem] bg-[#2F5F55] shadow-2xl">
               {recognitionItems.map((item, index) => (
                 <Image
                   key={item.title}

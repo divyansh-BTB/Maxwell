@@ -75,7 +75,7 @@ export function GalleryPreview() {
 
   return (
     <section
-      className="bg-[#23443D] px-[clamp(20px,5vw,72px)] py-[clamp(72px,10vw,120px)] overflow-hidden"
+      className="bg-[#3F6F63] px-[clamp(20px,5vw,72px)] py-[clamp(72px,10vw,120px)] overflow-hidden"
       id="gallery"
     >
       <div className="mx-auto w-full max-w-[1280px]">
@@ -148,7 +148,7 @@ export function GalleryPreview() {
                 </div>
 
                 {/* 2. Cinematic Gradient Overlay (Darkens the bottom for text readability) */}
-                <div className="absolute inset-0 z-10 bg-gradient-to-t from-[#0d1a17] via-[#0d1a17]/40 to-transparent opacity-80 transition-opacity duration-500 group-hover:opacity-100" />
+                <div className="absolute inset-0 z-10 bg-gradient-to-t from-[#1F3F38] via-[#1F3F38]/35 to-transparent opacity-80 transition-opacity duration-500 group-hover:opacity-100" />
 
                 {/* 3. Text & Hover Content */}
                 <div className="relative z-20 flex flex-col p-8 transition-transform duration-500 ease-out group-hover:-translate-y-2">

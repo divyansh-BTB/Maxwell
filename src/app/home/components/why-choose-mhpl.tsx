@@ -39,7 +39,7 @@ const pillars = [
 
 export function WhyChooseMhpl() {
   return (
-    <section className="bg-[#23443D] px-[clamp(20px,5vw,72px)] py-[clamp(72px,10vw,120px)] overflow-hidden">
+    <section className="bg-[#3F6F63] px-[clamp(20px,5vw,72px)] py-[clamp(72px,10vw,120px)] overflow-hidden">
       <div className="mx-auto max-w-[1280px]">
         
         {/* --- BALANCED & REFINED HEADER --- */}
@@ -67,7 +67,7 @@ export function WhyChooseMhpl() {
           {pillars.map((pillar, index) => (
             <article
               key={pillar.title}
-              className={`group relative flex flex-col justify-between overflow-hidden rounded-[1.5rem] bg-[#11221e] border border-white/10 p-8 text-white transition-all duration-500 hover:-translate-y-1 hover:border-[#C9A86A]/40 hover:shadow-2xl hover:shadow-black/50 ${pillar.bentoClass}`}
+              className={`group relative flex flex-col justify-between overflow-hidden rounded-[1.5rem] bg-[#244C43] border border-white/10 p-8 text-white transition-all duration-500 hover:-translate-y-1 hover:border-[#C9A86A]/40 hover:shadow-2xl hover:shadow-black/40 ${pillar.bentoClass}`}
             >
               
               {/* 1. Full Cover Image */}
@@ -82,7 +82,7 @@ export function WhyChooseMhpl() {
               </div>
 
               {/* 2. Gradient Overlay for Text Readability */}
-              <div className="absolute inset-0 z-10 bg-gradient-to-t from-[#0d1a17] via-[#0d1a17]/40 to-transparent transition-opacity duration-500 group-hover:opacity-90" />
+              <div className="absolute inset-0 z-10 bg-gradient-to-t from-[#1F3F38] via-[#1F3F38]/35 to-transparent transition-opacity duration-500 group-hover:opacity-90" />
 
               {/* 3. Massive Background Imprint Number */}
               <span className="absolute -bottom-10 -right-4 z-20 select-none text-[10rem] font-black leading-none text-white/10 transition-all duration-700 ease-out group-hover:scale-105 group-hover:text-[#C9A86A]/20 md:text-[12rem]">
