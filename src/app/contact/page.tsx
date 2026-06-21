@@ -1,4 +1,4 @@
-import { SiteHeader } from "../home/components/site-header";
+import { SiteHeader } from "@/components/SiteHeader";
 import { ContactFormSection } from "./components/ContactFormSection";
 import { ContactHero } from "./components/ContactHero";
 import { ContactInfo } from "./components/ContactInfo";

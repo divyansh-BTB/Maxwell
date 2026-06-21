@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Onest, Plus_Jakarta_Sans } from "next/font/google";
+import { SiteFooter } from "@/components/SiteFooter";
 import "./globals.css";
 
 const onest = Onest({
@@ -30,7 +31,10 @@ export default function RootLayout({
       lang="en"
       className={`${onest.variable} ${plusJakartaSans.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        {children}
+        <SiteFooter />
+      </body>
     </html>
   );
 }

@@ -1,4 +1,4 @@
-import { SiteHeader } from "../home/components/site-header";
+import { SiteHeader } from "@/components/SiteHeader";
 import { ServicesCta } from "./components/ServicesCta";
 import { ServicesHero } from "./components/ServicesHero";
 import { ServicesList } from "./components/ServicesList";
