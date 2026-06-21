@@ -2,16 +2,16 @@ import Link from "next/link";
 
 const footerColumns = [
   {
-    title: "Quick Links",
+    title: "Company",
     links: [
       { label: "Home", href: "/home" },
       { label: "About", href: "/about" },
-      { label: "Services", href: "/service" },
       { label: "Contact", href: "/contact" },
+      { label: "Core Values", href: "/about#values" },
     ],
   },
   {
-    title: "Service Verticals",
+    title: "Services",
     links: [
       { label: "Healthcare Food Services", href: "/service" },
       { label: "Food Court Management", href: "/service" },
@@ -20,83 +20,94 @@ const footerColumns = [
       { label: "Outdoor Catering", href: "/service" },
     ],
   },
-  {
-    title: "Company",
-    links: [
-      { label: "Maxwell Hospitality Private Limited", href: "/about" },
-      { label: "Core Values", href: "/about#values" },
-      { label: "Recognition", href: "/home#recognition" },
-      { label: "Gallery", href: "/home#gallery" },
-    ],
-  },
-];
-
-const addresses = [
-  "Basement, Block 10A, Sharda University & Hospital, Plot No. 32 & 34, Knowledge Park III, Greater Noida, Gautam Buddha Nagar, Uttar Pradesh, India",
-  "10 Jawahar Nagar, Khandari Bypass Road, Agra, Uttar Pradesh - 282002, India",
 ];
 
 export function SiteFooter() {
   return (
-    <footer className="overflow-hidden bg-[#FAFAF8] px-[clamp(20px,5vw,72px)] pt-[clamp(72px,9vw,108px)] pb-8 text-[#2A2A2A]">
-      <div className="mx-auto max-w-[1500px]">
-        <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-[0.8fr_0.95fr_0.75fr_1.2fr] lg:gap-14">
-          {footerColumns.map((column) => (
-            <div key={column.title}>
-              <h2 className="text-[0.85rem] font-black tracking-[0.16em] text-[#244C43] uppercase">
-                {column.title}
-              </h2>
-              <nav className="mt-5 grid gap-3" aria-label={column.title}>
-                {column.links.map((link) => (
-                  <Link
-                    className="text-[0.98rem] leading-relaxed text-[#3D423F] transition-colors hover:text-[#C9A86A]"
-                    href={link.href}
-                    key={`${column.title}-${link.label}`}
-                  >
-                    {link.label}
-                  </Link>
-                ))}
-              </nav>
-            </div>
-          ))}
+    <footer className="bg-[#3F6F63] px-[clamp(20px,5vw,72px)] pt-[clamp(72px,9vw,104px)] pb-7 text-white">
+      <div className="mx-auto max-w-[1280px]">
+        <div className="rounded-[2rem] border border-white/18 px-[clamp(24px,4vw,56px)] py-[clamp(36px,5vw,64px)]">
+          <div className="grid grid-cols-1 gap-12 lg:grid-cols-[1.15fr_0.85fr] lg:gap-20">
+            <div>
+              <Link
+                className="inline-flex text-[clamp(2.4rem,5vw,4.4rem)] font-black leading-[0.86] tracking-[-0.03em] text-white"
+                href="/home"
+              >
+                Maxwell
+                <br />
+                Hospitality
+              </Link>
+              <p className="mt-7 max-w-[620px] text-[1.02rem] leading-[1.8] text-white/76">
+                Premium hospitality and food service solutions across healthcare
+                institutions, food courts, restaurants, and catering operations.
+              </p>
 
-          <div>
-            <h2 className="text-[0.85rem] font-black tracking-[0.16em] text-[#244C43] uppercase">
-              Addresses
-            </h2>
-            <div className="mt-5 grid gap-4">
-              {addresses.map((address, index) => (
-                <p
-                  className="text-[0.95rem] leading-[1.75] text-[#3D423F]"
-                  key={address}
+              <form className="mt-8 flex max-w-[640px] flex-col gap-4 sm:flex-row">
+                <label className="sr-only" htmlFor="footer-email">
+                  Email address
+                </label>
+                <input
+                  className="min-h-13 flex-1 rounded-xl border border-white/22 bg-white/8 px-4 text-white outline-none placeholder:text-white/62 focus:border-[#C9A86A]"
+                  id="footer-email"
+                  placeholder="Enter your email"
+                  type="email"
+                />
+                <button
+                  className="min-h-13 rounded-full border border-[#C9A86A]/70 px-7 text-sm font-bold text-white transition-colors hover:bg-[#C9A86A] hover:text-[#244C43]"
+                  type="submit"
                 >
-                  <span className="mb-1 block font-bold text-[#3F6F63]">
-                    {index === 0
-                      ? "Principal Place of Business"
-                      : "Registered Office"}
-                  </span>
-                  {address}
-                </p>
+                  Subscribe
+                </button>
+              </form>
+
+              <p className="mt-4 max-w-[560px] text-xs leading-[1.7] text-white/62">
+                By subscribing you agree to receive updates from Maxwell
+                Hospitality Private Limited.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 gap-10 sm:grid-cols-2">
+              {footerColumns.map((column) => (
+                <div key={column.title}>
+                  <h2 className="text-[0.85rem] font-black tracking-[0.16em] text-white uppercase">
+                    {column.title}
+                  </h2>
+                  <nav className="mt-5 grid gap-4" aria-label={column.title}>
+                    {column.links.map((link) => (
+                      <Link
+                        className="text-[0.96rem] text-white/78 transition-colors hover:text-[#C9A86A]"
+                        href={link.href}
+                        key={`${column.title}-${link.label}`}
+                      >
+                        {link.label}
+                      </Link>
+                    ))}
+                  </nav>
+                </div>
               ))}
             </div>
           </div>
         </div>
 
-        <div className="mt-[clamp(56px,8vw,104px)]">
-          <p className="select-none text-center text-[clamp(4.4rem,18vw,18rem)] font-black leading-[0.82] tracking-[0.04em] text-[#2B292F] uppercase">
-            Maxwell
-          </p>
-        </div>
-
-        <div className="mt-8 grid grid-cols-1 gap-4 border-t border-[#E5DED1] pt-6 text-sm text-[#4F5551] md:grid-cols-3 md:items-center">
+        <div className="mt-8 flex flex-col gap-4 text-sm text-white/74 md:flex-row md:items-center md:justify-between">
           <p>© Maxwell Hospitality Private Limited. All Rights Reserved.</p>
-          <p className="md:text-center">Premium Hospitality & Food Services</p>
-          <Link
-            className="font-bold text-[#3F6F63] transition-colors hover:text-[#C9A86A] md:text-right"
-            href="/contact"
-          >
-            Contact MHPL
-          </Link>
+          <div className="flex flex-wrap gap-x-7 gap-y-2">
+            <Link
+              className="underline-offset-4 hover:underline"
+              href="/contact"
+            >
+              Contact
+            </Link>
+            <Link
+              className="underline-offset-4 hover:underline"
+              href="/service"
+            >
+              Services
+            </Link>
+            <Link className="underline-offset-4 hover:underline" href="/about">
+              Company
+            </Link>
+          </div>
         </div>
       </div>
     </footer>

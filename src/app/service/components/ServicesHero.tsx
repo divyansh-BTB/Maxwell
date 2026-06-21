@@ -11,7 +11,6 @@ export function ServicesHero() {
         priority
         sizes="100vw"
       />
-      <div className="absolute inset-0 bg-[linear-gradient(90deg,rgb(0_0_0_/_0.72),rgb(0_0_0_/_0.46),rgb(0_0_0_/_0.68)),linear-gradient(0deg,rgb(0_0_0_/_0.56),rgb(0_0_0_/_0.16)_45%,rgb(0_0_0_/_0.48))]" />
       <div className="relative z-10 mx-auto grid max-w-[1280px] grid-cols-1 gap-8 lg:grid-cols-[0.9fr_0.82fr] lg:items-end">
         <div>
           <span className="mb-5 flex items-center gap-3 text-sm font-bold tracking-[0.18em] text-[#C9A86A] uppercase">

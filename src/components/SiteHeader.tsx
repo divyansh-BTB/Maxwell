@@ -2,21 +2,18 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
-const leftNavItems = [
-  { label: "Home", href: "/" },
+const navItems = [
+  { label: "Home", href: "/home" },
   { label: "Service", href: "/service" },
-];
-
-const rightNavItems = [
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ];
 
-const allNavItems = [...leftNavItems, ...rightNavItems];
-
 export function SiteHeader() {
+  const pathname = usePathname();
   const [scrollProgress, setScrollProgress] = useState(0);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -44,8 +41,7 @@ export function SiteHeader() {
     };
   }, [isMobileMenuOpen]);
 
-  const containerMaxWidth = 900 - 200 * scrollProgress;
-  const gapSpacing = 2.5 - scrollProgress;
+  const containerMaxWidth = 1180 - 120 * scrollProgress;
   const backgroundOpacity = isMobileMenuOpen ? 0.98 : scrollProgress * 0.75;
   const shadowOpacity = isMobileMenuOpen ? 0.2 : scrollProgress * 0.12;
   const blurAmount = isMobileMenuOpen ? 32 : scrollProgress * 24;
@@ -56,6 +52,7 @@ export function SiteHeader() {
   const logoInvert = isMobileMenuOpen
     ? 0
     : Math.round(100 - 100 * scrollProgress);
+  const ctaColor = scrollProgress > 0.35 ? "#244C43" : textColor;
 
   return (
     <header
@@ -66,38 +63,21 @@ export function SiteHeader() {
         className="pointer-events-auto flex w-full flex-wrap items-center justify-between border border-transparent transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]"
         style={{
           maxWidth: `${containerMaxWidth}px`,
-          padding: `${20 - 8 * scrollProgress}px 32px`,
+          padding: `${16 - 6 * scrollProgress}px ${20 + 6 * scrollProgress}px`,
           backgroundColor: `rgba(250, 250, 248, ${backgroundOpacity})`,
           borderColor: `rgba(255, 255, 255, ${scrollProgress * 0.4})`,
           borderRadius: isMobileMenuOpen
-            ? "32px"
-            : `${16 + 40 * scrollProgress}px`,
+            ? "28px"
+            : `${18 + 34 * scrollProgress}px`,
           boxShadow: `0 20px 40px rgba(0, 0, 0, ${shadowOpacity})`,
           backdropFilter: `blur(${blurAmount}px) saturate(150%)`,
           WebkitBackdropFilter: `blur(${blurAmount}px) saturate(150%)`,
         }}
       >
-        <nav
-          aria-label="Primary left navigation"
-          className="flex items-center max-[900px]:hidden"
-          style={{ gap: `${gapSpacing}rem` }}
-        >
-          {leftNavItems.map((item) => (
-            <Link
-              className="text-[0.75rem] font-bold tracking-[0.15em] uppercase transition-all duration-300 hover:opacity-60"
-              href={item.href}
-              key={item.href}
-              style={{ color: textColor }}
-            >
-              {item.label}
-            </Link>
-          ))}
-        </nav>
-
         <Link
           aria-label="Maxwell Hospitality home"
-          className="group relative flex items-center justify-center transition-transform duration-500 ease-out hover:scale-105"
-          href="/"
+          className="group relative flex items-center gap-3 transition-transform duration-500 ease-out hover:scale-[1.02]"
+          href="/home"
           onClick={() => setIsMobileMenuOpen(false)}
           style={{
             transform: `scale(${1 - 0.1 * scrollProgress})`,
@@ -119,25 +99,40 @@ export function SiteHeader() {
         </Link>
 
         <nav
-          aria-label="Primary right navigation"
-          className="flex items-center justify-end max-[900px]:hidden"
-          style={{ gap: `${gapSpacing}rem` }}
+          aria-label="Primary navigation"
+          className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-1 rounded-full border border-white/10 bg-black/6 px-1.5 py-1.5 backdrop-blur-md max-[900px]:hidden min-[901px]:flex"
         >
-          {rightNavItems.map((item) => (
-            <Link
-              className="text-[0.75rem] font-bold tracking-[0.15em] uppercase transition-all duration-300 hover:opacity-60"
-              href={item.href}
-              key={item.href}
-              style={{ color: textColor }}
-            >
-              {item.label}
-            </Link>
-          ))}
+          {navItems.map((item) => {
+            const isActive =
+              pathname === item.href ||
+              (item.href === "/home" && pathname === "/");
+
+            return (
+              <Link
+                className={`rounded-full px-4 py-2 text-[0.72rem] font-black tracking-[0.12em] uppercase transition-all duration-300 ${
+                  isActive ? "bg-[#C9A86A] text-[#244C43]" : "hover:bg-white/12"
+                }`}
+                href={item.href}
+                key={item.href}
+                style={{ color: isActive ? undefined : textColor }}
+              >
+                {item.label}
+              </Link>
+            );
+          })}
         </nav>
+
+        <Link
+          className="hidden min-h-10 items-center justify-center rounded-full border border-[#C9A86A]/70 px-5 text-[0.72rem] font-black tracking-[0.12em] uppercase transition-colors duration-300 hover:bg-[#C9A86A] hover:text-[#244C43] max-[900px]:hidden min-[901px]:inline-flex"
+          href="/contact"
+          style={{ color: ctaColor }}
+        >
+          Inquiry
+        </Link>
 
         <button
           aria-label="Toggle mobile menu"
-          className="hidden items-center justify-center transition-transform duration-300 hover:opacity-70 max-[900px]:flex"
+          className="hidden h-11 w-11 items-center justify-center rounded-full border border-white/20 transition-transform duration-300 hover:opacity-70 max-[900px]:flex"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           style={{
             color: textColor,
@@ -186,10 +181,10 @@ export function SiteHeader() {
               : "mt-0 max-h-0 opacity-0"
           }`}
         >
-          <nav className="flex flex-col border-t border-black/5 pt-4 pb-4">
-            {allNavItems.map((item) => (
+          <nav className="flex flex-col border-t border-black/5 pt-4 pb-3">
+            {navItems.map((item) => (
               <Link
-                className="group relative flex w-full items-center justify-between py-4"
+                className="group relative flex w-full items-center justify-between rounded-2xl px-2 py-4 transition-colors hover:bg-[#3F6F63]/6"
                 href={item.href}
                 key={item.href}
                 onClick={() => setIsMobileMenuOpen(false)}
