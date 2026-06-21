@@ -1,3 +1,5 @@
+import { ArrowCircle } from "@/components/ArrowCircle";
+
 const serviceOptions = [
   "Healthcare Food Services",
   "Food Court Management",
@@ -9,83 +11,83 @@ const serviceOptions = [
 
 export function ContactFormSection() {
   return (
-    <section className="bg-[#FAFAF8] px-[clamp(20px,5vw,72px)] pb-[clamp(72px,9vw,112px)]">
-      <div className="mx-auto grid max-w-[1280px] grid-cols-1 gap-8 rounded-[1.75rem] bg-[#244C43] p-[clamp(24px,4vw,48px)] shadow-2xl shadow-[#3F6F63]/12 lg:grid-cols-[0.72fr_1.28fr]">
-        <div className="flex flex-col justify-between text-white">
+    <section className="bg-white px-[clamp(20px,5vw,72px)] pb-[clamp(72px,9vw,112px)]">
+      <div className="mx-auto grid max-w-[1280px] grid-cols-1 gap-8 rounded-[1.75rem] border border-[#D9D9D9] bg-white p-[clamp(24px,4vw,48px)] shadow-2xl shadow-[#0B1F33]/8 lg:grid-cols-[0.72fr_1.28fr]">
+        <div className="flex flex-col justify-between text-[#0B1F33]">
           <div>
-            <span className="mb-4 flex items-center gap-3 text-sm font-bold tracking-[0.15em] text-[#C9A86A] uppercase">
-              <span className="h-[2px] w-8 bg-[#C9A86A]" />
+            <span className="mb-4 flex items-center gap-3 text-sm font-bold tracking-[0.15em] text-[#758696] uppercase">
+              <span className="h-[2px] w-8 bg-[#758696]" />
               Contact Form
             </span>
-            <h2 className="max-w-[460px] text-[clamp(2rem,4vw,3.4rem)] font-bold leading-[1.05]">
+            <h2 className="max-w-[460px] text-[clamp(2rem,4vw,3.4rem)] font-bold leading-[1.05] text-[#0B1F33]">
               Submit your inquiry.
             </h2>
-            <p className="mt-6 max-w-[460px] text-[1rem] leading-[1.8] text-white/70">
+            <p className="mt-6 max-w-[460px] text-[1rem] leading-[1.8] text-[#5D6C7B]">
               Share a few details and our team can understand the service you
               need before starting the conversation.
             </p>
           </div>
 
-          <div className="mt-10 rounded-[1.25rem] border border-white/12 bg-white/8 p-6">
-            <p className="text-[0.78rem] font-bold tracking-[0.16em] text-[#C9A86A] uppercase">
+          <div className="mt-10 rounded-[1.25rem] border border-[#D9D9D9] bg-white p-6">
+            <p className="text-[0.78rem] font-bold tracking-[0.16em] text-[#758696] uppercase">
               Maxwell Hospitality Private Limited
             </p>
-            <p className="mt-3 text-[0.96rem] leading-[1.75] text-white/72">
+            <p className="mt-3 text-[0.96rem] leading-[1.75] text-[#5D6C7B]">
               Healthcare food services, food courts, restaurants, and catering
               operations across India.
             </p>
           </div>
         </div>
 
-        <form className="grid grid-cols-1 gap-4 rounded-[1.5rem] bg-[#FAFAF8] p-5 md:grid-cols-2 md:p-7">
+        <form className="grid grid-cols-1 gap-4 rounded-[1.5rem] border border-[#EAE8E3] bg-white p-5 md:grid-cols-2 md:p-7">
           <label className="grid gap-2">
-            <span className="text-sm font-bold text-[#3F6F63]">Full Name</span>
+            <span className="text-sm font-bold text-[#0B1F33]">Full Name</span>
             <input
-              className="min-h-12 rounded-xl border border-[#E5DED1] bg-white px-4 text-[#222222] outline-none transition-colors focus:border-[#C9A86A]"
+              className="min-h-12 rounded-xl border border-[#EAE8E3] bg-white px-4 text-[#0B1F33] outline-none transition-colors focus:border-[#0D2B44]"
               name="fullName"
               type="text"
             />
           </label>
 
           <label className="grid gap-2">
-            <span className="text-sm font-bold text-[#3F6F63]">
+            <span className="text-sm font-bold text-[#0B1F33]">
               Company Name
             </span>
             <input
-              className="min-h-12 rounded-xl border border-[#E5DED1] bg-white px-4 text-[#222222] outline-none transition-colors focus:border-[#C9A86A]"
+              className="min-h-12 rounded-xl border border-[#EAE8E3] bg-white px-4 text-[#0B1F33] outline-none transition-colors focus:border-[#0D2B44]"
               name="companyName"
               type="text"
             />
           </label>
 
           <label className="grid gap-2">
-            <span className="text-sm font-bold text-[#3F6F63]">
+            <span className="text-sm font-bold text-[#0B1F33]">
               Email Address
             </span>
             <input
-              className="min-h-12 rounded-xl border border-[#E5DED1] bg-white px-4 text-[#222222] outline-none transition-colors focus:border-[#C9A86A]"
+              className="min-h-12 rounded-xl border border-[#EAE8E3] bg-white px-4 text-[#0B1F33] outline-none transition-colors focus:border-[#0D2B44]"
               name="email"
               type="email"
             />
           </label>
 
           <label className="grid gap-2">
-            <span className="text-sm font-bold text-[#3F6F63]">
+            <span className="text-sm font-bold text-[#0B1F33]">
               Phone Number
             </span>
             <input
-              className="min-h-12 rounded-xl border border-[#E5DED1] bg-white px-4 text-[#222222] outline-none transition-colors focus:border-[#C9A86A]"
+              className="min-h-12 rounded-xl border border-[#EAE8E3] bg-white px-4 text-[#0B1F33] outline-none transition-colors focus:border-[#0D2B44]"
               name="phone"
               type="tel"
             />
           </label>
 
           <label className="grid gap-2 md:col-span-2">
-            <span className="text-sm font-bold text-[#3F6F63]">
+            <span className="text-sm font-bold text-[#0B1F33]">
               Service Required
             </span>
             <select
-              className="min-h-12 rounded-xl border border-[#E5DED1] bg-white px-4 text-[#222222] outline-none transition-colors focus:border-[#C9A86A]"
+              className="min-h-12 rounded-xl border border-[#EAE8E3] bg-white px-4 text-[#0B1F33] outline-none transition-colors focus:border-[#0D2B44]"
               name="service"
             >
               {serviceOptions.map((service) => (
@@ -95,19 +97,20 @@ export function ContactFormSection() {
           </label>
 
           <label className="grid gap-2 md:col-span-2">
-            <span className="text-sm font-bold text-[#3F6F63]">Message</span>
+            <span className="text-sm font-bold text-[#0B1F33]">Message</span>
             <textarea
-              className="min-h-36 resize-y rounded-xl border border-[#E5DED1] bg-white px-4 py-3 text-[#222222] outline-none transition-colors focus:border-[#C9A86A]"
+              className="min-h-36 resize-y rounded-xl border border-[#EAE8E3] bg-white px-4 py-3 text-[#0B1F33] outline-none transition-colors focus:border-[#0D2B44]"
               name="message"
             />
           </label>
 
           <div className="md:col-span-2">
             <button
-              className="inline-flex min-h-13 items-center justify-center rounded-full bg-[#C9A86A] px-8 text-sm font-black tracking-[0.08em] text-[#244C43] uppercase transition-transform duration-200 hover:-translate-y-0.5"
+              className="group inline-flex min-h-[58px] items-center justify-center gap-4 rounded-full border border-[#0D2B44] bg-[#0D2B44] py-2 pr-2 pl-7 text-sm font-black tracking-[0.08em] text-white uppercase transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:text-[#0D2B44]"
               type="submit"
             >
-              Submit Inquiry
+              <span>Submit Inquiry</span>
+              <ArrowCircle />
             </button>
           </div>
         </form>

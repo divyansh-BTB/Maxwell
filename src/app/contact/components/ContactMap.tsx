@@ -1,18 +1,18 @@
 export function ContactMap() {
   return (
-    <section className="bg-[#FAFAF8] px-[clamp(20px,5vw,72px)] pb-[clamp(72px,9vw,112px)]">
+    <section className="bg-white px-[clamp(20px,5vw,72px)] pb-[clamp(72px,9vw,112px)]">
       <div className="mx-auto max-w-[1280px]">
         <div className="mb-8">
-          <span className="mb-4 flex items-center gap-3 text-sm font-bold tracking-[0.15em] text-[#C9A86A] uppercase">
-            <span className="h-[2px] w-8 bg-[#C9A86A]" />
+          <span className="mb-4 flex items-center gap-3 text-sm font-bold tracking-[0.15em] text-[#758696] uppercase">
+            <span className="h-[2px] w-8 bg-[#758696]" />
             Principal Place of Business
           </span>
-          <h2 className="max-w-[720px] text-[clamp(2rem,3.5vw,3.2rem)] font-bold leading-[1.08] text-[#3F6F63]">
+          <h2 className="max-w-[720px] text-[clamp(2rem,3.5vw,3.2rem)] font-bold leading-[1.08] text-[#0B1F33]">
             Visit our Greater Noida business location.
           </h2>
         </div>
 
-        <div className="overflow-hidden rounded-[1.75rem] border border-[#E5DED1] bg-white shadow-2xl shadow-[#3F6F63]/10">
+        <div className="overflow-hidden rounded-[1.75rem] border border-[#EAE8E3] bg-white shadow-2xl shadow-[#0B1F33]/10">
           <iframe
             className="h-[520px] w-full"
             loading="lazy"

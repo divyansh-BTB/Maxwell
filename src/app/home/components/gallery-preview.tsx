@@ -75,26 +75,25 @@ export function GalleryPreview() {
 
   return (
     <section
-      className="bg-[#3F6F63] px-[clamp(20px,5vw,72px)] py-[clamp(72px,10vw,120px)] overflow-hidden"
+      className="bg-white px-[clamp(20px,5vw,72px)] py-[clamp(72px,10vw,120px)] overflow-hidden"
       id="gallery"
     >
       <div className="mx-auto w-full max-w-[1280px]">
-        
         {/* --- EDITORIAL HEADER LAYOUT --- */}
         <div className="mb-[clamp(40px,6vw,80px)] flex flex-col items-start justify-between gap-8 lg:flex-row lg:items-end">
           <div className="w-full lg:w-1/2">
-            <span className="mb-4 flex items-center gap-3 text-sm font-bold tracking-[0.15em] text-[#C9A86A] uppercase">
-              <span className="h-[2px] w-8 bg-[#C9A86A]" />
+            <span className="mb-4 flex items-center gap-3 text-sm font-bold tracking-[0.15em] text-[#758696] uppercase">
+              <span className="h-[2px] w-8 bg-[#758696]" />
               Gallery Preview
             </span>
-            <h2 className="m-0 text-[clamp(2rem,3.5vw,3rem)] font-bold leading-[1.1] text-[#FAFAF8]">
+            <h2 className="m-0 text-[clamp(2rem,3.5vw,3rem)] font-bold leading-[1.1] text-[#0B1F33]">
               Moments of excellence across service & operations.
             </h2>
           </div>
-          
+
           <div className="flex w-full items-center justify-between lg:w-auto lg:justify-end lg:gap-12">
             <Link
-              className="group inline-flex items-center gap-3 border-b border-[#C9A86A]/40 pb-1 text-sm font-bold tracking-[0.15em] text-[#FAFAF8] uppercase transition-all duration-300 hover:border-[#C9A86A] hover:text-[#C9A86A]"
+              className="group inline-flex items-center gap-3 border-b border-[#0D2B44]/40 pb-1 text-sm font-bold tracking-[0.15em] text-[#0B1F33] uppercase transition-all duration-300 hover:border-[#0D2B44] hover:text-[#0D2B44]"
               href="#gallery"
             >
               View Full Gallery
@@ -103,21 +102,45 @@ export function GalleryPreview() {
             {/* Pure Minimalist Arrows */}
             <div className="hidden items-center gap-6 lg:flex">
               <button
-                onClick={scrollPrev}
-                className="text-white/40 transition-all duration-300 hover:-translate-x-2 hover:text-[#C9A86A]"
                 aria-label="Previous image"
+                className="text-[#758696] transition-all duration-300 hover:-translate-x-2 hover:text-[#0D2B44]"
+                onClick={scrollPrev}
+                type="button"
               >
-                <svg className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+                <svg
+                  aria-hidden="true"
+                  className="h-10 w-10"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={1.5}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M15 19l-7-7 7-7"
+                  />
                 </svg>
               </button>
               <button
-                onClick={scrollNext}
-                className="text-white/40 transition-all duration-300 hover:translate-x-2 hover:text-[#C9A86A]"
                 aria-label="Next image"
+                className="text-[#758696] transition-all duration-300 hover:translate-x-2 hover:text-[#0D2B44]"
+                onClick={scrollNext}
+                type="button"
               >
-                <svg className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                <svg
+                  aria-hidden="true"
+                  className="h-10 w-10"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={1.5}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M9 5l7 7-7 7"
+                  />
                 </svg>
               </button>
             </div>
@@ -133,7 +156,7 @@ export function GalleryPreview() {
           >
             {galleryItems.map((item) => (
               <article
-                className="group relative flex h-[400px] w-[85vw] sm:w-[360px] flex-none snap-start flex-col justify-end overflow-hidden rounded-[2rem] border border-white/10 transition-all duration-700 hover:border-[#C9A86A]/50 hover:shadow-2xl hover:shadow-[#C9A86A]/20"
+                className="group relative flex h-[400px] w-[85vw] sm:w-[360px] flex-none snap-start flex-col justify-end overflow-hidden rounded-[2rem] border border-[#D9D9D9] transition-all duration-700 hover:border-[#0D2B44]/50 hover:shadow-2xl hover:shadow-[#0B1F33]/12"
                 key={item.title}
               >
                 {/* 1. Full-Bleed Background Image */}
@@ -148,36 +171,46 @@ export function GalleryPreview() {
                 </div>
 
                 {/* 2. Cinematic Gradient Overlay (Darkens the bottom for text readability) */}
-                <div className="absolute inset-0 z-10 bg-gradient-to-t from-[#1F3F38] via-[#1F3F38]/35 to-transparent opacity-80 transition-opacity duration-500 group-hover:opacity-100" />
+                <div className="absolute inset-0 z-10 bg-gradient-to-t from-[#0B1F33] via-[#0B1F33]/35 to-transparent opacity-80 transition-opacity duration-500 group-hover:opacity-100" />
 
                 {/* 3. Text & Hover Content */}
                 <div className="relative z-20 flex flex-col p-8 transition-transform duration-500 ease-out group-hover:-translate-y-2">
                   {/* Decorative Gold Line */}
-                  <div className="mb-4 h-[2px] w-8 bg-[#C9A86A] transition-all duration-500 group-hover:w-16" />
-                  
+                  <div className="mb-4 h-[2px] w-8 bg-[#758696] transition-all duration-500 group-hover:w-16" />
+
                   <h3 className="text-[1.4rem] font-bold leading-tight text-white drop-shadow-md">
                     {item.title}
                   </h3>
-                  
+
                   {/* Hover "Explore" Indicator that slides up */}
                   <div className="mt-4 flex items-center gap-2 overflow-hidden">
-                    <span className="translate-y-4 text-xs font-bold tracking-[0.2em] text-[#C9A86A] opacity-0 transition-all duration-500 uppercase group-hover:translate-y-0 group-hover:opacity-100">
+                    <span className="translate-y-4 text-xs font-bold tracking-[0.2em] text-[#0D2B44] opacity-0 transition-all duration-500 uppercase group-hover:translate-y-0 group-hover:opacity-100">
                       Explore
                     </span>
-                    <svg className="-translate-x-4 h-4 w-4 text-[#C9A86A] opacity-0 transition-all duration-500 group-hover:translate-x-0 group-hover:opacity-100" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    <svg
+                      aria-hidden="true"
+                      className="-translate-x-4 h-4 w-4 text-[#0D2B44] opacity-0 transition-all duration-500 group-hover:translate-x-0 group-hover:opacity-100"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={2.5}
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M17 8l4 4m0 0l-4 4m4-4H3"
+                      />
                     </svg>
                   </div>
                 </div>
               </article>
             ))}
           </div>
-          
-          <div className="mt-4 hidden justify-center text-xs tracking-widest text-[#FAFAF8]/30 uppercase lg:hidden flex">
+
+          <div className="mt-4 hidden justify-center text-xs tracking-widest text-[#758696] uppercase lg:hidden flex">
             Swipe to explore
           </div>
         </div>
-
       </div>
     </section>
   );

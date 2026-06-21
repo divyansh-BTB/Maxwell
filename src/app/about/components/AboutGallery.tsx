@@ -43,21 +43,21 @@ export function AboutGallery() {
 
   return (
     <section
-      className="bg-[#FAFAF8] px-[clamp(20px,5vw,72px)] py-[clamp(72px,10vw,120px)]"
+      className="bg-white px-[clamp(20px,5vw,72px)] py-[clamp(72px,10vw,120px)]"
       id="about-gallery"
     >
       <div className="mx-auto max-w-[1280px]">
         <div className="mb-[clamp(36px,6vw,72px)] grid grid-cols-1 gap-6 lg:grid-cols-[0.85fr_1fr] lg:items-end">
           <div>
-            <span className="mb-4 flex items-center gap-3 text-sm font-bold tracking-[0.15em] text-[#C9A86A] uppercase">
-              <span className="h-[2px] w-8 bg-[#C9A86A]" />
+            <span className="mb-4 flex items-center gap-3 text-sm font-bold tracking-[0.15em] text-[#758696] uppercase">
+              <span className="h-[2px] w-8 bg-[#758696]" />
               Inside MHPL
             </span>
-            <h2 className="m-0 text-[clamp(2rem,3.5vw,3rem)] font-bold leading-[1.1] text-[#3F6F63]">
+            <h2 className="m-0 text-[clamp(2rem,3.5vw,3rem)] font-bold leading-[1.1] text-[#0B1F33]">
               Our operations in action.
             </h2>
           </div>
-          <p className="max-w-[620px] text-[1.04rem] leading-[1.8] text-[#6D706B] lg:justify-self-end">
+          <p className="max-w-[620px] text-[1.04rem] leading-[1.8] text-[#5D6C7B] lg:justify-self-end">
             A glimpse into the environments MHPL serves, from healthcare food
             programs and managed dining spaces to catering events and team-led
             service moments.
@@ -65,7 +65,7 @@ export function AboutGallery() {
         </div>
 
         <div className="grid grid-cols-1 gap-5 lg:grid-cols-[minmax(0,1.35fr)_minmax(340px,0.65fr)]">
-          <article className="group relative min-h-[620px] overflow-hidden rounded-[1.75rem] bg-[#244C43] shadow-2xl shadow-[#3F6F63]/10 max-lg:min-h-[520px] max-sm:min-h-[420px]">
+          <article className="group relative min-h-[620px] overflow-hidden rounded-[1.75rem] bg-[#0D2B44] shadow-2xl shadow-[#0B1F33]/10 max-lg:min-h-[520px] max-sm:min-h-[420px]">
             <Image
               src={previewItem.image}
               alt={previewItem.title}
@@ -75,7 +75,7 @@ export function AboutGallery() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/62 via-black/14 to-transparent" />
             <div className="absolute inset-x-0 bottom-0 p-[clamp(24px,4vw,44px)] text-white">
-              <p className="text-[0.78rem] font-bold tracking-[0.18em] text-[#C9A86A] uppercase">
+              <p className="text-[0.78rem] font-bold tracking-[0.18em] text-[#758696] uppercase">
                 Featured
               </p>
               <h3 className="mt-3 max-w-[620px] text-[clamp(2rem,4vw,4rem)] font-bold leading-[1.02]">
@@ -88,22 +88,22 @@ export function AboutGallery() {
           </article>
 
           <div className="grid gap-5">
-            <div className="rounded-[1.5rem] border border-[#E5DED1] bg-white p-7 shadow-sm">
-              <p className="text-[0.78rem] font-bold tracking-[0.16em] text-[#C9A86A] uppercase">
+            <div className="rounded-[1.5rem] border border-[#EAE8E3] bg-white p-7 shadow-sm">
+              <p className="text-[0.78rem] font-bold tracking-[0.16em] text-[#758696] uppercase">
                 Gallery Focus
               </p>
-              <p className="mt-4 text-[1.65rem] font-bold leading-tight text-[#3F6F63]">
+              <p className="mt-4 text-[1.65rem] font-bold leading-tight text-[#0B1F33]">
                 Real service moments, organized by the spaces we support.
               </p>
             </div>
 
             {supportingItems.map((item) => (
               <article
-                className="group grid min-h-[132px] grid-cols-[128px_1fr] overflow-hidden rounded-[1.25rem] border border-[#E5DED1] bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-[#C9A86A] hover:shadow-xl hover:shadow-[#3F6F63]/10 max-sm:grid-cols-1"
+                className="group grid min-h-[132px] grid-cols-[128px_1fr] overflow-hidden rounded-[1.25rem] border border-[#EAE8E3] bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-[#0D2B44] hover:shadow-xl hover:shadow-[#0B1F33]/10 max-sm:grid-cols-1"
                 key={item.title}
                 onMouseEnter={() => setPreviewItem(item)}
               >
-                <div className="relative min-h-[132px] overflow-hidden bg-[#244C43]">
+                <div className="relative min-h-[132px] overflow-hidden bg-[#0D2B44]">
                   <Image
                     src={item.image}
                     alt={item.title}
@@ -113,10 +113,10 @@ export function AboutGallery() {
                   />
                 </div>
                 <div className="flex flex-col justify-center p-5">
-                  <h3 className="text-[1.1rem] font-bold text-[#3F6F63]">
+                  <h3 className="text-[1.1rem] font-bold text-[#0B1F33]">
                     {item.title}
                   </h3>
-                  <p className="mt-2 text-[0.9rem] leading-[1.6] text-[#6D706B]">
+                  <p className="mt-2 text-[0.9rem] leading-[1.6] text-[#5D6C7B]">
                     {item.description}
                   </p>
                 </div>
@@ -128,7 +128,7 @@ export function AboutGallery() {
         <div className="mt-5 grid grid-cols-2 gap-5 md:grid-cols-4">
           {supportingItems.map((item) => (
             <article
-              className="group relative aspect-[4/3] overflow-hidden rounded-[1.25rem] bg-[#244C43]"
+              className="group relative aspect-[4/3] overflow-hidden rounded-[1.25rem] bg-[#0D2B44]"
               key={`${item.title}-tile`}
             >
               <Image

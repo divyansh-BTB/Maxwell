@@ -3,7 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { ArrowCircle } from "./ArrowCircle";
 
 const navItems = [
   { label: "Home", href: "/home" },
@@ -14,93 +15,67 @@ const navItems = [
 
 export function SiteHeader() {
   const pathname = usePathname();
-  const [scrollProgress, setScrollProgress] = useState(0);
+  const lastScrollY = useRef(0);
+  const [isHidden, setIsHidden] = useState(false);
+  const [isAtTop, setIsAtTop] = useState(true);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const updateHeader = () => {
-      const progress = Math.min(window.scrollY / 100, 1);
-      setScrollProgress(progress);
+      const currentScrollY = window.scrollY;
+      const scrollingDown = currentScrollY > lastScrollY.current;
+
+      setIsAtTop(currentScrollY < 16);
+      setIsHidden(scrollingDown && currentScrollY > 120 && !isMobileMenuOpen);
+      lastScrollY.current = currentScrollY;
     };
 
     updateHeader();
     window.addEventListener("scroll", updateHeader, { passive: true });
 
     return () => window.removeEventListener("scroll", updateHeader);
-  }, []);
+  }, [isMobileMenuOpen]);
 
   useEffect(() => {
-    if (isMobileMenuOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "unset";
-    }
+    document.body.style.overflow = isMobileMenuOpen ? "hidden" : "unset";
 
     return () => {
       document.body.style.overflow = "unset";
     };
   }, [isMobileMenuOpen]);
 
-  const containerMaxWidth = 1180 - 120 * scrollProgress;
-  const backgroundOpacity = isMobileMenuOpen ? 0.98 : scrollProgress * 0.75;
-  const shadowOpacity = isMobileMenuOpen ? 0.2 : scrollProgress * 0.12;
-  const blurAmount = isMobileMenuOpen ? 32 : scrollProgress * 24;
-  const textValue = isMobileMenuOpen
-    ? 25
-    : Math.round(255 - 240 * scrollProgress);
-  const textColor = `rgb(${textValue} ${textValue} ${textValue})`;
-  const logoInvert = isMobileMenuOpen
-    ? 0
-    : Math.round(100 - 100 * scrollProgress);
-  const ctaColor = scrollProgress > 0.35 ? "#244C43" : textColor;
-
   return (
     <header
-      className="pointer-events-none fixed inset-x-0 top-0 z-40 flex justify-center px-4 transition-all duration-300"
-      style={{ paddingTop: `${16 + 16 * scrollProgress}px` }}
+      className={`pointer-events-none fixed inset-x-0 top-0 z-40 px-4 pt-4 transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] ${
+        isHidden ? "-translate-y-[130%]" : "translate-y-0"
+      }`}
     >
       <div
-        className="pointer-events-auto flex w-full flex-wrap items-center justify-between border border-transparent transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]"
-        style={{
-          maxWidth: `${containerMaxWidth}px`,
-          padding: `${16 - 6 * scrollProgress}px ${20 + 6 * scrollProgress}px`,
-          backgroundColor: `rgba(250, 250, 248, ${backgroundOpacity})`,
-          borderColor: `rgba(255, 255, 255, ${scrollProgress * 0.4})`,
-          borderRadius: isMobileMenuOpen
-            ? "28px"
-            : `${18 + 34 * scrollProgress}px`,
-          boxShadow: `0 20px 40px rgba(0, 0, 0, ${shadowOpacity})`,
-          backdropFilter: `blur(${blurAmount}px) saturate(150%)`,
-          WebkitBackdropFilter: `blur(${blurAmount}px) saturate(150%)`,
-        }}
+        className={`pointer-events-auto mx-auto flex w-full max-w-[1180px] flex-wrap items-center justify-between rounded-2xl border px-4 py-3 transition-all duration-300 md:px-5 ${
+          isAtTop && !isMobileMenuOpen
+            ? "border-white/55 bg-white/88 shadow-[0_18px_48px_rgba(11,31,51,0.08)] backdrop-blur-xl"
+            : "border-[#D9D9D9] bg-white/96 shadow-[0_18px_48px_rgba(11,31,51,0.12)] backdrop-blur-2xl"
+        }`}
       >
         <Link
           aria-label="Maxwell Hospitality home"
-          className="group relative flex items-center gap-3 transition-transform duration-500 ease-out hover:scale-[1.02]"
+          className="relative flex h-11 w-32 shrink-0 items-center"
           href="/home"
           onClick={() => setIsMobileMenuOpen(false)}
-          style={{
-            transform: `scale(${1 - 0.1 * scrollProgress})`,
-          }}
         >
-          <div
-            className="relative flex h-12 w-32 items-center justify-center overflow-hidden transition-all duration-300"
-            style={{ filter: `invert(${logoInvert}%)` }}
-          >
-            <Image
-              alt="Maxwell Hospitality"
-              className="object-contain"
-              fill
-              priority
-              sizes="128px"
-              src="/logo.png"
-            />
-          </div>
+          <Image
+            alt="Maxwell Hospitality"
+            className="object-contain"
+            fill
+            priority
+            sizes="128px"
+            src="/logo.png"
+          />
         </Link>
 
         <nav
           aria-label="Primary navigation"
-          className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-1 rounded-full border border-white/10 bg-black/6 px-1.5 py-1.5 backdrop-blur-md max-[900px]:hidden min-[901px]:flex"
+          className="hidden items-center gap-1 rounded-full p-1 min-[901px]:flex"
         >
           {navItems.map((item) => {
             const isActive =
@@ -109,12 +84,13 @@ export function SiteHeader() {
 
             return (
               <Link
-                className={`rounded-full px-4 py-2 text-[0.72rem] font-black tracking-[0.12em] uppercase transition-all duration-300 ${
-                  isActive ? "bg-[#C9A86A] text-[#244C43]" : "hover:bg-white/12"
+                className={`rounded-full px-4 py-2 text-[0.72rem] font-black tracking-[0.12em] uppercase transition-colors ${
+                  isActive
+                    ? "bg-[#0B1F33] text-white"
+                    : "text-[#5D6C7B] hover:bg-white hover:text-[#0D2B44]"
                 }`}
                 href={item.href}
                 key={item.href}
-                style={{ color: isActive ? undefined : textColor }}
               >
                 {item.label}
               </Link>
@@ -122,35 +98,33 @@ export function SiteHeader() {
           })}
         </nav>
 
-        <Link
-          className="hidden min-h-10 items-center justify-center rounded-full border border-[#C9A86A]/70 px-5 text-[0.72rem] font-black tracking-[0.12em] uppercase transition-colors duration-300 hover:bg-[#C9A86A] hover:text-[#244C43] max-[900px]:hidden min-[901px]:inline-flex"
-          href="/contact"
-          style={{ color: ctaColor }}
-        >
-          Inquiry
-        </Link>
+        <div className="hidden items-center gap-3 min-[901px]:flex">
+          <Link
+            className="group inline-flex min-h-12 items-center justify-center gap-3 rounded-full border border-[#0D2B44] bg-[#0D2B44] py-1.5 pr-1.5 pl-5 text-[0.72rem] font-black tracking-[0.12em] text-white uppercase transition-colors duration-300 hover:bg-white hover:text-[#0D2B44]"
+            href="/contact"
+          >
+            <span>Inquiry</span>
+            <ArrowCircle />
+          </Link>
+        </div>
 
         <button
           aria-label="Toggle mobile menu"
-          className="hidden h-11 w-11 items-center justify-center rounded-full border border-white/20 transition-transform duration-300 hover:opacity-70 max-[900px]:flex"
+          className="flex h-11 w-11 items-center justify-center rounded-full border border-[#D9D9D9] bg-white text-[#0B1F33] transition-colors hover:bg-white min-[901px]:hidden"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          style={{
-            color: textColor,
-            transform: isMobileMenuOpen ? "rotate(90deg)" : "rotate(0deg)",
-          }}
           type="button"
         >
           {isMobileMenuOpen ? (
             <svg
               aria-hidden="true"
               fill="none"
-              height="24"
+              height="22"
               stroke="currentColor"
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth="2"
               viewBox="0 0 24 24"
-              width="24"
+              width="22"
             >
               <line x1="18" x2="6" y1="6" y2="18" />
               <line x1="6" x2="18" y1="6" y2="18" />
@@ -159,54 +133,52 @@ export function SiteHeader() {
             <svg
               aria-hidden="true"
               fill="none"
-              height="24"
+              height="22"
               stroke="currentColor"
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth="2"
               viewBox="0 0 24 24"
-              width="24"
+              width="22"
             >
-              <line x1="3" x2="21" y1="12" y2="12" />
-              <line x1="3" x2="21" y1="6" y2="6" />
-              <line x1="3" x2="21" y1="18" y2="18" />
+              <line x1="4" x2="20" y1="8" y2="8" />
+              <line x1="4" x2="20" y1="16" y2="16" />
             </svg>
           )}
         </button>
 
         <div
-          className={`w-full overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] lg:hidden ${
+          className={`basis-full overflow-hidden transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)] min-[901px]:hidden ${
             isMobileMenuOpen
-              ? "mt-4 max-h-[500px] opacity-100"
+              ? "mt-4 max-h-[520px] opacity-100"
               : "mt-0 max-h-0 opacity-0"
           }`}
         >
-          <nav className="flex flex-col border-t border-black/5 pt-4 pb-3">
-            {navItems.map((item) => (
-              <Link
-                className="group relative flex w-full items-center justify-between rounded-2xl px-2 py-4 transition-colors hover:bg-[#3F6F63]/6"
-                href={item.href}
-                key={item.href}
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                <span className="text-[0.85rem] font-bold tracking-[0.15em] text-[#1a1a1a] uppercase transition-colors group-hover:text-[#C9A86A]">
-                  {item.label}
-                </span>
-                <svg
-                  aria-hidden="true"
-                  className="h-4 w-4 text-[#C9A86A] opacity-0 transition-all duration-300 group-hover:-translate-x-2 group-hover:opacity-100"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
+          <nav
+            aria-label="Mobile navigation"
+            className="grid gap-1 border-t border-[#EAE8E3] pt-4 pb-2"
+          >
+            {navItems.map((item) => {
+              const isActive =
+                pathname === item.href ||
+                (item.href === "/home" && pathname === "/");
+
+              return (
+                <Link
+                  className={`flex min-h-12 items-center justify-between rounded-2xl px-4 text-sm font-black tracking-[0.12em] uppercase transition-colors ${
+                    isActive
+                      ? "bg-[#0B1F33] text-white"
+                      : "text-[#5D6C7B] hover:bg-white hover:text-[#0D2B44]"
+                  }`}
+                  href={item.href}
+                  key={item.href}
+                  onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  <line x1="5" x2="19" y1="12" y2="12" />
-                  <polyline points="12 5 19 12 12 19" />
-                </svg>
-              </Link>
-            ))}
+                  {item.label}
+                  <span aria-hidden="true">+</span>
+                </Link>
+              );
+            })}
           </nav>
         </div>
       </div>
