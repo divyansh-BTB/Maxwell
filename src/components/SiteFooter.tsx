@@ -31,7 +31,7 @@ export function SiteFooter() {
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-[1.15fr_0.85fr] lg:gap-20">
             <div>
               <Link
-                className="inline-flex text-[clamp(2.4rem,5vw,4.4rem)] font-black leading-[0.86] tracking-[-0.03em] text-white"
+                className="inline-flex text-[clamp(2.4rem,5vw,4.4rem)] font-black leading-[1.02] tracking-[-0.03em] text-white"
                 href="/home"
               >
                 Maxwell

@@ -12,7 +12,7 @@ export function HeroSection() {
             Maxwell Hospitality
           </span>
 
-          <h1 className="text-[clamp(2.9rem,6.4vw,6.8rem)] font-black leading-[0.86] tracking-normal text-[#0B1F33]">
+          <h1 className="max-w-[860px] text-[clamp(2.15rem,3.55vw,3.9rem)] font-black leading-[0.98] tracking-normal text-[#0B1F33]">
             Food service that feels effortless.
           </h1>
 
