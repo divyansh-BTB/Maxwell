@@ -49,7 +49,7 @@ export function HeroSection() {
               fill
               priority
               sizes="(max-width: 1024px) 100vw, 52vw"
-              src="https://images.unsplash.com/photo-1556911220-bff31c812dba?q=80&w=1700&auto=format&fit=crop"
+              src="/hero.png"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/34 via-transparent to-transparent" />
           </div>
