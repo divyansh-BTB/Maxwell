@@ -1,19 +1,5 @@
-import { SiteHeader } from "@/components/SiteHeader";
-import { ServiceDetailSections } from "./components/ServiceDetailSections";
-import { ServicesCta } from "./components/ServicesCta";
-import { ServicesHero } from "./components/ServicesHero";
-import { ServicesList } from "./components/ServicesList";
-import { ServicesProcess } from "./components/ServicesProcess";
+import { redirect } from "next/navigation";
 
-export default function ServicePage() {
-  return (
-    <main>
-      <SiteHeader />
-      <ServicesHero />
-      <ServicesList />
-      <ServiceDetailSections />
-      <ServicesProcess />
-      <ServicesCta />
-    </main>
-  );
+export default function ServiceRedirectPage() {
+  redirect("/solutions");
 }

@@ -42,24 +42,24 @@ export function RecognitionSection() {
 
   return (
     <section
-      className="bg-white px-[clamp(20px,5vw,72px)] py-[clamp(72px,10vw,132px)] text-[#0E4A4F]"
+      className="bg-white px-[clamp(20px,5vw,72px)] py-[clamp(72px,10vw,132px)] text-[#0B1F33]"
       id="recognition"
     >
       <div className="mx-auto max-w-[1280px]">
         {/* --- HEADER --- */}
         <div className="mb-[clamp(50px,8vw,100px)] flex flex-col items-start justify-between gap-8 lg:flex-row lg:items-end">
           <div className="w-full max-w-[700px]">
-            <span className="mb-4 flex items-center gap-3 text-sm font-bold tracking-[0.15em] text-[#2E7C82] uppercase">
-              <span className="h-[2px] w-8 bg-[#2E7C82]" />
+            <span className="mb-4 flex items-center gap-3 text-sm font-bold tracking-[0.15em] text-[#758696] uppercase">
+              <span className="h-[2px] w-8 bg-[#758696]" />
               Featured Clients
             </span>
             {/* Shorter, punchier heading */}
-            <h2 className="m-0 text-[clamp(2rem,3.5vw,3.5rem)] font-bold leading-[1.15] text-[#0E4A4F]">
+            <h2 className="m-0 text-[clamp(2rem,3.5vw,3.5rem)] font-bold leading-[1.15] text-[#0B1F33]">
               Trusted by leading organizations.
             </h2>
           </div>
           <div className="w-full lg:w-[400px] lg:pb-3">
-            <p className="m-0 text-[1.05rem] leading-[1.7] text-[#5C7078]">
+            <p className="m-0 text-[1.05rem] leading-[1.7] text-[#5D6C7B]">
               This section is ready for the final logo grid while showing the
               client and partner categories Maxwell wants to highlight.
             </p>
@@ -71,7 +71,7 @@ export function RecognitionSection() {
           {/* Left Side: The Interactive List */}
           <div className="flex flex-col">
             {/* Top border for the list */}
-            <div className="h-[1px] w-full bg-[#D9E4E8]" />
+            <div className="h-[1px] w-full bg-[#D9D9D9]" />
 
             {recognitionItems.map((item, index) => {
               const isActive = activeIndex === index;
@@ -82,18 +82,18 @@ export function RecognitionSection() {
                   key={item.title}
                   onMouseEnter={() => setActiveIndex(index)}
                   onFocus={() => setActiveIndex(index)}
-                  className="group relative w-full cursor-pointer border-b border-[#D9E4E8] py-8 text-left transition-colors duration-500 hover:border-[#1F9AAA]/50 focus:outline-none lg:py-10"
+                  className="group relative w-full cursor-pointer border-b border-[#D9D9D9] py-8 text-left transition-colors duration-500 hover:border-[#0D2B44]/50 focus:outline-none lg:py-10"
                 >
                   <div className="flex items-center justify-between pr-4">
                     {/* The Title */}
                     <div className="flex items-center gap-6 md:gap-10">
                       <span
-                        className={`text-lg font-mono transition-colors duration-500 ${isActive ? "text-[#1F9AAA]" : "text-[#2E7C82]"}`}
+                        className={`text-lg font-mono transition-colors duration-500 ${isActive ? "text-[#0D2B44]" : "text-[#758696]"}`}
                       >
                         0{index + 1}
                       </span>
                       <h3
-                        className={`text-2xl font-bold transition-all duration-500 md:text-4xl ${isActive ? "text-[#0E4A4F] translate-x-4" : "text-[#5C7078]"}`}
+                        className={`text-2xl font-bold transition-all duration-500 md:text-4xl ${isActive ? "text-[#0B1F33] translate-x-4" : "text-[#5D6C7B]"}`}
                       >
                         {item.title}
                       </h3>
@@ -102,7 +102,7 @@ export function RecognitionSection() {
                     {/* The Sliding Gold Arrow */}
                     <svg
                       aria-hidden="true"
-                      className={`h-8 w-8 text-[#1F9AAA] transition-all duration-500 ease-out ${
+                      className={`h-8 w-8 text-[#0D2B44] transition-all duration-500 ease-out ${
                         isActive
                           ? "opacity-100 translate-x-0"
                           : "opacity-0 -translate-x-8"
@@ -141,7 +141,7 @@ export function RecognitionSection() {
 
           {/* Right Side: The Sticky Image Viewer (Desktop Only) */}
           <div className="hidden sticky top-32 lg:block">
-            <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[2rem] bg-[#0E4A4F] shadow-2xl">
+            <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[2rem] bg-[#0B1F33] shadow-2xl">
               {recognitionItems.map((item, index) => (
                 <Image
                   key={item.title}

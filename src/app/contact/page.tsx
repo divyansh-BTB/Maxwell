@@ -1,19 +1,5 @@
-import { SiteHeader } from "@/components/SiteHeader";
-import { ContactFormSection } from "./components/ContactFormSection";
-import { ContactHero } from "./components/ContactHero";
-import { ContactInfo } from "./components/ContactInfo";
-import { ContactMap } from "./components/ContactMap";
-import { SocialMediaSection } from "./components/SocialMediaSection";
+import { redirect } from "next/navigation";
 
-export default function ContactPage() {
-  return (
-    <main>
-      <SiteHeader />
-      <ContactHero />
-      <ContactInfo />
-      <ContactFormSection />
-      <ContactMap />
-      <SocialMediaSection />
-    </main>
-  );
+export default function ContactRedirectPage() {
+  redirect("/contact-us");
 }

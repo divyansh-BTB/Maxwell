@@ -67,29 +67,29 @@ export function AboutValues() {
 
   return (
     <section
-      className="border-b border-[#D9E4E8] bg-[#E7F1F5] px-[clamp(20px,5vw,72px)] py-[clamp(72px,9vw,112px)]"
+      className="border-b border-[#D9D9D9] bg-[#F6F7F8] px-[clamp(20px,5vw,72px)] py-[clamp(72px,9vw,112px)]"
       id="values"
     >
       <div className="mx-auto max-w-[1280px]">
         <div className="mb-[clamp(36px,6vw,72px)] grid grid-cols-1 gap-6 lg:grid-cols-[0.85fr_1fr] lg:items-end">
           <div>
-            <span className="mb-4 flex items-center gap-3 text-sm font-bold tracking-[0.15em] text-[#2E7C82] uppercase">
-              <span className="h-[2px] w-8 bg-[#2E7C82]" />
+            <span className="mb-4 flex items-center gap-3 text-sm font-bold tracking-[0.15em] text-[#758696] uppercase">
+              <span className="h-[2px] w-8 bg-[#758696]" />
               Core Values
             </span>
-            <h2 className="max-w-[600px] text-[clamp(2rem,4vw,3.6rem)] font-bold leading-[1.05] text-[#0E4A4F]">
+            <h2 className="max-w-[600px] text-[clamp(2rem,4vw,3.6rem)] font-bold leading-[1.05] text-[#0B1F33]">
               The principles behind every service.
             </h2>
           </div>
-          <p className="max-w-[620px] text-[1.04rem] leading-[1.8] text-[#5C7078] lg:justify-self-end">
+          <p className="max-w-[620px] text-[1.04rem] leading-[1.8] text-[#5D6C7B] lg:justify-self-end">
             These values guide how MHPL plans food programs, trains teams,
             manages kitchens, and serves people across every environment.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-10 rounded-[1.5rem] border border-[#D9E4E8] bg-white p-[clamp(24px,4vw,48px)] shadow-2xl shadow-[#0E4A4F]/8 lg:grid-cols-[0.82fr_1.18fr] lg:gap-16">
+        <div className="grid grid-cols-1 gap-10 rounded-[1.5rem] border border-[#D9D9D9] bg-white p-[clamp(24px,4vw,48px)] shadow-2xl shadow-[#0B1F33]/8 lg:grid-cols-[0.82fr_1.18fr] lg:gap-16">
           <div>
-            <div className="divide-y divide-[#E7F1F5]">
+            <div className="divide-y divide-[#F6F7F8]">
               {values.map((value) => {
                 const isActive = activeValue.title === value.title;
 
@@ -103,7 +103,7 @@ export function AboutValues() {
                     <div>
                       <h3
                         className={`text-[1.05rem] font-bold transition-colors duration-300 ${
-                          isActive ? "text-[#1F9AAA]" : "text-[#5C7078]"
+                          isActive ? "text-[#0D2B44]" : "text-[#5D6C7B]"
                         }`}
                       >
                         {value.title}
@@ -112,7 +112,7 @@ export function AboutValues() {
                         <div className="mt-5 flex flex-wrap gap-2">
                           {value.tags.map((tag) => (
                             <span
-                              className="rounded-full bg-[#0E4A4F]/8 px-3 py-1.5 text-[0.72rem] font-bold text-[#1F9AAA]"
+                              className="rounded-full bg-[#0B1F33]/8 px-3 py-1.5 text-[0.72rem] font-bold text-[#0D2B44]"
                               key={tag}
                             >
                               {tag}
@@ -123,7 +123,7 @@ export function AboutValues() {
                     </div>
                     <span
                       className={`text-2xl leading-none transition-colors duration-300 ${
-                        isActive ? "text-[#1F9AAA]" : "text-[#2E7C82]"
+                        isActive ? "text-[#0D2B44]" : "text-[#758696]"
                       }`}
                     >
                       {isActive ? "-" : "+"}
@@ -135,7 +135,7 @@ export function AboutValues() {
           </div>
 
           <div>
-            <div className="relative min-h-[430px] overflow-hidden rounded-[1.35rem] bg-[#1F9AAA] max-sm:min-h-[320px]">
+            <div className="relative min-h-[430px] overflow-hidden rounded-[1.35rem] bg-[#0D2B44] max-sm:min-h-[320px]">
               <Image
                 src={activeValue.image}
                 alt={activeValue.title}
@@ -147,10 +147,10 @@ export function AboutValues() {
             </div>
 
             <div className="mt-8 max-w-[760px]">
-              <p className="text-[0.82rem] font-bold tracking-[0.16em] text-[#2E7C82] uppercase">
+              <p className="text-[0.82rem] font-bold tracking-[0.16em] text-[#758696] uppercase">
                 {activeValue.title}
               </p>
-              <p className="mt-3 text-[1.05rem] leading-[1.85] text-[#5C7078]">
+              <p className="mt-3 text-[1.05rem] leading-[1.85] text-[#5D6C7B]">
                 {activeValue.description} These principles shape how our teams
                 plan, prepare, and serve across healthcare, food courts,
                 restaurants, and catering environments.

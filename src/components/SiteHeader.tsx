@@ -7,11 +7,11 @@ import { useEffect, useRef, useState } from "react";
 import { ArrowCircle } from "./ArrowCircle";
 
 const navItems = [
-  { label: "Home", href: "/home" },
-  { label: "About", href: "/about" },
-  { label: "Services", href: "/service" },
-  { label: "Our Brands", href: "/home#brands" },
-  { label: "Contact", href: "/contact" },
+  { label: "Home", href: "/" },
+  { label: "About", href: "/about-maxwell" },
+  { label: "Brands", href: "/our-brands" },
+  { label: "Solutions", href: "/solutions" },
+  { label: "Gallery", href: "/gallery" },
 ];
 
 export function SiteHeader() {
@@ -55,13 +55,13 @@ export function SiteHeader() {
         className={`pointer-events-auto mx-auto flex w-full max-w-[1180px] flex-wrap items-center justify-between rounded-2xl border px-4 py-3 transition-all duration-300 md:px-5 ${
           isAtTop && !isMobileMenuOpen
             ? "border-white/55 bg-white/88 shadow-[0_18px_48px_rgba(11,31,51,0.08)] backdrop-blur-xl"
-            : "border-[#D9E4E8] bg-white/96 shadow-[0_18px_48px_rgba(11,31,51,0.12)] backdrop-blur-2xl"
+            : "border-[#D9D9D9] bg-white/96 shadow-[0_18px_48px_rgba(11,31,51,0.12)] backdrop-blur-2xl"
         }`}
       >
         <Link
           aria-label="Maxwell Hospitality home"
           className="relative flex h-11 w-32 shrink-0 items-center"
-          href="/home"
+          href="/"
           onClick={() => setIsMobileMenuOpen(false)}
         >
           <Image
@@ -81,14 +81,14 @@ export function SiteHeader() {
           {navItems.map((item) => {
             const isActive =
               (!item.href.includes("#") && pathname === item.href) ||
-              (item.href === "/home" && pathname === "/");
+              (item.href === "/" && pathname === "/");
 
             return (
               <Link
                 className={`rounded-full px-4 py-2 text-[0.72rem] font-black tracking-[0.12em] uppercase transition-colors ${
                   isActive
-                    ? "bg-[#0E4A4F] text-white"
-                    : "text-[#5C7078] hover:bg-white hover:text-[#1F9AAA]"
+                    ? "bg-[#0B1F33] text-white"
+                    : "text-[#5D6C7B] hover:bg-white hover:text-[#0D2B44]"
                 }`}
                 href={item.href}
                 key={`${item.label}-${item.href}`}
@@ -101,17 +101,17 @@ export function SiteHeader() {
 
         <div className="hidden items-center gap-3 min-[901px]:flex">
           <Link
-            className="group inline-flex min-h-12 items-center justify-center gap-3 rounded-full border border-[#1F9AAA] bg-[#1F9AAA] py-1.5 pr-1.5 pl-5 text-[0.72rem] font-black tracking-[0.12em] text-white uppercase transition-colors duration-300 hover:bg-white hover:text-[#1F9AAA]"
-            href="/contact"
+            className="group inline-flex min-h-12 items-center justify-center gap-3 rounded-full border border-[#0D2B44] bg-[#0D2B44] py-1.5 pr-1.5 pl-5 text-[0.72rem] font-black tracking-[0.12em] text-white uppercase transition-colors duration-300 hover:bg-white hover:text-[#0D2B44]"
+            href="/contact-us#inquiry-form"
           >
-            <span>Inquiry</span>
+            <span>Request a Proposal</span>
             <ArrowCircle />
           </Link>
         </div>
 
         <button
           aria-label="Toggle mobile menu"
-          className="flex h-11 w-11 items-center justify-center rounded-full border border-[#D9E4E8] bg-white text-[#0E4A4F] transition-colors hover:bg-white min-[901px]:hidden"
+          className="flex h-11 w-11 items-center justify-center rounded-full border border-[#D9D9D9] bg-white text-[#0B1F33] transition-colors hover:bg-white min-[901px]:hidden"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           type="button"
         >
@@ -157,19 +157,19 @@ export function SiteHeader() {
         >
           <nav
             aria-label="Mobile navigation"
-            className="grid gap-1 border-t border-[#E7F1F5] pt-4 pb-2"
+            className="grid gap-1 border-t border-[#F6F7F8] pt-4 pb-2"
           >
             {navItems.map((item) => {
               const isActive =
                 (!item.href.includes("#") && pathname === item.href) ||
-                (item.href === "/home" && pathname === "/");
+                (item.href === "/" && pathname === "/");
 
               return (
                 <Link
                   className={`flex min-h-12 items-center justify-between rounded-2xl px-4 text-sm font-black tracking-[0.12em] uppercase transition-colors ${
                     isActive
-                      ? "bg-[#0E4A4F] text-white"
-                      : "text-[#5C7078] hover:bg-white hover:text-[#1F9AAA]"
+                      ? "bg-[#0B1F33] text-white"
+                      : "text-[#5D6C7B] hover:bg-white hover:text-[#0D2B44]"
                   }`}
                   href={item.href}
                   key={`${item.label}-${item.href}`}
