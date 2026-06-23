@@ -76,10 +76,10 @@ export function AboutPreview() {
       <div className="mx-auto max-w-[1280px]">
         {/* Responsive Heading: Left on mobile, Centered on desktop */}
         <div className="mb-[clamp(40px,8vw,80px)] text-left md:text-center">
-          <span className="mb-3 block text-sm font-bold tracking-[0.15em] text-[#758696] uppercase">
+          <span className="mb-3 block text-sm font-bold tracking-[0.15em] text-[#2E7C82] uppercase">
             Who We Are
           </span>
-          <h2 className="mx-auto max-w-[800px] text-[clamp(2rem,4vw,3.5rem)] font-bold leading-[1.1] text-[#0B1F33]">
+          <h2 className="mx-auto max-w-[800px] text-[clamp(2rem,4vw,3.5rem)] font-bold leading-[1.1] text-[#0E4A4F]">
             Purposeful hospitality for institutions, diners, and events
           </h2>
         </div>
@@ -94,7 +94,7 @@ export function AboutPreview() {
                 <div
                   key={`${feature.id}-dot`}
                   className={`h-2 w-2 rounded-full transition-all duration-500 ${
-                    activeIndex === idx ? "h-8 bg-[#0D2B44]" : "bg-[#0B1F33]/20"
+                    activeIndex === idx ? "h-8 bg-[#1F9AAA]" : "bg-[#0E4A4F]/20"
                   }`}
                 />
               ))}
@@ -110,13 +110,13 @@ export function AboutPreview() {
                       : "opacity-0 blur-md translate-y-8 pointer-events-none"
                   }`}
                 >
-                  <span className="mb-4 block text-sm font-bold tracking-[0.12em] text-[#758696] uppercase">
+                  <span className="mb-4 block text-sm font-bold tracking-[0.12em] text-[#2E7C82] uppercase">
                     {feature.eyebrow}
                   </span>
-                  <h3 className="mb-6 text-[clamp(1.8rem,2.5vw,2.5rem)] font-bold leading-[1.1] text-[#0B1F33]">
+                  <h3 className="mb-6 text-[clamp(1.8rem,2.5vw,2.5rem)] font-bold leading-[1.1] text-[#0E4A4F]">
                     {feature.title}
                   </h3>
-                  <p className="mb-8 text-[1.05rem] leading-[1.8] text-[#5D6C7B] max-w-[90%]">
+                  <p className="mb-8 text-[1.05rem] leading-[1.8] text-[#5C7078] max-w-[90%]">
                     {feature.description}
                   </p>
 
@@ -124,14 +124,14 @@ export function AboutPreview() {
                     <div>
                       {/* Premium Sliding Underline Link using Next.js Link */}
                       <Link
-                        className="group relative inline-flex overflow-hidden pb-[5px] text-[1.05rem] font-bold text-[#0B1F33] transition-opacity hover:opacity-80"
+                        className="group relative inline-flex overflow-hidden pb-[5px] text-[1.05rem] font-bold text-[#0E4A4F] transition-opacity hover:opacity-80"
                         href="/about"
                       >
                         Learn More
                         {/* Line 1: Slides much further out to the right (125%) */}
-                        <span className="absolute bottom-0 left-0 h-[1.5px] w-full bg-[#0D2B44] transition-transform duration-500 ease-in-out group-hover:translate-x-[125%]" />
+                        <span className="absolute bottom-0 left-0 h-[1.5px] w-full bg-[#1F9AAA] transition-transform duration-500 ease-in-out group-hover:translate-x-[125%]" />
                         {/* Line 2: Starts much further back on the left (-125%) */}
-                        <span className="absolute bottom-0 left-0 h-[1.5px] w-full -translate-x-[125%] bg-[#0D2B44] transition-transform duration-500 ease-in-out group-hover:translate-x-0" />
+                        <span className="absolute bottom-0 left-0 h-[1.5px] w-full -translate-x-[125%] bg-[#1F9AAA] transition-transform duration-500 ease-in-out group-hover:translate-x-0" />
                       </Link>
                     </div>
                   )}
@@ -150,7 +150,7 @@ export function AboutPreview() {
                 }}
                 className="flex h-screen items-center justify-center py-10"
               >
-                <div className="relative h-[70vh] w-full overflow-hidden rounded-[2rem] bg-[#0B1F33] shadow-2xl transition-transform duration-700 hover:scale-[1.02]">
+                <div className="relative h-[70vh] w-full overflow-hidden rounded-[2rem] bg-[#0E4A4F] shadow-2xl transition-transform duration-700 hover:scale-[1.02]">
                   <Image
                     src={feature.image}
                     alt={feature.title}
@@ -169,7 +169,7 @@ export function AboutPreview() {
         <div className="flex flex-col gap-[80px] md:hidden">
           {features.map((feature, idx) => (
             <div key={feature.id} className="flex flex-col gap-6">
-              <div className="relative h-[400px] w-full overflow-hidden rounded-[1.5rem] bg-[#0B1F33] shadow-xl">
+              <div className="relative h-[400px] w-full overflow-hidden rounded-[1.5rem] bg-[#0E4A4F] shadow-xl">
                 <Image
                   src={feature.image}
                   alt={feature.title}
@@ -179,25 +179,25 @@ export function AboutPreview() {
                 />
               </div>
               <div className="text-left">
-                <span className="mb-3 block text-xs font-bold tracking-[0.12em] text-[#758696] uppercase">
+                <span className="mb-3 block text-xs font-bold tracking-[0.12em] text-[#2E7C82] uppercase">
                   {feature.eyebrow}
                 </span>
-                <h3 className="mb-4 text-[1.8rem] font-bold leading-[1.2] text-[#0B1F33]">
+                <h3 className="mb-4 text-[1.8rem] font-bold leading-[1.2] text-[#0E4A4F]">
                   {feature.title}
                 </h3>
-                <p className="text-[1.02rem] leading-[1.8] text-[#5D6C7B]">
+                <p className="text-[1.02rem] leading-[1.8] text-[#5C7078]">
                   {feature.description}
                 </p>
                 {idx === features.length - 1 && (
                   <div className="mt-6">
                     {/* Premium Sliding Underline Link using Next.js Link (Mobile) */}
                     <Link
-                      className="group relative inline-flex overflow-hidden pb-[5px] text-[1.05rem] font-bold text-[#0B1F33] transition-opacity hover:opacity-80"
+                      className="group relative inline-flex overflow-hidden pb-[5px] text-[1.05rem] font-bold text-[#0E4A4F] transition-opacity hover:opacity-80"
                       href="/about"
                     >
                       Learn More
-                      <span className="absolute bottom-0 left-0 h-[1.5px] w-full bg-[#0D2B44] transition-transform duration-500 ease-in-out group-hover:translate-x-[125%]" />
-                      <span className="absolute bottom-0 left-0 h-[1.5px] w-full -translate-x-[125%] bg-[#0D2B44] transition-transform duration-500 ease-in-out group-hover:translate-x-0" />
+                      <span className="absolute bottom-0 left-0 h-[1.5px] w-full bg-[#1F9AAA] transition-transform duration-500 ease-in-out group-hover:translate-x-[125%]" />
+                      <span className="absolute bottom-0 left-0 h-[1.5px] w-full -translate-x-[125%] bg-[#1F9AAA] transition-transform duration-500 ease-in-out group-hover:translate-x-0" />
                     </Link>
                   </div>
                 )}

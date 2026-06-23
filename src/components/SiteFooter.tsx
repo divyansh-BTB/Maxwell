@@ -53,7 +53,7 @@ const footerColumns = [
 
 export function SiteFooter() {
   return (
-    <footer className="bg-[#0B1F33] px-[clamp(20px,5vw,72px)] pt-[clamp(72px,9vw,104px)] pb-7 text-white">
+    <footer className="bg-[#0E4A4F] px-[clamp(20px,5vw,72px)] pt-[clamp(72px,9vw,104px)] pb-7 text-white">
       <div className="mx-auto max-w-[1280px]">
         <div className="rounded-[2rem] border border-white/16 bg-white/6 px-[clamp(24px,4vw,56px)] py-[clamp(36px,5vw,64px)]">
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-20">
@@ -82,7 +82,7 @@ export function SiteFooter() {
                   type="email"
                 />
                 <button
-                  className="group inline-flex min-h-[58px] items-center justify-center gap-4 rounded-full border border-white bg-white py-2 pr-2 pl-7 text-sm font-bold text-[#0B1F33] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#0D2B44] hover:text-white"
+                  className="group inline-flex min-h-[58px] items-center justify-center gap-4 rounded-full border border-white bg-white py-2 pr-2 pl-7 text-sm font-bold text-[#0E4A4F] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#1F9AAA] hover:text-white"
                   type="submit"
                 >
                   <span>Subscribe</span>

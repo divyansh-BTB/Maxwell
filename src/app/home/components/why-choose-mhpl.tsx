@@ -43,21 +43,21 @@ const pillars = [
 
 export function WhyChooseMhpl() {
   return (
-    <section className="bg-[#EAE8E3] px-[clamp(20px,5vw,72px)] py-[clamp(72px,10vw,120px)] overflow-hidden">
+    <section className="bg-[#E7F1F5] px-[clamp(20px,5vw,72px)] py-[clamp(72px,10vw,120px)] overflow-hidden">
       <div className="mx-auto max-w-[1280px]">
         {/* --- BALANCED & REFINED HEADER --- */}
         <div className="mb-[clamp(40px,6vw,80px)] flex flex-col items-start justify-between gap-6 lg:flex-row lg:items-end">
           <div className="w-full max-w-[650px]">
-            <span className="mb-4 flex items-center gap-3 text-sm font-bold tracking-[0.15em] text-[#758696] uppercase">
-              <span className="h-[2px] w-8 bg-[#758696]" />
+            <span className="mb-4 flex items-center gap-3 text-sm font-bold tracking-[0.15em] text-[#2E7C82] uppercase">
+              <span className="h-[2px] w-8 bg-[#2E7C82]" />
               Why Choose Maxwell
             </span>
-            <h2 className="m-0 text-[clamp(1.8rem,3vw,3rem)] font-bold leading-[1.15] tracking-tight text-[#0B1F33]">
+            <h2 className="m-0 text-[clamp(1.8rem,3vw,3rem)] font-bold leading-[1.15] tracking-tight text-[#0E4A4F]">
               Excellence delivered daily.
             </h2>
           </div>
           <div className="w-full lg:w-[420px] lg:pb-2">
-            <p className="m-0 text-[0.95rem] leading-[1.7] text-[#5D6C7B]">
+            <p className="m-0 text-[0.95rem] leading-[1.7] text-[#5C7078]">
               Maxwell combines healthcare hospitality, food safety discipline,
               large-scale catering capability, technology-driven operations, and
               an experienced culinary team.

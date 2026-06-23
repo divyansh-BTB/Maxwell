@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
-import { Onest, Plus_Jakarta_Sans } from "next/font/google";
+import { Inter, Marcellus } from "next/font/google";
 import { SiteFooter } from "@/components/SiteFooter";
 import "./globals.css";
 
-const onest = Onest({
+const marcellus = Marcellus({
   subsets: ["latin"],
-  variable: "--font-onest",
+  variable: "--font-marcellus",
+  weight: "400",
   display: "swap",
 });
 
-const plusJakartaSans = Plus_Jakarta_Sans({
+const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-plus-jakarta",
+  variable: "--font-inter",
   display: "swap",
 });
 
@@ -29,7 +30,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${onest.variable} ${plusJakartaSans.variable} h-full antialiased`}
+      className={`${marcellus.variable} ${inter.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         {children}

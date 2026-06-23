@@ -82,11 +82,11 @@ export function GalleryPreview() {
         {/* --- EDITORIAL HEADER LAYOUT --- */}
         <div className="mb-[clamp(40px,6vw,80px)] flex flex-col items-start justify-between gap-8 lg:flex-row lg:items-end">
           <div className="w-full lg:w-1/2">
-            <span className="mb-4 flex items-center gap-3 text-sm font-bold tracking-[0.15em] text-[#758696] uppercase">
-              <span className="h-[2px] w-8 bg-[#758696]" />
+            <span className="mb-4 flex items-center gap-3 text-sm font-bold tracking-[0.15em] text-[#2E7C82] uppercase">
+              <span className="h-[2px] w-8 bg-[#2E7C82]" />
               Experience Maxwell
             </span>
-            <h2 className="m-0 text-[clamp(2rem,3.5vw,3rem)] font-bold leading-[1.1] text-[#0B1F33]">
+            <h2 className="m-0 text-[clamp(2rem,3.5vw,3rem)] font-bold leading-[1.1] text-[#0E4A4F]">
               Service moments across brands, kitchens, banquets, and client
               events.
             </h2>
@@ -94,7 +94,7 @@ export function GalleryPreview() {
 
           <div className="flex w-full items-center justify-between lg:w-auto lg:justify-end lg:gap-12">
             <Link
-              className="group inline-flex items-center gap-3 border-b border-[#0D2B44]/40 pb-1 text-sm font-bold tracking-[0.15em] text-[#0B1F33] uppercase transition-all duration-300 hover:border-[#0D2B44] hover:text-[#0D2B44]"
+              className="group inline-flex items-center gap-3 border-b border-[#1F9AAA]/40 pb-1 text-sm font-bold tracking-[0.15em] text-[#0E4A4F] uppercase transition-all duration-300 hover:border-[#1F9AAA] hover:text-[#1F9AAA]"
               href="#gallery"
             >
               View Full Gallery
@@ -104,7 +104,7 @@ export function GalleryPreview() {
             <div className="hidden items-center gap-6 lg:flex">
               <button
                 aria-label="Previous image"
-                className="text-[#758696] transition-all duration-300 hover:-translate-x-2 hover:text-[#0D2B44]"
+                className="text-[#2E7C82] transition-all duration-300 hover:-translate-x-2 hover:text-[#1F9AAA]"
                 onClick={scrollPrev}
                 type="button"
               >
@@ -125,7 +125,7 @@ export function GalleryPreview() {
               </button>
               <button
                 aria-label="Next image"
-                className="text-[#758696] transition-all duration-300 hover:translate-x-2 hover:text-[#0D2B44]"
+                className="text-[#2E7C82] transition-all duration-300 hover:translate-x-2 hover:text-[#1F9AAA]"
                 onClick={scrollNext}
                 type="button"
               >
@@ -157,7 +157,7 @@ export function GalleryPreview() {
           >
             {galleryItems.map((item) => (
               <article
-                className="group relative flex h-[400px] w-[85vw] sm:w-[360px] flex-none snap-start flex-col justify-end overflow-hidden rounded-[2rem] border border-[#D9D9D9] transition-all duration-700 hover:border-[#0D2B44]/50 hover:shadow-2xl hover:shadow-[#0B1F33]/12"
+                className="group relative flex h-[400px] w-[85vw] sm:w-[360px] flex-none snap-start flex-col justify-end overflow-hidden rounded-[2rem] border border-[#D9E4E8] transition-all duration-700 hover:border-[#1F9AAA]/50 hover:shadow-2xl hover:shadow-[#0E4A4F]/12"
                 key={item.title}
               >
                 {/* 1. Full-Bleed Background Image */}
@@ -172,12 +172,12 @@ export function GalleryPreview() {
                 </div>
 
                 {/* 2. Cinematic Gradient Overlay (Darkens the bottom for text readability) */}
-                <div className="absolute inset-0 z-10 bg-gradient-to-t from-[#0B1F33] via-[#0B1F33]/35 to-transparent opacity-80 transition-opacity duration-500 group-hover:opacity-100" />
+                <div className="absolute inset-0 z-10 bg-gradient-to-t from-[#0E4A4F] via-[#0E4A4F]/35 to-transparent opacity-80 transition-opacity duration-500 group-hover:opacity-100" />
 
                 {/* 3. Text & Hover Content */}
                 <div className="relative z-20 flex flex-col p-8 transition-transform duration-500 ease-out group-hover:-translate-y-2">
                   {/* Decorative Gold Line */}
-                  <div className="mb-4 h-[2px] w-8 bg-[#758696] transition-all duration-500 group-hover:w-16" />
+                  <div className="mb-4 h-[2px] w-8 bg-[#2E7C82] transition-all duration-500 group-hover:w-16" />
 
                   <h3 className="text-[1.4rem] font-bold leading-tight text-white drop-shadow-md">
                     {item.title}
@@ -185,12 +185,12 @@ export function GalleryPreview() {
 
                   {/* Hover "Explore" Indicator that slides up */}
                   <div className="mt-4 flex items-center gap-2 overflow-hidden">
-                    <span className="translate-y-4 text-xs font-bold tracking-[0.2em] text-[#0D2B44] opacity-0 transition-all duration-500 uppercase group-hover:translate-y-0 group-hover:opacity-100">
+                    <span className="translate-y-4 text-xs font-bold tracking-[0.2em] text-[#1F9AAA] opacity-0 transition-all duration-500 uppercase group-hover:translate-y-0 group-hover:opacity-100">
                       Explore
                     </span>
                     <svg
                       aria-hidden="true"
-                      className="-translate-x-4 h-4 w-4 text-[#0D2B44] opacity-0 transition-all duration-500 group-hover:translate-x-0 group-hover:opacity-100"
+                      className="-translate-x-4 h-4 w-4 text-[#1F9AAA] opacity-0 transition-all duration-500 group-hover:translate-x-0 group-hover:opacity-100"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -208,7 +208,7 @@ export function GalleryPreview() {
             ))}
           </div>
 
-          <div className="mt-4 hidden justify-center text-xs tracking-widest text-[#758696] uppercase lg:hidden flex">
+          <div className="mt-4 hidden justify-center text-xs tracking-widest text-[#2E7C82] uppercase lg:hidden flex">
             Swipe to explore
           </div>
         </div>
