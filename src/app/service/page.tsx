@@ -1,4 +1,5 @@
 import { SiteHeader } from "@/components/SiteHeader";
+import { ServiceDetailSections } from "./components/ServiceDetailSections";
 import { ServicesCta } from "./components/ServicesCta";
 import { ServicesHero } from "./components/ServicesHero";
 import { ServicesList } from "./components/ServicesList";
@@ -10,6 +11,7 @@ export default function ServicePage() {
       <SiteHeader />
       <ServicesHero />
       <ServicesList />
+      <ServiceDetailSections />
       <ServicesProcess />
       <ServicesCta />
     </main>

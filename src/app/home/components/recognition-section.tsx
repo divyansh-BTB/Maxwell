@@ -5,31 +5,31 @@ import { useState } from "react";
 
 const recognitionItems = [
   {
-    title: "NABH Related Achievements",
+    title: "Sharda Care Healthcity",
     // Represents quality and clinical precision
     image:
       "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=1200&auto=format&fit=crop",
   },
   {
-    title: "Hospital Partnerships",
+    title: "Sharda University",
     // Represents trust, partnership, and professional relationships
     image:
       "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?q=80&w=1200&auto=format&fit=crop",
   },
   {
-    title: "Certificates",
+    title: "Sharda Hospital",
     // Represents official documentation, quality seals, premium paper
     image:
       "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?q=80&w=1200&auto=format&fit=crop",
   },
   {
-    title: "Awards",
+    title: "Sharda Group",
     // Represents celebration, galas, excellence
     image:
       "https://images.unsplash.com/photo-1530103862676-de8892b07439?q=80&w=1200&auto=format&fit=crop",
   },
   {
-    title: "Recognition",
+    title: "Healthcare & Institutional Clients",
     // Represents a glowing, premium hospitality team or establishment
     image:
       "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200&auto=format&fit=crop",
@@ -51,18 +51,17 @@ export function RecognitionSection() {
           <div className="w-full max-w-[700px]">
             <span className="mb-4 flex items-center gap-3 text-sm font-bold tracking-[0.15em] text-[#758696] uppercase">
               <span className="h-[2px] w-8 bg-[#758696]" />
-              Accreditations & Recognition
+              Featured Clients
             </span>
             {/* Shorter, punchier heading */}
             <h2 className="m-0 text-[clamp(2rem,3.5vw,3.5rem)] font-bold leading-[1.15] text-[#0B1F33]">
-              Proven excellence and trusted partnerships.
+              Trusted by leading organizations.
             </h2>
           </div>
           <div className="w-full lg:w-[400px] lg:pb-3">
             <p className="m-0 text-[1.05rem] leading-[1.7] text-[#5D6C7B]">
-              This section is structured for NABH-related achievements, hospital
-              partnerships, certificates, awards, and recognition photos as they
-              become available.
+              This section is ready for the final logo grid while showing the
+              client and partner categories Maxwell wants to highlight.
             </p>
           </div>
         </div>

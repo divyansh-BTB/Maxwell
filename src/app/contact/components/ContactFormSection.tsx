@@ -1,11 +1,19 @@
 import { ArrowCircle } from "@/components/ArrowCircle";
 
 const serviceOptions = [
+  "Corporate Catering",
+  "Corporate Events",
+  "Workplace Cafeteria Management",
+  "Corporate Gifting",
   "Healthcare Food Services",
+  "Hospital Cafeteria Management",
+  "Patient Meal Management",
   "Food Court Management",
   "Restaurant Operations",
-  "Indoor Catering",
-  "Outdoor Catering",
+  "Events & Banquets",
+  "Baker Street",
+  "Street Cafe",
+  "Nutriverse",
   "General Inquiry",
 ];
 
@@ -20,11 +28,12 @@ export function ContactFormSection() {
               Contact Form
             </span>
             <h2 className="max-w-[460px] text-[clamp(2rem,4vw,3.4rem)] font-bold leading-[1.05] text-[#0B1F33]">
-              Submit your inquiry.
+              Request a proposal.
             </h2>
             <p className="mt-6 max-w-[460px] text-[1rem] leading-[1.8] text-[#5D6C7B]">
-              Share a few details and our team can understand the service you
-              need before starting the conversation.
+              Share a few details and our team can understand your service
+              requirement, guest count, and timeline before starting the
+              conversation.
             </p>
           </div>
 
@@ -33,8 +42,8 @@ export function ContactFormSection() {
               Maxwell Hospitality Private Limited
             </p>
             <p className="mt-3 text-[0.96rem] leading-[1.75] text-[#5D6C7B]">
-              Healthcare food services, food courts, restaurants, and catering
-              operations across India.
+              Corporate catering, hospital food services, banquets, cafes,
+              bakeries, food courts, and event operations.
             </p>
           </div>
         </div>
@@ -73,7 +82,7 @@ export function ContactFormSection() {
 
           <label className="grid gap-2">
             <span className="text-sm font-bold text-[#0B1F33]">
-              Phone Number
+              Mobile Number
             </span>
             <input
               className="min-h-12 rounded-xl border border-[#EAE8E3] bg-white px-4 text-[#0B1F33] outline-none transition-colors focus:border-[#0D2B44]"
@@ -82,7 +91,7 @@ export function ContactFormSection() {
             />
           </label>
 
-          <label className="grid gap-2 md:col-span-2">
+          <label className="grid gap-2">
             <span className="text-sm font-bold text-[#0B1F33]">
               Service Required
             </span>
@@ -94,6 +103,26 @@ export function ContactFormSection() {
                 <option key={service}>{service}</option>
               ))}
             </select>
+          </label>
+
+          <label className="grid gap-2">
+            <span className="text-sm font-bold text-[#0B1F33]">
+              Number of Guests
+            </span>
+            <input
+              className="min-h-12 rounded-xl border border-[#EAE8E3] bg-white px-4 text-[#0B1F33] outline-none transition-colors focus:border-[#0D2B44]"
+              name="guests"
+              type="number"
+            />
+          </label>
+
+          <label className="grid gap-2 md:col-span-2">
+            <span className="text-sm font-bold text-[#0B1F33]">Event Date</span>
+            <input
+              className="min-h-12 rounded-xl border border-[#EAE8E3] bg-white px-4 text-[#0B1F33] outline-none transition-colors focus:border-[#0D2B44]"
+              name="eventDate"
+              type="date"
+            />
           </label>
 
           <label className="grid gap-2 md:col-span-2">
@@ -109,7 +138,7 @@ export function ContactFormSection() {
               className="group inline-flex min-h-[58px] items-center justify-center gap-4 rounded-full border border-[#0D2B44] bg-[#0D2B44] py-2 pr-2 pl-7 text-sm font-black tracking-[0.08em] text-white uppercase transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:text-[#0D2B44]"
               type="submit"
             >
-              <span>Submit Inquiry</span>
+              <span>Request a Proposal</span>
               <ArrowCircle />
             </button>
           </div>

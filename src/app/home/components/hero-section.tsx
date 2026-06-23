@@ -12,29 +12,36 @@ export function HeroSection() {
             Maxwell Hospitality
           </span>
 
-          <h1 className="max-w-[860px] text-[clamp(2.15rem,3.55vw,3.9rem)] font-black leading-[0.98] tracking-normal text-[#0B1F33]">
-            Food service that feels effortless.
+          <h1 className="max-w-[700px] text-[clamp(2rem,3.15vw,3.35rem)] font-black leading-[1.02] tracking-normal text-[#0B1F33]">
+            One Partner. Multiple Hospitality Solutions.
           </h1>
 
           <p className="mt-6 max-w-[600px] border-l border-[#D9D9D9] pl-6 text-[clamp(0.98rem,1.25vw,1.12rem)] leading-[1.75] text-[#5D6C7B]">
-            We manage healthcare food services, food courts, restaurants, and
-            catering with dependable systems, disciplined kitchens, and warm
-            hospitality.
+            From corporate catering and hospital food services to premium
+            banquets, cafes, bakeries, and large-scale event management, Maxwell
+            brings hospitality excellence under one roof.
           </p>
 
-          <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+          <div className="mt-7 grid max-w-[540px] grid-cols-1 gap-3 sm:grid-cols-2">
             <Link
               className="group inline-flex min-h-[58px] items-center justify-center gap-4 rounded-full border border-[#0D2B44] bg-[#0D2B44] py-2 pr-2 pl-7 text-[0.76rem] font-black tracking-[0.1em] text-white uppercase transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:text-[#0D2B44]"
-              href="#contact"
+              href="/contact"
             >
-              <span>Start Inquiry</span>
+              <span>Request a Proposal</span>
               <ArrowCircle />
             </Link>
             <Link
               className="group inline-flex min-h-[58px] items-center justify-center gap-4 rounded-full border border-[#D9D9D9] bg-white py-2 pr-2 pl-7 text-[0.76rem] font-black tracking-[0.1em] text-[#0B1F33] uppercase transition-all duration-300 hover:-translate-y-0.5 hover:border-[#0D2B44] hover:bg-[#0D2B44] hover:text-white"
-              href="#services"
+              href="/contact"
             >
-              <span>Explore Services</span>
+              <span>Book a Consultation</span>
+              <ArrowCircle dark />
+            </Link>
+            <Link
+              className="group inline-flex min-h-[58px] items-center justify-center gap-4 rounded-full border border-[#D9D9D9] bg-white py-2 pr-2 pl-7 text-[0.76rem] font-black tracking-[0.1em] text-[#0B1F33] uppercase transition-all duration-300 hover:-translate-y-0.5 hover:border-[#0D2B44] hover:bg-[#0D2B44] hover:text-white sm:col-span-2 sm:justify-self-center"
+              href="/home#brands"
+            >
+              <span>Explore Our Brands</span>
               <ArrowCircle dark />
             </Link>
           </div>

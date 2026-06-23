@@ -6,52 +6,52 @@ import { useRef } from "react";
 
 const galleryItems = [
   {
-    title: "R&R Event Images",
+    title: "Corporate Events",
     image:
       "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=900&q=80",
   },
   {
-    title: "Catering Events",
+    title: "Banquets",
     image:
       "https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=900&q=80",
   },
   {
-    title: "Food Court Operations",
+    title: "Catering Services",
     image:
       "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=900&q=80",
   },
   {
-    title: "Team Activities",
+    title: "Hospital Catering",
     image:
       "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=80",
   },
   {
-    title: "Hospital Food Service Operations",
+    title: "Street Cafe",
     image:
       "https://images.unsplash.com/photo-1584982751601-97dcc096659c?auto=format&fit=crop&w=900&q=80",
   },
   {
-    title: "Banquet Setup",
+    title: "Baker Street",
     image:
       "https://images.unsplash.com/photo-1606900136270-2a2a07c9d1c9?auto=format&fit=crop&w=900&q=80",
   },
   {
-    title: "Healthcare Kitchen Operations",
+    title: "Nutriverse",
     image:
       "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=900&q=80",
   },
   {
-    title: "Event Catering Station",
+    title: "Kitchen Operations",
     image:
       "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&w=900&q=80",
   },
   {
-    title: "Team Dinner/Celebration",
+    title: "Food Preparation",
     image:
       "https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=900&q=80",
   },
   {
-    title: "Cafeteria Food Service Line",
+    title: "Client Events",
     image:
       "https://images.unsplash.com/photo-1544025162-8315ea07fc7a?auto=format&fit=crop&w=900&q=80",
   },
@@ -84,10 +84,11 @@ export function GalleryPreview() {
           <div className="w-full lg:w-1/2">
             <span className="mb-4 flex items-center gap-3 text-sm font-bold tracking-[0.15em] text-[#758696] uppercase">
               <span className="h-[2px] w-8 bg-[#758696]" />
-              Gallery Preview
+              Experience Maxwell
             </span>
             <h2 className="m-0 text-[clamp(2rem,3.5vw,3rem)] font-bold leading-[1.1] text-[#0B1F33]">
-              Moments of excellence across service & operations.
+              Service moments across brands, kitchens, banquets, and client
+              events.
             </h2>
           </div>
 

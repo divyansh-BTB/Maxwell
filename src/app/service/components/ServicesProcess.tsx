@@ -29,8 +29,11 @@ const processSteps = [
 
 export function ServicesProcess() {
   return (
-    <section className="relative overflow-hidden bg-white px-[clamp(20px,5vw,72px)] py-[clamp(72px,9vw,112px)] text-[#0B1F33]">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_22%,rgb(46_196_182_/_0.12),transparent_30%)]" />
+    <section
+      className="relative overflow-hidden bg-white px-[clamp(20px,5vw,72px)] py-[clamp(72px,9vw,112px)] text-[#0B1F33]"
+      id="process"
+    >
+      <div className="absolute inset-0 bg-[linear-gradient(180deg,#ffffff_0%,#f7f7f5_100%)]" />
       <div className="relative z-10 mx-auto grid max-w-[1280px] grid-cols-1 gap-[clamp(40px,7vw,92px)] lg:grid-cols-[0.78fr_1.22fr] lg:items-start">
         <div className="lg:sticky lg:top-32">
           <div className="max-w-[560px]">
@@ -69,7 +72,7 @@ export function ServicesProcess() {
                   marginLeft: index % 2 === 1 ? "clamp(0px, 4vw, 56px)" : 0,
                 }}
               >
-                <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full border border-[#0D2B44]/50 bg-white text-sm font-black text-[#0B1F33] transition-colors duration-300 group-hover:bg-[#0D2B44] group-hover:text-[#0D2B44]">
+                <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full border border-[#0D2B44]/50 bg-white text-sm font-black text-[#0B1F33] transition-colors duration-300 group-hover:bg-[#0D2B44] group-hover:text-white">
                   {String(index + 1).padStart(2, "0")}
                 </div>
                 <div>

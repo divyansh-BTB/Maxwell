@@ -2,11 +2,7 @@
 
 import Image from "next/image";
 
-const visionPillars = [
-  "Trusted food service partner",
-  "Memorable dining experiences",
-  "Value for people and communities",
-];
+const visionPillars = ["Quality", "Innovation", "Care"];
 
 export function AboutVision() {
   return (
@@ -24,13 +20,13 @@ export function AboutVision() {
           </span>
 
           <h2 className="max-w-[720px] text-[clamp(2rem,4.4vw,4.8rem)] font-bold leading-[1.02] text-[#0B1F33]">
-            To be the most trusted name in food service.
+            To become the most trusted hospitality and food service partner.
           </h2>
 
           <p className="mt-7 max-w-[680px] text-[1.08rem] leading-[1.85] text-[#5D6C7B]">
-            MHPL aims to be recognized as a benchmark for food service
-            management, known for nourishment, comfort, convenience, and
-            memorable dining experiences.
+            Maxwell aims to deliver memorable experiences through quality,
+            innovation, and care while becoming the preferred food service
+            partner for organizations and communities.
           </p>
 
           <div className="mt-10 grid grid-cols-1 gap-3 sm:grid-cols-3 lg:grid-cols-1">

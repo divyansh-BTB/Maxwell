@@ -32,29 +32,29 @@ export function ContactCta() {
           {/* Eyebrow - Tightened margin */}
           <span className="mb-4 flex items-center justify-center gap-4 text-xs font-bold tracking-[0.2em] text-[#758696] uppercase sm:text-sm">
             <span className="h-[2px] w-6 bg-[#758696]/60 sm:w-8" />
-            Ready to Partner With MHPL?
+            Ready to Partner With Maxwell?
             <span className="h-[2px] w-6 bg-[#758696]/60 sm:w-8" />
           </span>
 
           {/* Heading - Slightly scaled down to prevent excessive wrapping */}
           <h2 className="m-0 text-[clamp(2rem,4vw,3.5rem)] font-bold leading-[1.15] text-white drop-shadow-md">
-            Let's discuss your hospitality solutions.
+            Let's create exceptional hospitality experiences together.
           </h2>
 
           {/* Description - Tightened top and bottom margins */}
           <p className="mx-auto mt-5 mb-8 max-w-[700px] text-[1.05rem] leading-[1.7] text-white/70">
-            Discuss healthcare food services, catering requirements, restaurant
-            partnerships, and operational food service needs with Maxwell
-            Hospitality Private Limited.
+            Discuss corporate catering, healthcare food services, restaurant
+            partnerships, banquets, bakery gifting, and event requirements with
+            Maxwell Hospitality.
           </p>
 
           {/* Animated Pill Button */}
           <Link
-            href="mailto:info@maxwellhospitality.com"
+            href="/contact"
             className="group relative inline-flex min-h-[58px] items-center justify-center gap-4 overflow-hidden rounded-full border border-white bg-white py-2 pr-2 pl-7 font-bold tracking-[0.1em] text-[#0B1F33] uppercase transition-all duration-500 hover:-translate-y-1 hover:bg-[#0B1F33] hover:text-white max-[640px]:w-full"
           >
             <span className="relative z-10 flex items-center gap-3">
-              Get In Touch
+              Request a Proposal
             </span>
             <ArrowCircle dark />
             {/* Sweep Shine Effect */}

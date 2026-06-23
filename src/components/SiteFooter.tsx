@@ -6,19 +6,47 @@ const footerColumns = [
     title: "Company",
     links: [
       { label: "Home", href: "/home" },
-      { label: "About", href: "/about" },
+      { label: "About Maxwell", href: "/about" },
+      { label: "Our Brands", href: "/home#brands" },
+      { label: "Gallery", href: "/home#gallery" },
+      { label: "Clients", href: "/home#recognition" },
       { label: "Contact", href: "/contact" },
-      { label: "Core Values", href: "/about#values" },
     ],
   },
   {
     title: "Services",
     links: [
-      { label: "Healthcare Food Services", href: "/service" },
-      { label: "Food Court Management", href: "/service" },
-      { label: "Restaurant Operations", href: "/service" },
-      { label: "Indoor Catering", href: "/service" },
-      { label: "Outdoor Catering", href: "/service" },
+      { label: "Corporate Solutions", href: "/service#corporate-solutions" },
+      { label: "Hospital Catering", href: "/service#corporate-solutions" },
+      { label: "Events & Banquets", href: "/service#catering-events" },
+      { label: "Packages", href: "/service#packages" },
+      { label: "Kitchen Excellence", href: "/service#kitchen-excellence" },
+      { label: "How We Work", href: "/service#process" },
+    ],
+  },
+  {
+    title: "Brands",
+    links: [
+      { label: "Street Hub", href: "/home#brands" },
+      { label: "Street Cafe", href: "/home#brands" },
+      { label: "Baker Street", href: "/home#brands" },
+      { label: "Nutriverse", href: "/home#brands" },
+      { label: "Maxwell Banquets", href: "/home#brands" },
+      { label: "Maxwell Events", href: "/home#brands" },
+      { label: "Hospital Management Services", href: "/home#brands" },
+    ],
+  },
+  {
+    title: "Solutions",
+    links: [
+      { label: "Challenges We Solve", href: "/service#challenges" },
+      { label: "Catering Categories", href: "/service#catering-events" },
+      { label: "Event Categories", href: "/service#catering-events" },
+      {
+        label: "Healthcare Food Services",
+        href: "/service#corporate-solutions",
+      },
+      { label: "Corporate Gifting", href: "/service#corporate-solutions" },
     ],
   },
 ];
@@ -28,7 +56,7 @@ export function SiteFooter() {
     <footer className="bg-[#0B1F33] px-[clamp(20px,5vw,72px)] pt-[clamp(72px,9vw,104px)] pb-7 text-white">
       <div className="mx-auto max-w-[1280px]">
         <div className="rounded-[2rem] border border-white/16 bg-white/6 px-[clamp(24px,4vw,56px)] py-[clamp(36px,5vw,64px)]">
-          <div className="grid grid-cols-1 gap-12 lg:grid-cols-[1.15fr_0.85fr] lg:gap-20">
+          <div className="grid grid-cols-1 gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-20">
             <div>
               <Link
                 className="inline-flex text-[clamp(2.4rem,5vw,4.4rem)] font-black leading-[1.02] tracking-[-0.03em] text-white"
@@ -39,8 +67,8 @@ export function SiteFooter() {
                 Hospitality
               </Link>
               <p className="mt-7 max-w-[620px] text-[1.02rem] leading-[1.8] text-white/70">
-                Premium hospitality and food service solutions across healthcare
-                institutions, food courts, restaurants, and catering operations.
+                Integrated hospitality, catering, healthcare food service,
+                banquets, cafes, bakeries, and event management under one roof.
               </p>
 
               <form className="mt-8 flex max-w-[640px] flex-col gap-4 sm:flex-row">
@@ -68,7 +96,7 @@ export function SiteFooter() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 gap-10 sm:grid-cols-2">
+            <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 xl:grid-cols-4">
               {footerColumns.map((column) => (
                 <div key={column.title}>
                   <h2 className="text-[0.85rem] font-black tracking-[0.16em] text-white uppercase">

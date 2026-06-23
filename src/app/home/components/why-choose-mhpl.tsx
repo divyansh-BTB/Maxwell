@@ -4,36 +4,36 @@ import Image from "next/image";
 
 const pillars = [
   {
-    title: "Always hygienic, never casual",
+    title: "Multi-sector expertise",
     description:
-      "Food safety, controlled preparation, and disciplined service routines sit at the center of every MHPL operation.",
+      "Hospitality programs for healthcare, corporates, banquets, cafeterias, cafes, bakeries, and events.",
     bentoClass: "md:col-span-1 md:row-span-2",
     // UPDATED IMAGE: Professional chef plating with precision (screams controlled, hygienic, and premium)
     image:
       "https://images.unsplash.com/photo-1581349485608-9469926a8e5e?q=80&w=800&auto=format&fit=crop",
   },
   {
-    title: "Patient-centric when care matters",
+    title: "Food safety first approach",
     description:
-      "Healthcare meals are planned around comfort, nutrition, dietary needs, and dependable delivery timing.",
+      "Controlled kitchens, hygiene routines, temperature monitoring, and quality checks guide every operation.",
     bentoClass: "md:col-span-2 md:row-span-1",
     // Warm, comforting nutritious food layout
     image:
       "https://images.unsplash.com/photo-1505576399279-565b52d4ac71?q=80&w=1200&auto=format&fit=crop",
   },
   {
-    title: "Culinary edge with operational scale",
+    title: "Customized menu planning",
     description:
-      "From premium brands to institutional programs, MHPL combines menu variety with reliable daily execution.",
+      "Menus are shaped around audience needs, nutrition goals, event formats, and service volume.",
     bentoClass: "md:col-span-1 md:row-span-1",
     // Premium dining/restaurant setup
     image:
       "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=800&auto=format&fit=crop",
   },
   {
-    title: "Teams that own the experience",
+    title: "End-to-end event management",
     description:
-      "Experienced hospitality teams bring accountability, training, and guest-first service to every site.",
+      "Experienced culinary and hospitality teams support planning, setup, service delivery, and improvement.",
     bentoClass: "md:col-span-1 md:row-span-1",
     // Dedicated hospitality team member
     image:
@@ -50,17 +50,17 @@ export function WhyChooseMhpl() {
           <div className="w-full max-w-[650px]">
             <span className="mb-4 flex items-center gap-3 text-sm font-bold tracking-[0.15em] text-[#758696] uppercase">
               <span className="h-[2px] w-8 bg-[#758696]" />
-              Built to Be Different
+              Why Choose Maxwell
             </span>
             <h2 className="m-0 text-[clamp(1.8rem,3vw,3rem)] font-bold leading-[1.15] tracking-tight text-[#0B1F33]">
-              Engineered for reliability, warmth, and premium dining.
+              Excellence delivered daily.
             </h2>
           </div>
           <div className="w-full lg:w-[420px] lg:pb-2">
             <p className="m-0 text-[0.95rem] leading-[1.7] text-[#5D6C7B]">
-              Generic food programs do not fit hospitals, food courts,
-              restaurants, and events equally. MHPL builds every operation
-              around the space, audience, and service expectation.
+              Maxwell combines healthcare hospitality, food safety discipline,
+              large-scale catering capability, technology-driven operations, and
+              an experienced culinary team.
             </p>
           </div>
         </div>

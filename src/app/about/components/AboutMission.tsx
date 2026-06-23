@@ -1,14 +1,11 @@
 "use client";
 
 const missions = [
-  "Deliver safe, hygienic, nutritious, and delicious food.",
-  "Provide patient-centric healthcare food services.",
-  "Develop and manage vibrant food courts featuring premium brands.",
-  "Operate restaurants offering exceptional dining experiences.",
-  "Deliver professional indoor and outdoor catering services.",
-  "Continuously innovate menus, systems, and processes.",
-  "Build a culture of integrity, teamwork, and accountability.",
-  "Promote sustainability and responsible business practices.",
+  "Deliver safe and nutritious food.",
+  "Create exceptional guest experiences.",
+  "Maintain the highest standards of hygiene and compliance.",
+  "Drive innovation in hospitality and food services.",
+  "Build long-term partnerships with organizations and communities.",
 ];
 
 export function AboutMission() {

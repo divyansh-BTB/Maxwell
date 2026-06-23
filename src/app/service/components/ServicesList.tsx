@@ -2,94 +2,102 @@ import Image from "next/image";
 
 const services = [
   {
-    title: "Healthcare Food Services",
+    title: "Corporate Solutions",
     description:
-      "Patient-focused dining programs shaped around nutrition, hygiene, and delivery discipline.",
+      "Customized food and hospitality solutions for businesses of all sizes.",
+    image:
+      "https://images.unsplash.com/photo-1556761175-b413da4baf72?q=80&w=1400&auto=format&fit=crop",
+    items: [
+      "Corporate Catering",
+      "Daily Meal Programs",
+      "Executive Dining",
+      "Meeting Refreshments",
+      "Conference Catering",
+      "Workplace Cafeteria Management",
+    ],
+  },
+  {
+    title: "Healthcare & Hospital Food Services",
+    description:
+      "Patient-centric nutrition services designed for healthcare institutions.",
     image:
       "https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=1400&auto=format&fit=crop",
     items: [
-      "Patient Meal Services",
-      "Diet Planning Coordination",
-      "Staff Cafeteria Management",
-      "Nutrition-Focused Meal Programs",
-      "Hygienic Food Preparation",
-      "Timely Meal Delivery",
+      "Patient Meal Management",
+      "Customized Patient Meals",
+      "Disease-Specific Diets",
+      "Diet Planning Services",
+      "Hospital Cafeteria Management",
+      "In-House Restaurant Operations",
     ],
   },
   {
-    title: "Food Court Management",
+    title: "Catering Solutions",
     description:
-      "Managed multi-brand food court operations with coordinated vendors and customer-first service.",
-    image:
-      "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=1400&auto=format&fit=crop",
-    items: [
-      "Multi-Brand Food Court Operations",
-      "Vendor Coordination",
-      "Customer Experience Management",
-      "Food Safety Compliance",
-      "Revenue Optimization",
-    ],
-  },
-  {
-    title: "Restaurant Operations",
-    description:
-      "Complete restaurant management support for memorable dining and operational excellence.",
-    image:
-      "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=1400&auto=format&fit=crop",
-    items: [
-      "Restaurant Management",
-      "Menu Development",
-      "Guest Experience Enhancement",
-      "Operational Excellence",
-      "Staff Training",
-    ],
-  },
-  {
-    title: "Indoor Catering",
-    description:
-      "Professional indoor catering solutions for corporate and institutional environments.",
+      "Catering for corporate, healthcare, social, and institutional occasions.",
     image:
       "https://images.unsplash.com/photo-1555244162-803834f70033?q=80&w=1400&auto=format&fit=crop",
     items: [
-      "Corporate Events",
-      "Institutional Functions",
-      "Meetings & Conferences",
-      "Employee Dining Solutions",
+      "Office Events",
+      "Conferences",
+      "Healthcare Catering",
+      "Weddings",
+      "Family Celebrations",
+      "Industrial Facilities",
     ],
   },
   {
-    title: "Outdoor Catering",
+    title: "Events & Banquets",
     description:
-      "Large-scale outdoor catering for weddings, celebrations, and private gatherings.",
+      "End-to-end planning and food service support for corporate and social events.",
     image:
       "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=1400&auto=format&fit=crop",
     items: [
+      "Corporate Conferences",
+      "Annual Day Celebrations",
+      "Product Launches",
+      "Award Functions",
       "Weddings",
-      "Social Events",
-      "Celebrations",
-      "Private Gatherings",
-      "Large-Scale Catering",
+      "Community Festivals",
+    ],
+  },
+  {
+    title: "Brands & Retail Food Outlets",
+    description:
+      "Food court, cafe, bakery, and nutrition-led brand operations under the Maxwell ecosystem.",
+    image:
+      "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=1400&auto=format&fit=crop",
+    items: [
+      "Street Hub",
+      "Street Cafe",
+      "Baker Street",
+      "Nutriverse",
+      "Food Court Management",
+      "Restaurant Operations",
     ],
   },
 ];
 
 export function ServicesList() {
   return (
-    <section className="bg-white px-[clamp(20px,5vw,72px)] py-[clamp(72px,9vw,116px)]">
+    <section
+      className="bg-white px-[clamp(20px,5vw,72px)] py-[clamp(72px,9vw,116px)]"
+      id="corporate-solutions"
+    >
       <div className="mx-auto max-w-[1280px]">
         <div className="mb-[clamp(36px,6vw,72px)] grid grid-cols-1 gap-6 lg:grid-cols-[0.86fr_1fr] lg:items-end">
           <div>
             <span className="mb-4 flex items-center gap-3 text-sm font-bold tracking-[0.15em] text-[#758696] uppercase">
               <span className="h-[2px] w-8 bg-[#758696]" />
-              What We Provide
+              Complete Service Map
             </span>
             <h2 className="max-w-[680px] text-[clamp(2rem,4vw,3.7rem)] font-bold leading-[1.05] text-[#0B1F33]">
-              Service programs built for real operations.
+              Solutions mapped to the new Maxwell structure.
             </h2>
           </div>
           <p className="max-w-[640px] text-[1.04rem] leading-[1.8] text-[#5D6C7B] lg:justify-self-end">
-            Each service vertical is planned around the audience, site
-            requirements, food safety expectations, and daily delivery rhythm.
+            This page now covers corporate solutions, hospital food services,
+            catering, events, banquets, brands, and retail food operations.
           </p>
         </div>
 

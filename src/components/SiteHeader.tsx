@@ -8,8 +8,9 @@ import { ArrowCircle } from "./ArrowCircle";
 
 const navItems = [
   { label: "Home", href: "/home" },
-  { label: "Service", href: "/service" },
   { label: "About", href: "/about" },
+  { label: "Services", href: "/service" },
+  { label: "Our Brands", href: "/home#brands" },
   { label: "Contact", href: "/contact" },
 ];
 
@@ -79,7 +80,7 @@ export function SiteHeader() {
         >
           {navItems.map((item) => {
             const isActive =
-              pathname === item.href ||
+              (!item.href.includes("#") && pathname === item.href) ||
               (item.href === "/home" && pathname === "/");
 
             return (
@@ -90,7 +91,7 @@ export function SiteHeader() {
                     : "text-[#5D6C7B] hover:bg-white hover:text-[#0D2B44]"
                 }`}
                 href={item.href}
-                key={item.href}
+                key={`${item.label}-${item.href}`}
               >
                 {item.label}
               </Link>
@@ -160,7 +161,7 @@ export function SiteHeader() {
           >
             {navItems.map((item) => {
               const isActive =
-                pathname === item.href ||
+                (!item.href.includes("#") && pathname === item.href) ||
                 (item.href === "/home" && pathname === "/");
 
               return (
@@ -171,7 +172,7 @@ export function SiteHeader() {
                       : "text-[#5D6C7B] hover:bg-white hover:text-[#0D2B44]"
                   }`}
                   href={item.href}
-                  key={item.href}
+                  key={`${item.label}-${item.href}`}
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {item.label}

@@ -5,32 +5,36 @@ import { useState } from "react";
 
 const galleryCategories = [
   {
-    title: "Hospital Operations",
-    description: "Healthcare food programs built around safety and care.",
+    title: "Hospital Catering",
+    description: "Patient-centric food programs built around safety and care.",
     image:
       "https://images.unsplash.com/photo-1584982751601-97dcc096659c?q=80&w=1400&auto=format&fit=crop",
   },
   {
-    title: "Catering Events",
-    description: "Planned food experiences for professional gatherings.",
+    title: "Corporate Events",
+    description:
+      "Planned food experiences for meetings, launches, and annual days.",
     image:
       "https://images.unsplash.com/photo-1555244162-803834f70033?q=80&w=900&auto=format&fit=crop",
   },
   {
-    title: "Food Courts",
-    description: "Managed spaces with variety, flow, and service discipline.",
+    title: "Street Cafe & Food Courts",
+    description:
+      "Managed retail spaces with variety, flow, and service discipline.",
     image:
       "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=900&auto=format&fit=crop",
   },
   {
-    title: "Team Culture",
-    description: "People who bring ownership to daily hospitality.",
+    title: "Kitchen Operations",
+    description:
+      "Controlled preparation, hygiene routines, and trained culinary teams.",
     image:
       "https://images.unsplash.com/photo-1556761175-b413da4baf72?q=80&w=900&auto=format&fit=crop",
   },
   {
-    title: "Awards & Recognition",
-    description: "Milestones that reflect trust and consistent effort.",
+    title: "Banquets & Client Events",
+    description:
+      "Celebrations and client moments delivered with hospitality detail.",
     image:
       "https://images.unsplash.com/photo-1530103862676-de8892b07439?q=80&w=900&auto=format&fit=crop",
   },
