@@ -70,7 +70,7 @@ export function ServiceVerticals() {
           <span className="mb-3 block text-sm font-bold tracking-[0.15em] text-[#758696] uppercase">
             Maxwell Ecosystem
           </span>
-          <h2 className="mx-auto max-w-[800px] text-[clamp(2rem,4vw,3.5rem)] font-bold leading-[1.1] text-[#0B1F33]">
+          <h2 className="mx-auto max-w-[800px] section-title text-[#0B1F33]">
             Brands built around daily food, care, celebration, and scale.
           </h2>
         </div>

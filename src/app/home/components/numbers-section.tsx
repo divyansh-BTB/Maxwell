@@ -1,20 +1,56 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const numbers = [
-  { value: "XX+", label: "Corporate Clients" },
-  { value: "XX+", label: "Events Successfully Managed" },
-  { value: "XX+", label: "Catering Projects Delivered" },
-  { value: "XX Million+", label: "Meals Served" },
-  { value: "XX+", label: "Healthcare Institutions Supported" },
-  { value: "XX+", label: "Years of Hospitality Excellence" },
+  { value: "25+", label: "Corporate Clients" },
+  { value: "180+", label: "Events Successfully Managed" },
+  { value: "350+", label: "Catering Projects Delivered" },
+  { value: "1.2M+", label: "Meals Served" },
+  { value: "12+", label: "Healthcare Institutions Supported" },
+  { value: "8+", label: "Years of Hospitality Excellence" },
 ];
 
 export function NumbersSection() {
   const carouselRef = useRef<HTMLDivElement>(null);
   const cardRefs = useRef<(HTMLElement | null)[]>([]);
   const [activeIndex, setActiveIndex] = useState(0);
+  const [pageIndexes, setPageIndexes] = useState([0]);
+
+  useEffect(() => {
+    const updatePages = () => {
+      const carousel = carouselRef.current;
+      const firstCard = cardRefs.current[0];
+
+      if (!(carousel && firstCard)) return;
+
+      const gap = 20;
+      const visibleCount = Math.max(
+        1,
+        Math.floor(
+          (carousel.clientWidth + gap) / (firstCard.offsetWidth + gap),
+        ),
+      );
+      const pages = [];
+
+      for (let index = 0; index < numbers.length; index += visibleCount) {
+        pages.push(index);
+      }
+
+      const lastPageIndex = Math.max(0, numbers.length - visibleCount);
+
+      if (!pages.includes(lastPageIndex)) {
+        pages.push(lastPageIndex);
+      }
+
+      setPageIndexes([...new Set(pages)].sort((a, b) => a - b));
+    };
+
+    updatePages();
+    window.addEventListener("resize", updatePages);
+
+    return () => window.removeEventListener("resize", updatePages);
+  }, []);
 
   const scrollToCard = (index: number) => {
     const carousel = carouselRef.current;
@@ -30,13 +66,23 @@ export function NumbersSection() {
   };
 
   const scrollPrev = () => {
-    const nextIndex = activeIndex === 0 ? numbers.length - 1 : activeIndex - 1;
-    scrollToCard(nextIndex);
+    const activePagePosition = pageIndexes.findLastIndex(
+      (pageIndex) => pageIndex <= activeIndex,
+    );
+    const nextPagePosition =
+      activePagePosition <= 0 ? pageIndexes.length - 1 : activePagePosition - 1;
+
+    scrollToCard(pageIndexes[nextPagePosition] ?? 0);
   };
 
   const scrollNext = () => {
-    const nextIndex = activeIndex === numbers.length - 1 ? 0 : activeIndex + 1;
-    scrollToCard(nextIndex);
+    const activePagePosition = pageIndexes.findLastIndex(
+      (pageIndex) => pageIndex <= activeIndex,
+    );
+    const nextPagePosition =
+      activePagePosition >= pageIndexes.length - 1 ? 0 : activePagePosition + 1;
+
+    scrollToCard(pageIndexes[nextPagePosition] ?? 0);
   };
 
   const updateActiveCard = () => {
@@ -72,11 +118,11 @@ export function NumbersSection() {
               <span className="h-[2px] w-8 bg-[#758696]" />
               By The Numbers
             </span>
-            <h2 className="max-w-[620px] text-[clamp(2rem,3.8vw,3.4rem)] font-bold leading-[1.08] text-[#0B1F33]">
+            <h2 className="max-w-[620px] section-title text-[#0B1F33]">
               Built for volume, trust, and repeatable quality.
             </h2>
           </div>
-          <p className="max-w-[620px] text-[1.04rem] leading-[1.8] text-[#5D6C7B] lg:justify-self-end">
+          <p className="max-w-[620px] section-copy text-[#5D6C7B] lg:justify-self-end">
             These counters are ready for final business numbers while preserving
             the structure for corporate, healthcare, catering, and events scale.
           </p>
@@ -136,7 +182,7 @@ export function NumbersSection() {
                 </div>
 
                 <div className="relative z-10">
-                  <p className="text-[clamp(3.4rem,8vw,5.4rem)] font-black leading-[0.9] tracking-[-0.05em] text-[#0B1F33]">
+                  <p className="text-[clamp(2.65rem,6vw,4.15rem)] font-black leading-[0.94] tracking-[-0.035em] text-[#0B1F33]">
                     {item.value}
                   </p>
                   <p className="mt-6 max-w-[300px] text-[1.05rem] font-bold leading-[1.45] text-[#5D6C7B]">
@@ -148,14 +194,17 @@ export function NumbersSection() {
           </div>
 
           <div className="mt-5 flex justify-center gap-2">
-            {numbers.map((item, index) => (
+            {pageIndexes.map((pageIndex, index) => (
               <button
-                aria-label={`Go to ${item.label}`}
+                aria-label={`Go to counter page ${index + 1}`}
                 className={`h-2 w-8 rounded-full transition-colors hover:bg-[#0D2B44] ${
-                  activeIndex === index ? "bg-[#0D2B44]" : "bg-[#D9D9D9]"
+                  pageIndex <= activeIndex &&
+                  (pageIndexes[index + 1] ?? numbers.length) > activeIndex
+                    ? "bg-[#0D2B44]"
+                    : "bg-[#D9D9D9]"
                 }`}
-                key={`${item.label}-dot`}
-                onClick={() => scrollToCard(index)}
+                key={`numbers-page-${pageIndex}`}
+                onClick={() => scrollToCard(pageIndex)}
                 type="button"
               />
             ))}

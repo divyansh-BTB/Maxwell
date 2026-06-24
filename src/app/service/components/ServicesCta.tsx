@@ -12,7 +12,7 @@ export function ServicesCta() {
             Contact MHPL Today
             <span className="h-[2px] w-8 bg-[#758696]/70" />
           </span>
-          <h2 className="text-[clamp(2rem,4vw,3.75rem)] font-bold leading-[1.08]">
+          <h2 className="section-title ">
             Looking for Reliable Hospitality & Food Service Solutions?
           </h2>
           <div className="mt-8">

@@ -14,11 +14,11 @@ export default function OurBrandsPage() {
                 <span className="h-[2px] w-8 bg-[#758696]" />
                 Our Brands
               </span>
-              <h1 className="max-w-[760px] text-[clamp(2.5rem,5vw,5rem)] leading-[0.98] text-[#0B1F33]">
+              <h1 className="max-w-[760px] page-title text-[#0B1F33]">
                 Maxwell Ecosystem
               </h1>
             </div>
-            <p className="max-w-[680px] text-[1.06rem] leading-[1.85] text-[#5D6C7B] lg:justify-self-end">
+            <p className="max-w-[680px] section-copy text-[#5D6C7B] lg:justify-self-end">
               A connected portfolio across vibrant food destinations, cafes,
               bakeries, nutrition-led services, banquets, events, and hospital
               management services.
@@ -45,10 +45,10 @@ export default function OurBrandsPage() {
                   </span>
                 </div>
                 <div className="p-6">
-                  <h2 className="text-[clamp(1.8rem,3vw,2.6rem)] leading-[1.02] text-[#0B1F33]">
+                  <h2 className="section-title text-[#0B1F33]">
                     {brand.title}
                   </h2>
-                  <p className="mt-4 text-[0.98rem] leading-[1.75] text-[#5D6C7B]">
+                  <p className="mt-4 section-copy text-[#5D6C7B]">
                     {brand.description}
                   </p>
                 </div>

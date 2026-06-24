@@ -41,10 +41,10 @@ export function ServicesProcess() {
               <span className="h-[2px] w-8 bg-[#758696]" />
               How We Work
             </span>
-            <h2 className="text-[clamp(2rem,4vw,3.8rem)] font-bold leading-[1.05]">
+            <h2 className="section-title ">
               A clear process from brief to daily delivery.
             </h2>
-            <p className="mt-7 text-[1.04rem] leading-[1.85] text-[#5D6C7B]">
+            <p className="mt-7 section-copy text-[#5D6C7B]">
               We align expectations early, build the operating model, and
               improve continuously after service begins.
             </p>
@@ -79,7 +79,7 @@ export function ServicesProcess() {
                   <h3 className="text-[1.35rem] font-bold leading-tight text-[#0B1F33]">
                     {step.title}
                   </h3>
-                  <p className="mt-3 max-w-[680px] text-[0.98rem] leading-[1.75] text-[#5D6C7B]">
+                  <p className="mt-3 max-w-[680px] section-copy text-[#5D6C7B]">
                     {step.description}
                   </p>
                 </div>

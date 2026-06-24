@@ -35,3 +35,29 @@ section h3 {
   font-weight: 400;
   letter-spacing: -0.035em;
 }
+
+@layer components {
+  .page-title {
+    font-size: clamp(2rem, 3.15vw, 3.45rem);
+    line-height: 1.02;
+    letter-spacing: -0.03em;
+  }
+
+  .section-title {
+    font-size: clamp(1.65rem, 2.55vw, 2.55rem);
+    line-height: 1.1;
+    letter-spacing: -0.025em;
+  }
+
+  .section-copy {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #5d6c7b;
+  }
+
+  .card-title {
+    font-size: clamp(1.15rem, 1.55vw, 1.45rem);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+  }
+}

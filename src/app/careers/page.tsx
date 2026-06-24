@@ -12,10 +12,8 @@ export default function CareersPage() {
             <span className="h-[2px] w-8 bg-[#758696]" />
             Careers
           </span>
-          <h1 className="max-w-[760px] text-[clamp(2.8rem,6vw,6rem)] leading-[0.96] text-[#0B1F33]">
-            Careers
-          </h1>
-          <p className="mt-6 max-w-[720px] text-[1.08rem] leading-[1.85] text-[#5D6C7B]">
+          <h1 className="max-w-[760px] page-title text-[#0B1F33]">Careers</h1>
+          <p className="mt-6 max-w-[720px] section-copy text-[#5D6C7B]">
             Join Maxwell Hospitality & Food Services across corporate,
             healthcare, catering, food court, banquet, and event operations.
           </p>

@@ -12,13 +12,13 @@ export function HeroSection() {
             Maxwell Hospitality
           </span>
 
-          <h1 className="max-w-[760px] text-[clamp(2.9rem,4.7vw,5.4rem)] leading-[0.98] tracking-[-0.04em] text-[#0B1F33]">
+          <h1 className="max-w-[680px] page-title text-[#0B1F33]">
             One Partner. Multiple
             <br />
             Hospitality Solutions.
           </h1>
 
-          <p className="mt-6 max-w-[600px] border-l border-[#D9D9D9] pl-6 text-[clamp(0.98rem,1.25vw,1.12rem)] leading-[1.75] text-[#5D6C7B]">
+          <p className="mt-6 max-w-[600px] border-l border-[#D9D9D9] pl-6 section-copy text-[#5D6C7B]">
             From corporate catering and hospital food services to premium
             banquets, cafes, bakeries, and large-scale event management, Maxwell
             brings hospitality excellence under one roof.

@@ -57,11 +57,11 @@ export function AboutGallery() {
               <span className="h-[2px] w-8 bg-[#758696]" />
               Inside MHPL
             </span>
-            <h2 className="m-0 text-[clamp(2rem,3.5vw,3rem)] font-bold leading-[1.1] text-[#0B1F33]">
+            <h2 className="m-0 section-title text-[#0B1F33]">
               Our operations in action.
             </h2>
           </div>
-          <p className="max-w-[620px] text-[1.04rem] leading-[1.8] text-[#5D6C7B] lg:justify-self-end">
+          <p className="max-w-[620px] section-copy text-[#5D6C7B] lg:justify-self-end">
             A glimpse into the environments MHPL serves, from healthcare food
             programs and managed dining spaces to catering events and team-led
             service moments.
@@ -82,10 +82,10 @@ export function AboutGallery() {
               <p className="text-[0.78rem] font-bold tracking-[0.18em] text-[#758696] uppercase">
                 Featured
               </p>
-              <h3 className="mt-3 max-w-[620px] text-[clamp(2rem,4vw,4rem)] font-bold leading-[1.02]">
+              <h3 className="mt-3 max-w-[620px] text-[clamp(1.75rem,3vw,3rem)] font-bold leading-[1.02]">
                 {previewItem.title}
               </h3>
-              <p className="mt-5 max-w-[520px] text-[1.02rem] leading-[1.75] text-white/78">
+              <p className="mt-5 max-w-[520px] section-copy text-white/78">
                 {previewItem.description}
               </p>
             </div>
@@ -120,7 +120,7 @@ export function AboutGallery() {
                   <h3 className="text-[1.1rem] font-bold text-[#0B1F33]">
                     {item.title}
                   </h3>
-                  <p className="mt-2 text-[0.9rem] leading-[1.6] text-[#5D6C7B]">
+                  <p className="mt-2 section-copy text-[#5D6C7B]">
                     {item.description}
                   </p>
                 </div>

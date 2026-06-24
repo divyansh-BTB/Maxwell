@@ -7,7 +7,7 @@ export function ContactMap() {
             <span className="h-[2px] w-8 bg-[#758696]" />
             Principal Place of Business
           </span>
-          <h2 className="max-w-[720px] text-[clamp(2rem,3.5vw,3.2rem)] font-bold leading-[1.08] text-[#0B1F33]">
+          <h2 className="max-w-[720px] section-title text-[#0B1F33]">
             Visit our Greater Noida business location.
           </h2>
         </div>

@@ -21,11 +21,11 @@ export function ContactInfo() {
               <span className="h-[2px] w-8 bg-[#758696]" />
               Contact Information
             </span>
-            <h2 className="max-w-[620px] text-[clamp(2rem,4vw,3.6rem)] font-bold leading-[1.05] text-[#0B1F33]">
+            <h2 className="max-w-[620px] section-title text-[#0B1F33]">
               Reach the MHPL team.
             </h2>
           </div>
-          <p className="max-w-[620px] text-[1.04rem] leading-[1.8] text-[#5D6C7B] lg:justify-self-end">
+          <p className="max-w-[620px] section-copy text-[#5D6C7B] lg:justify-self-end">
             Connect with our offices for hospitality partnerships, institutional
             food service programs, restaurant operations, or catering inquiries.
           </p>

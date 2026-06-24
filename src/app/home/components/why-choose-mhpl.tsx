@@ -52,12 +52,12 @@ export function WhyChooseMhpl() {
               <span className="h-[2px] w-8 bg-[#758696]" />
               Why Choose Maxwell
             </span>
-            <h2 className="m-0 text-[clamp(1.8rem,3vw,3rem)] font-bold leading-[1.15] tracking-tight text-[#0B1F33]">
+            <h2 className="m-0 section-title tracking-tight text-[#0B1F33]">
               Excellence delivered daily.
             </h2>
           </div>
           <div className="w-full lg:w-[420px] lg:pb-2">
-            <p className="m-0 text-[0.95rem] leading-[1.7] text-[#5D6C7B]">
+            <p className="m-0 section-copy text-[#5D6C7B]">
               Maxwell combines healthcare hospitality, food safety discipline,
               large-scale catering capability, technology-driven operations, and
               an experienced culinary team.
@@ -122,7 +122,7 @@ export function WhyChooseMhpl() {
                 >
                   {pillar.title}
                 </h3>
-                <p className="max-w-[90%] text-[0.95rem] leading-[1.6] text-white/80 drop-shadow-md transition-all duration-500 group-hover:-translate-y-1 group-hover:text-white">
+                <p className="max-w-[90%] section-copy text-white/80 drop-shadow-md transition-all duration-500 group-hover:-translate-y-1 group-hover:text-white">
                   {pillar.description}
                 </p>
               </div>

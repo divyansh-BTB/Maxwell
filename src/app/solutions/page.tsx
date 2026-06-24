@@ -13,7 +13,7 @@ export default function SolutionsPage() {
             <span className="h-[2px] w-8 bg-[#758696]" />
             Solutions
           </span>
-          <h1 className="max-w-[860px] text-[clamp(2.5rem,5vw,5rem)] leading-[0.98] text-[#0B1F33]">
+          <h1 className="max-w-[860px] page-title text-[#0B1F33]">
             Hospitality and food service solutions for every operating need.
           </h1>
         </div>

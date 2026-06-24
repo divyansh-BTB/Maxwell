@@ -64,10 +64,10 @@ export function CorporateSolutions() {
             <span className="h-[2px] w-8 bg-[#758696]" />
             Corporate Solutions
           </span>
-          <h2 className="max-w-[760px] text-[clamp(2rem,3.8vw,3.6rem)] font-bold leading-[1.08] text-[#0B1F33]">
+          <h2 className="max-w-[760px] section-title text-[#0B1F33]">
             Trusted hospitality partner for corporate organizations.
           </h2>
-          <p className="mt-6 max-w-[720px] text-[1.04rem] leading-[1.85] text-[#5D6C7B]">
+          <p className="mt-6 max-w-[720px] section-copy text-[#5D6C7B]">
             Maxwell provides customized food and hospitality solutions for
             businesses of all sizes, from daily workplace meals to large-format
             corporate events and gifting.

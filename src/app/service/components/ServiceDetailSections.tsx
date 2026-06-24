@@ -104,11 +104,11 @@ export function ServiceDetailSections() {
                 <span className="h-[2px] w-8 bg-[#758696]" />
                 Challenges We Solve
               </span>
-              <h2 className="max-w-[680px] text-[clamp(2rem,4vw,3.7rem)] font-bold leading-[1.05] text-[#0B1F33]">
+              <h2 className="max-w-[680px] section-title text-[#0B1F33]">
                 Common industry challenges, handled with systems.
               </h2>
             </div>
-            <p className="max-w-[620px] text-[1.04rem] leading-[1.8] text-[#5D6C7B] lg:justify-self-end">
+            <p className="max-w-[620px] section-copy text-[#5D6C7B] lg:justify-self-end">
               Maxwell helps institutions and companies remove friction from
               procurement, food safety, diet planning, operations, and guest
               experience.
@@ -127,7 +127,7 @@ export function ServiceDetailSections() {
                 <h3 className="mt-8 text-[1.22rem] font-black leading-tight text-[#0B1F33] transition-colors group-hover:text-white">
                   {challenge.title}
                 </h3>
-                <p className="mt-4 text-[0.96rem] leading-[1.7] text-[#5D6C7B] transition-colors group-hover:text-white/74">
+                <p className="mt-4 section-copy text-[#5D6C7B] transition-colors group-hover:text-white/74">
                   {challenge.description}
                 </p>
               </article>
@@ -146,10 +146,10 @@ export function ServiceDetailSections() {
               <span className="h-[2px] w-8 bg-[#758696]" />
               Catering & Events
             </span>
-            <h2 className="max-w-[620px] text-[clamp(2rem,4vw,3.7rem)] font-bold leading-[1.05] text-[#0B1F33]">
+            <h2 className="max-w-[620px] section-title text-[#0B1F33]">
               Catering for every occasion.
             </h2>
-            <p className="mt-6 max-w-[560px] text-[1.04rem] leading-[1.85] text-[#5D6C7B]">
+            <p className="mt-6 max-w-[560px] section-copy text-[#5D6C7B]">
               Corporate, healthcare, social, and institutional catering mapped
               together with the event categories Maxwell manages.
             </p>
@@ -221,11 +221,11 @@ export function ServiceDetailSections() {
                 <span className="h-[2px] w-8 bg-white/45" />
                 Packages
               </span>
-              <h2 className="max-w-[640px] text-[clamp(2rem,4vw,3.5rem)] font-bold leading-[1.05]">
+              <h2 className="max-w-[640px] section-title ">
                 Corporate catering and banquet packages.
               </h2>
             </div>
-            <p className="max-w-[620px] text-[1.02rem] leading-[1.8] text-white/68 lg:justify-self-end">
+            <p className="max-w-[620px] section-copy text-white/68 lg:justify-self-end">
               Silver, Gold, Platinum, and Banquet packages are structured for
               different event formats. Detailed menus and pricing are available
               on request.
@@ -239,7 +239,7 @@ export function ServiceDetailSections() {
                 key={item.title}
               >
                 <h3 className="text-[1.15rem] font-black">{item.title}</h3>
-                <p className="mt-4 text-[0.94rem] leading-[1.7] text-white/70">
+                <p className="mt-4 section-copy text-white/70">
                   {item.description}
                 </p>
               </article>

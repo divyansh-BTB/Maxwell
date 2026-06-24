@@ -86,7 +86,7 @@ export function GalleryPreview() {
               <span className="h-[2px] w-8 bg-[#758696]" />
               Experience Maxwell
             </span>
-            <h2 className="m-0 text-[clamp(2rem,3.5vw,3rem)] font-bold leading-[1.1] text-[#0B1F33]">
+            <h2 className="m-0 section-title text-[#0B1F33]">
               Service moments across brands, kitchens, banquets, and client
               events.
             </h2>

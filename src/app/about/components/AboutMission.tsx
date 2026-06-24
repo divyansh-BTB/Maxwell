@@ -21,11 +21,11 @@ export function AboutMission() {
               <span className="h-[2px] w-8 bg-[#758696]" />
               Our Mission
             </span>
-            <h2 className="m-0 text-[clamp(2rem,4vw,3.5rem)] font-bold leading-[1.1] text-[#0B1F33]">
+            <h2 className="m-0 section-title text-[#0B1F33]">
               Operational commitments.
             </h2>
           </div>
-          <p className="max-w-[640px] text-[1.04rem] leading-[1.8] text-[#5D6C7B] lg:justify-self-end">
+          <p className="max-w-[640px] section-copy text-[#5D6C7B] lg:justify-self-end">
             Every MHPL operation is shaped by practical commitments that keep
             food safe, service consistent, and hospitality dependable.
           </p>

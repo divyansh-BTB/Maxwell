@@ -19,11 +19,11 @@ export function AboutVision() {
             Our Vision
           </span>
 
-          <h2 className="max-w-[720px] text-[clamp(2rem,4.4vw,4.8rem)] font-bold leading-[1.02] text-[#0B1F33]">
+          <h2 className="max-w-[720px] section-title text-[#0B1F33]">
             To become the most trusted hospitality and food service partner.
           </h2>
 
-          <p className="mt-7 max-w-[680px] text-[1.08rem] leading-[1.85] text-[#5D6C7B]">
+          <p className="mt-7 max-w-[680px] section-copy text-[#5D6C7B]">
             Maxwell aims to deliver memorable experiences through quality,
             innovation, and care while becoming the preferred food service
             partner for organizations and communities.

@@ -32,7 +32,7 @@ export function SocialMediaSection() {
             <span className="h-[2px] w-8 bg-[#758696]" />
             Social Media
           </span>
-          <h2 className="max-w-[720px] text-[clamp(2rem,3.5vw,3.2rem)] font-bold leading-[1.08] text-[#0B1F33]">
+          <h2 className="max-w-[720px] section-title text-[#0B1F33]">
             Follow Maxwell Hospitality.
           </h2>
         </div>
@@ -47,7 +47,7 @@ export function SocialMediaSection() {
               <p className="text-[1.25rem] font-black text-[#0B1F33] transition-colors group-hover:text-white">
                 {channel.title}
               </p>
-              <p className="mt-5 text-[0.96rem] leading-[1.7] text-[#5D6C7B] transition-colors group-hover:text-white/74">
+              <p className="mt-5 section-copy text-[#5D6C7B] transition-colors group-hover:text-white/74">
                 {channel.description}
               </p>
               <span className="mt-7 inline-flex text-sm font-black tracking-[0.12em] text-[#0D2B44] uppercase transition-colors group-hover:text-white">

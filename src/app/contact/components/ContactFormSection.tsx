@@ -27,10 +27,10 @@ export function ContactFormSection() {
               <span className="h-[2px] w-8 bg-[#758696]" />
               Contact Form
             </span>
-            <h2 className="max-w-[460px] text-[clamp(2rem,4vw,3.4rem)] font-bold leading-[1.05] text-[#0B1F33]">
+            <h2 className="max-w-[460px] section-title text-[#0B1F33]">
               Request a proposal.
             </h2>
-            <p className="mt-6 max-w-[460px] text-[1rem] leading-[1.8] text-[#5D6C7B]">
+            <p className="mt-6 max-w-[460px] section-copy text-[#5D6C7B]">
               Share a few details and our team can understand your service
               requirement, guest count, and timeline before starting the
               conversation.
@@ -41,7 +41,7 @@ export function ContactFormSection() {
             <p className="text-[0.78rem] font-bold tracking-[0.16em] text-[#758696] uppercase">
               Maxwell Hospitality Private Limited
             </p>
-            <p className="mt-3 text-[0.96rem] leading-[1.75] text-[#5D6C7B]">
+            <p className="mt-3 section-copy text-[#5D6C7B]">
               Corporate catering, hospital food services, banquets, cafes,
               bakeries, food courts, and event operations.
             </p>

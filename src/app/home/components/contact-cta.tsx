@@ -37,12 +37,12 @@ export function ContactCta() {
           </span>
 
           {/* Heading - Slightly scaled down to prevent excessive wrapping */}
-          <h2 className="m-0 text-[clamp(2rem,4vw,3.5rem)] font-bold leading-[1.15] text-white drop-shadow-md">
+          <h2 className="m-0 section-title text-white drop-shadow-md">
             Let's create exceptional hospitality experiences together.
           </h2>
 
           {/* Description - Tightened top and bottom margins */}
-          <p className="mx-auto mt-5 mb-8 max-w-[700px] text-[1.05rem] leading-[1.7] text-white/70">
+          <p className="mx-auto mt-5 mb-8 max-w-[700px] section-copy text-white/70">
             Discuss corporate catering, healthcare food services, restaurant
             partnerships, banquets, bakery gifting, and event requirements with
             Maxwell Hospitality.

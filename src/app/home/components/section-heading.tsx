@@ -20,13 +20,11 @@ export function SectionHeading({
           {eyebrow}
         </p>
       ) : null}
-      <h2 className="m-0 text-[clamp(2rem,4.5vw,4rem)] leading-[1.05] font-semibold tracking-normal text-[#0B1F33]">
+      <h2 className="m-0 section-title font-semibold tracking-normal text-[#0B1F33]">
         {title}
       </h2>
       {description ? (
-        <p className="mt-5 text-[1.02rem] leading-[1.8] text-[#5D6C7B]">
-          {description}
-        </p>
+        <p className="mt-5 section-copy text-[#5D6C7B]">{description}</p>
       ) : null}
     </div>
   );

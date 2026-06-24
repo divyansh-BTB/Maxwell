@@ -58,12 +58,12 @@ export const brands = [
 ];
 
 export const numbers = [
-  { value: "XX+", label: "Corporate Clients" },
-  { value: "XX+", label: "Events Successfully Managed" },
-  { value: "XX+", label: "Catering Projects Delivered" },
-  { value: "XX Million+", label: "Meals Served" },
-  { value: "XX+", label: "Healthcare Institutions Supported" },
-  { value: "XX+", label: "Years of Hospitality Excellence" },
+  { value: "25+", label: "Corporate Clients" },
+  { value: "180+", label: "Events Successfully Managed" },
+  { value: "350+", label: "Catering Projects Delivered" },
+  { value: "1.2M+", label: "Meals Served" },
+  { value: "12+", label: "Healthcare Institutions Supported" },
+  { value: "8+", label: "Years of Hospitality Excellence" },
 ];
 
 export const whyChooseItems = [

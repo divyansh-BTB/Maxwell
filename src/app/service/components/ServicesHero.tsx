@@ -17,11 +17,11 @@ export function ServicesHero() {
             <span className="h-[2px] w-8 bg-[#758696]" />
             Services
           </span>
-          <h1 className="max-w-[760px] text-[clamp(2.4rem,4.8vw,4.8rem)] font-bold leading-[1.02]">
+          <h1 className="max-w-[760px] page-title ">
             Hospitality, food service, catering, and event solutions.
           </h1>
         </div>
-        <p className="max-w-[620px] text-[clamp(1.02rem,1.45vw,1.18rem)] leading-[1.8] text-white/74 lg:justify-self-end">
+        <p className="max-w-[620px] section-copy text-white/74 lg:justify-self-end">
           Maxwell supports corporate organizations, healthcare institutions,
           banquets, cafes, bakeries, food courts, and events with disciplined
           food service programs designed around quality, hygiene, and reliable

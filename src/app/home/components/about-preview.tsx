@@ -79,7 +79,7 @@ export function AboutPreview() {
           <span className="mb-3 block text-sm font-bold tracking-[0.15em] text-[#758696] uppercase">
             Who We Are
           </span>
-          <h2 className="mx-auto max-w-[800px] text-[clamp(2rem,4vw,3.5rem)] font-bold leading-[1.1] text-[#0B1F33]">
+          <h2 className="mx-auto max-w-[800px] section-title text-[#0B1F33]">
             Purposeful hospitality for institutions, diners, and events
           </h2>
         </div>
@@ -113,10 +113,10 @@ export function AboutPreview() {
                   <span className="mb-4 block text-sm font-bold tracking-[0.12em] text-[#758696] uppercase">
                     {feature.eyebrow}
                   </span>
-                  <h3 className="mb-6 text-[clamp(1.8rem,2.5vw,2.5rem)] font-bold leading-[1.1] text-[#0B1F33]">
+                  <h3 className="mb-6 text-[clamp(1.5rem,2.1vw,2rem)] font-bold leading-[1.1] text-[#0B1F33]">
                     {feature.title}
                   </h3>
-                  <p className="mb-8 text-[1.05rem] leading-[1.8] text-[#5D6C7B] max-w-[90%]">
+                  <p className="mb-8 section-copy text-[#5D6C7B] max-w-[90%]">
                     {feature.description}
                   </p>
 
@@ -185,7 +185,7 @@ export function AboutPreview() {
                 <h3 className="mb-4 text-[1.8rem] font-bold leading-[1.2] text-[#0B1F33]">
                   {feature.title}
                 </h3>
-                <p className="text-[1.02rem] leading-[1.8] text-[#5D6C7B]">
+                <p className="section-copy text-[#5D6C7B]">
                   {feature.description}
                 </p>
                 {idx === features.length - 1 && (

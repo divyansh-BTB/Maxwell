@@ -39,7 +39,7 @@ export function AboutHero() {
             <span className="h-[2px] w-8 bg-[#758696]" />
             Company Overview
           </span>
-          <h1 className="m-0 max-w-[900px] text-[clamp(2.5rem,5vw,5rem)] font-bold leading-[1.05] text-white">
+          <h1 className="m-0 max-w-[900px] page-title text-white">
             About Maxwell Hospitality Private Limited
           </h1>
         </div>
@@ -54,7 +54,7 @@ export function AboutHero() {
               <span className="h-[2px] w-8 bg-[#758696]" />
               Who We Are
             </span>
-            <h2 className="text-[clamp(2.5rem,4vw,4rem)] font-bold leading-[1.05] tracking-tight text-[#0B1F33]">
+            <h2 className="section-title tracking-tight text-[#0B1F33]">
               Integrated hospitality under one roof.
             </h2>
           </div>
@@ -62,13 +62,13 @@ export function AboutHero() {
           <div className="relative pl-6 lg:pl-10">
             {/* Elegant vertical border separator */}
             <div className="absolute bottom-0 left-0 top-0 w-[2px] bg-gradient-to-b from-[#0D2B44] to-transparent" />
-            <p className="mb-4 text-[1.1rem] leading-[1.8] text-[#0B1F33] font-medium">
+            <p className="mb-4 section-copy text-[#0B1F33] font-medium">
               Maxwell is an integrated hospitality, catering, and facility
               management company delivering exceptional food and service
               experiences across healthcare institutions, corporate offices,
               events, banquets, and retail food outlets.
             </p>
-            <p className="text-[1.05rem] leading-[1.8] text-[#5D6C7B]">
+            <p className="section-copy text-[#5D6C7B]">
               With a focus on quality, safety, innovation, and customer
               satisfaction, Maxwell serves thousands of guests daily through its
               diverse portfolio of brands and services.
@@ -130,7 +130,7 @@ export function AboutHero() {
                       <h4 className="mb-2 text-[1.1rem] font-black tracking-[0.1em] text-[#0B1F33] uppercase transition-colors duration-300">
                         {item.title}
                       </h4>
-                      <p className="max-w-[90%] text-[1.05rem] leading-[1.6] text-[#5D6C7B] transition-colors duration-300 group-hover:text-[#0B1F33]">
+                      <p className="max-w-[90%] section-copy text-[#5D6C7B] transition-colors duration-300 group-hover:text-[#0B1F33]">
                         {item.description}
                       </p>
                     </div>

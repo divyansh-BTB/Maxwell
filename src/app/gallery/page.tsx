@@ -12,7 +12,7 @@ export default function GalleryPage() {
             <span className="h-[2px] w-8 bg-[#758696]" />
             Gallery
           </span>
-          <h1 className="max-w-[760px] text-[clamp(2.5rem,5vw,5rem)] leading-[0.98] text-[#0B1F33]">
+          <h1 className="max-w-[760px] page-title text-[#0B1F33]">
             Experience Maxwell
           </h1>
         </div>

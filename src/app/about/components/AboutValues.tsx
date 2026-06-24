@@ -77,11 +77,11 @@ export function AboutValues() {
               <span className="h-[2px] w-8 bg-[#758696]" />
               Core Values
             </span>
-            <h2 className="max-w-[600px] text-[clamp(2rem,4vw,3.6rem)] font-bold leading-[1.05] text-[#0B1F33]">
+            <h2 className="max-w-[600px] section-title text-[#0B1F33]">
               The principles behind every service.
             </h2>
           </div>
-          <p className="max-w-[620px] text-[1.04rem] leading-[1.8] text-[#5D6C7B] lg:justify-self-end">
+          <p className="max-w-[620px] section-copy text-[#5D6C7B] lg:justify-self-end">
             These values guide how MHPL plans food programs, trains teams,
             manages kitchens, and serves people across every environment.
           </p>
@@ -150,7 +150,7 @@ export function AboutValues() {
               <p className="text-[0.82rem] font-bold tracking-[0.16em] text-[#758696] uppercase">
                 {activeValue.title}
               </p>
-              <p className="mt-3 text-[1.05rem] leading-[1.85] text-[#5D6C7B]">
+              <p className="mt-3 section-copy text-[#5D6C7B]">
                 {activeValue.description} These principles shape how our teams
                 plan, prepare, and serve across healthcare, food courts,
                 restaurants, and catering environments.

@@ -29,10 +29,10 @@ export function KitchenExcellenceSection() {
             <span className="h-[2px] w-8 bg-[#758696]" />
             Kitchen Excellence
           </span>
-          <h2 className="max-w-[560px] text-[clamp(2rem,3.5vw,3.2rem)] font-bold leading-[1.08] text-[#0B1F33]">
+          <h2 className="max-w-[560px] section-title text-[#0B1F33]">
             Behind every great meal.
           </h2>
-          <p className="mt-5 text-[1.02rem] leading-[1.8] text-[#5D6C7B]">
+          <p className="mt-5 section-copy text-[#5D6C7B]">
             The video section can showcase central kitchen tours, food
             preparation, quality checks, hygiene standards, packaging, delivery
             operations, and team excellence.

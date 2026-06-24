@@ -54,12 +54,12 @@ export function RecognitionSection() {
               Featured Clients
             </span>
             {/* Shorter, punchier heading */}
-            <h2 className="m-0 text-[clamp(2rem,3.5vw,3.5rem)] font-bold leading-[1.15] text-[#0B1F33]">
+            <h2 className="m-0 section-title text-[#0B1F33]">
               Trusted by leading organizations.
             </h2>
           </div>
           <div className="w-full lg:w-[400px] lg:pb-3">
-            <p className="m-0 text-[1.05rem] leading-[1.7] text-[#5D6C7B]">
+            <p className="m-0 section-copy text-[#5D6C7B]">
               This section is ready for the final logo grid while showing the
               client and partner categories Maxwell wants to highlight.
             </p>

@@ -43,10 +43,10 @@ export function HealthcareExcellence() {
               <span className="h-[2px] w-8 bg-[#758696]" />
               Hospital Food Services
             </span>
-            <h2 className="mb-6 text-[clamp(2rem,3.5vw,3rem)] font-bold leading-[1.15] text-[#0B1F33]">
+            <h2 className="mb-6 section-title text-[#0B1F33]">
               Specialized healthcare hospitality solutions.
             </h2>
-            <p className="max-w-[90%] text-[1.05rem] leading-[1.8] text-[#5D6C7B]">
+            <p className="max-w-[90%] section-copy text-[#5D6C7B]">
               Maxwell delivers patient-centric food and nutrition services
               designed specifically for healthcare institutions, including
               customized meals, therapeutic diets, staff cafeterias, attendant

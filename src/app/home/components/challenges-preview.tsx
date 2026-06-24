@@ -40,11 +40,11 @@ export function ChallengesPreview() {
               <span className="h-[2px] w-8 bg-[#758696]" />
               Challenges We Solve
             </span>
-            <h2 className="max-w-[680px] text-[clamp(2rem,4vw,3.7rem)] font-bold leading-[1.05] text-[#0B1F33]">
+            <h2 className="max-w-[680px] section-title text-[#0B1F33]">
               Common industry challenges.
             </h2>
           </div>
-          <p className="max-w-[620px] text-[1.04rem] leading-[1.8] text-[#5D6C7B] lg:justify-self-end">
+          <p className="max-w-[620px] section-copy text-[#5D6C7B] lg:justify-self-end">
             Maxwell brings systems, compliance, and hospitality discipline to
             the recurring operational issues food service teams face every day.
           </p>
@@ -62,7 +62,7 @@ export function ChallengesPreview() {
               <h3 className="mt-8 text-[1.22rem] font-black leading-tight text-[#0B1F33]">
                 {challenge.title}
               </h3>
-              <p className="mt-4 text-[0.96rem] leading-[1.7] text-[#5D6C7B]">
+              <p className="mt-4 section-copy text-[#5D6C7B]">
                 {challenge.description}
               </p>
             </article>
