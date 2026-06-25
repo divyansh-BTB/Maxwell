@@ -19,9 +19,8 @@ export default function OurBrandsPage() {
               </h1>
             </div>
             <p className="max-w-[680px] section-copy text-[#5D6C7B] lg:justify-self-end">
-              A connected portfolio across vibrant food destinations, cafes,
-              bakeries, nutrition-led services, banquets, events, and hospital
-              management services.
+              A connected portfolio across vibrant food destinations, playful
+              cafe experiences, bakeries, and nutrition-led services.
             </p>
           </div>
 
@@ -32,10 +31,18 @@ export default function OurBrandsPage() {
                 id={brand.id}
                 key={brand.id}
               >
-                <div className="relative aspect-[4/3] bg-[#0B1F33]">
+                <div
+                  className={`relative aspect-[4/3] ${
+                    brand.image.startsWith("/") ? "bg-white" : "bg-[#0B1F33]"
+                  }`}
+                >
                   <Image
                     alt={brand.title}
-                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                    className={`transition-transform duration-700 group-hover:scale-105 ${
+                      brand.image.startsWith("/")
+                        ? "object-contain p-8"
+                        : "object-cover"
+                    }`}
                     fill
                     sizes="(max-width: 768px) 100vw, 33vw"
                     src={brand.image}

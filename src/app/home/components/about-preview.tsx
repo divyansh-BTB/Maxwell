@@ -22,7 +22,7 @@ const features = [
     description:
       "With a focus on quality, safety, innovation, and customer satisfaction, Maxwell serves thousands of guests daily through disciplined kitchens, reliable systems, and a diverse portfolio of services.",
     image:
-      "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1556911220-bff31c812dba?q=80&w=1200&auto=format&fit=crop",
   },
   {
     id: "service",

@@ -70,10 +70,10 @@ const services = [
     title: "Brands & Retail Food Outlets",
     description:
       "Food court, cafe, bakery, and nutrition-led brand operations under the Maxwell ecosystem.",
-    image:
-      "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=1400&auto=format&fit=crop",
+    image: "/Dice-n-sip.png",
     items: [
       "Street Hub",
+      "Dice N Sip",
       "Street Cafe",
       "Baker Street",
       "Nutriverse",

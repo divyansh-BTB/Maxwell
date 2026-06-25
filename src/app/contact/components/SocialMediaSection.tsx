@@ -3,7 +3,7 @@ import Link from "next/link";
 const channels = [
   {
     title: "Instagram",
-    description: "Showcase Banquets, Catering, Baker Street, and Street Cafe.",
+    description: "Showcase Banquets, Catering, Baker Street, and Dice N Sip.",
     href: "/contact-us",
   },
   {

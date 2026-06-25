@@ -31,15 +31,10 @@ const footerColumns = [
     title: "Our Brands",
     links: [
       { label: "Street Hub", href: "/our-brands#street-hub" },
+      { label: "Dice N Sip", href: "/our-brands#dice-n-sip" },
       { label: "Street Cafe", href: "/our-brands#street-cafe" },
       { label: "Baker Street", href: "/our-brands#baker-street" },
       { label: "Nutriverse", href: "/our-brands#nutriverse" },
-      { label: "Maxwell Banquets", href: "/our-brands#maxwell-banquets" },
-      { label: "Maxwell Events", href: "/our-brands#maxwell-events" },
-      {
-        label: "Hospital Management Services",
-        href: "/our-brands#hospital-management-services",
-      },
     ],
   },
   {
@@ -60,7 +55,10 @@ const footerColumns = [
     links: [
       { label: "Maxwell Hospitality Services", href: "/contact-us" },
       { label: "Phone Number", href: "/contact-us" },
-      { label: "Email Address", href: "/contact-us" },
+      {
+        label: "Services@maxwellhotels.in",
+        href: "mailto:Services@maxwellhotels.in",
+      },
       { label: "Website", href: "/" },
       { label: "Office Address", href: "/contact-us" },
     ],

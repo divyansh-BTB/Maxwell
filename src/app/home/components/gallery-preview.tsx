@@ -26,9 +26,8 @@ const galleryItems = [
       "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=80",
   },
   {
-    title: "Street Cafe",
-    image:
-      "https://images.unsplash.com/photo-1584982751601-97dcc096659c?auto=format&fit=crop&w=900&q=80",
+    title: "Dice N Sip",
+    image: "/Dice-n-sip.png",
   },
   {
     title: "Baker Street",
@@ -37,8 +36,7 @@ const galleryItems = [
   },
   {
     title: "Nutriverse",
-    image:
-      "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=900&q=80",
+    image: "/nutriverse.png",
   },
   {
     title: "Kitchen Operations",

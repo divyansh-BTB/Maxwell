@@ -11,6 +11,7 @@ const serviceOptions = [
   "Food Court Management",
   "Restaurant Operations",
   "Events & Banquets",
+  "Dice N Sip",
   "Baker Street",
   "Street Cafe",
   "Nutriverse",

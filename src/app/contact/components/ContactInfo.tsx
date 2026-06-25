@@ -1,5 +1,9 @@
 const offices = [
   {
+    title: "Email",
+    address: "Services@maxwellhotels.in",
+  },
+  {
     title: "Principal Place of Business",
     address:
       "Basement, Block 10A, Sharda University & Hospital, Plot No. 32 & 34, Knowledge Park III, Greater Noida, Gautam Buddha Nagar, Uttar Pradesh, India",

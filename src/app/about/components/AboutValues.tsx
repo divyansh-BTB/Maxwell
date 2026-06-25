@@ -30,7 +30,7 @@ const values = [
     description: "Controlled routines that keep food safety at the center.",
     tags: ["Food Safety", "Control", "Cleanliness"],
     image:
-      "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1556911220-bff31c812dba?q=80&w=1200&auto=format&fit=crop",
   },
   {
     title: "Innovation",

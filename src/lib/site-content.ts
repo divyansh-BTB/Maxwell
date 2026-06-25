@@ -4,8 +4,14 @@ export const brands = [
     title: "Street Hub",
     description:
       "A vibrant food destination offering multi-cuisine experiences for customers seeking quality and convenience.",
-    image:
-      "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80",
+    image: "/Street-HUB.png",
+  },
+  {
+    id: "dice-n-sip",
+    title: "Dice N Sip",
+    description:
+      'A one-of-a-kind cafe built around the concept of "eat, play, and enjoy," pairing delicious food, refreshing beverages, and interactive play for friends, families, food lovers, and gaming enthusiasts.',
+    image: "/Dice-n-sip.png",
   },
   {
     id: "street-cafe",
@@ -28,32 +34,7 @@ export const brands = [
     title: "Nutriverse",
     description:
       "Specialized nutrition-focused food solutions designed for hospitals, wellness programs, and health-conscious consumers.",
-    image:
-      "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=80",
-  },
-  {
-    id: "maxwell-banquets",
-    title: "Maxwell Banquets",
-    description:
-      "Premium banquet services for weddings, celebrations, corporate gatherings, and social events.",
-    image:
-      "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1200&q=80",
-  },
-  {
-    id: "maxwell-events",
-    title: "Maxwell Events",
-    description:
-      "End-to-end event planning and execution services for corporate and social events.",
-    image:
-      "https://images.unsplash.com/photo-1505236858219-8359eb29e329?auto=format&fit=crop&w=1200&q=80",
-  },
-  {
-    id: "hospital-management-services",
-    title: "Hospital Management Services",
-    description:
-      "Comprehensive hospital food operations, cafeteria management, patient diet planning, and healthcare hospitality solutions.",
-    image:
-      "https://images.unsplash.com/photo-1584982751601-97dcc096659c?auto=format&fit=crop&w=1200&q=80",
+    image: "/nutriverse.png",
   },
 ];
 
@@ -92,6 +73,7 @@ export const galleryCategories = [
   "Banquets",
   "Catering Services",
   "Hospital Catering",
+  "Dice N Sip",
   "Street Cafe",
   "Baker Street",
   "Nutriverse",

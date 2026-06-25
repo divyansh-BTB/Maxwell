@@ -46,13 +46,6 @@ const services = [
     image:
       "https://images.unsplash.com/photo-1505236858219-8359eb29e329?auto=format&fit=crop&w=900&q=80",
   },
-  {
-    title: "Hospital Management Services",
-    description:
-      "Hospital food operations, cafeteria management, patient diet planning, and healthcare hospitality.",
-    image:
-      "https://images.unsplash.com/photo-1584982751601-97dcc096659c?auto=format&fit=crop&w=900&q=80",
-  },
 ];
 
 export function ServiceVerticals() {
@@ -76,7 +69,7 @@ export function ServiceVerticals() {
         </div>
 
         {/* --- DESKTOP VIEW: 2D Fisheye Curve --- */}
-        <div className="hidden lg:flex flex-row items-center justify-center gap-4 h-[600px] w-full">
+        <div className="hidden h-[600px] w-full flex-row items-center justify-center gap-4 lg:flex">
           {services.map((service, index) => {
             const isActive = hoveredIndex === index;
 
@@ -103,21 +96,27 @@ export function ServiceVerticals() {
               <button
                 type="button"
                 key={service.title}
+                onBlur={() => setHoveredIndex(null)}
                 onFocus={() => setHoveredIndex(index)}
                 onMouseEnter={() => setHoveredIndex(index)}
+                onMouseLeave={() => setHoveredIndex(null)}
                 style={{
                   height: `${cardHeight}px`,
                   flex: cardFlex,
                 }}
-                className="group relative overflow-hidden rounded-[2rem] text-left transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]"
+                className={`group relative overflow-hidden rounded-[2rem] text-left transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] ${
+                  service.image.startsWith("/") ? "bg-white" : "bg-[#0B1F33]"
+                }`}
               >
                 <Image
                   src={service.image}
                   alt={service.title}
                   fill
-                  className={`object-cover transition-transform duration-1000 ease-out ${
-                    isActive ? "scale-105" : "scale-100"
-                  }`}
+                  className={`transition-transform duration-1000 ease-out ${
+                    service.image.startsWith("/")
+                      ? "object-contain p-8"
+                      : "object-cover"
+                  } ${isActive ? "scale-105" : "scale-100"}`}
                   sizes="(max-width: 1024px) 100vw, 33vw"
                 />
 
@@ -151,13 +150,19 @@ export function ServiceVerticals() {
           {services.map((service) => (
             <div
               key={service.title}
-              className="relative h-[350px] w-full overflow-hidden rounded-[1.5rem]"
+              className={`relative h-[350px] w-full overflow-hidden rounded-[1.5rem] ${
+                service.image.startsWith("/") ? "bg-white" : "bg-[#0B1F33]"
+              }`}
             >
               <Image
                 src={service.image}
                 alt={service.title}
                 fill
-                className="object-cover"
+                className={
+                  service.image.startsWith("/")
+                    ? "object-contain p-8"
+                    : "object-cover"
+                }
                 sizes="100vw"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/78 via-transparent to-transparent" />
