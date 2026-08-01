@@ -48,8 +48,8 @@ export function AboutVision() {
           <div className="absolute -right-5 -bottom-5 h-full w-full rounded-[1.5rem] border border-[#0D2B44]/35" />
           <div className="relative min-h-[520px] overflow-hidden rounded-[1.5rem] bg-[#0B1F33] shadow-2xl shadow-black/16 max-sm:min-h-[380px]">
             <Image
-              src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?q=80&w=1400&auto=format&fit=crop"
-              alt="Memorable hospitality dining experience"
+              src="/indian.avif"
+              alt="Guest enjoying a meal in a warm restaurant setting"
               fill
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 48vw"

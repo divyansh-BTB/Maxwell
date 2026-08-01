@@ -8,10 +8,9 @@ import { ArrowCircle } from "./ArrowCircle";
 
 const navItems = [
   { label: "Home", href: "/" },
-  { label: "About", href: "/about-maxwell" },
+  { label: "About", href: "/about" },
   { label: "Brands", href: "/our-brands" },
   { label: "Solutions", href: "/solutions" },
-  { label: "Gallery", href: "/gallery" },
 ];
 
 export function SiteHeader() {

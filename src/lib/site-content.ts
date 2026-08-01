@@ -7,11 +7,11 @@ export const brands = [
     image: "/Street-HUB.png",
   },
   {
-    id: "dice-n-sip",
-    title: "Dice N Sip",
+    id: "smsr",
+    title: "SMSR Cafe",
     description:
       'A one-of-a-kind cafe built around the concept of "eat, play, and enjoy," pairing delicious food, refreshing beverages, and interactive play for friends, families, food lovers, and gaming enthusiasts.',
-    image: "/Dice-n-sip.png",
+    image: "/smsr.png",
   },
   {
     id: "street-cafe",

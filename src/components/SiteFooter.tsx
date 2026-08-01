@@ -6,7 +6,7 @@ const footerColumns = [
     title: "Main Links",
     links: [
       { label: "Home", href: "/" },
-      { label: "About Maxwell", href: "/about-maxwell" },
+      { label: "About Maxwell", href: "/about" },
       { label: "Our Brands", href: "/our-brands" },
       { label: "Solutions", href: "/solutions" },
       { label: "Gallery", href: "/gallery" },
@@ -42,10 +42,10 @@ const footerColumns = [
     links: [
       { label: "Featured Clients", href: "/clients" },
       { label: "Careers", href: "/careers" },
-      { label: "By The Numbers", href: "/about-maxwell#by-the-numbers" },
+      { label: "By The Numbers", href: "/about#by-the-numbers" },
       {
         label: "Why Choose Maxwell",
-        href: "/about-maxwell#why-choose-maxwell",
+        href: "/about#why-choose-maxwell",
       },
       { label: "Kitchen Excellence", href: "/gallery#kitchen-excellence" },
     ],
@@ -155,10 +155,7 @@ export function SiteFooter() {
             >
               Services
             </Link>
-            <Link
-              className="underline-offset-4 hover:underline"
-              href="/about-maxwell"
-            >
+            <Link className="underline-offset-4 hover:underline" href="/about">
               Company
             </Link>
           </div>

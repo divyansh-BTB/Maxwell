@@ -70,7 +70,7 @@ export function WhyChooseMhpl() {
           {pillars.map((pillar, index) => (
             <article
               key={pillar.title}
-              className={`group relative flex flex-col justify-between overflow-hidden rounded-[1.5rem] bg-black border border-white/10 p-8 text-white transition-all duration-500 hover:-translate-y-1 hover:border-white/35 hover:shadow-2xl hover:shadow-black/30 ${pillar.bentoClass}`}
+              className={`group relative flex flex-col justify-between overflow-hidden rounded-[1.5rem] border border-white/10 p-8 text-white transition-all duration-500 hover:-translate-y-1 hover:border-white/35 hover:shadow-2xl hover:shadow-black/30 ${pillar.bentoClass}`}
             >
               {/* 1. Full Cover Image */}
               <div className="absolute inset-0 z-0">
@@ -78,7 +78,7 @@ export function WhyChooseMhpl() {
                   src={pillar.image}
                   alt={pillar.title}
                   fill
-                  className="object-cover opacity-60 transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-110 group-hover:opacity-80"
+                  className="object-cover transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-110 group-hover:opacity-80"
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>

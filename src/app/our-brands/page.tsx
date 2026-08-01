@@ -27,7 +27,7 @@ export default function OurBrandsPage() {
           <div className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3">
             {brands.map((brand, index) => (
               <article
-                className="group overflow-hidden rounded-[1.5rem] border border-[#F6F7F8] bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-[#0D2B44] hover:shadow-xl hover:shadow-[#0B1F33]/10"
+                className="group overflow-hidden rounded-[1.5rem] border border-[#000]/10 bg-white transition-all duration-300 hover:-translate-y-1 hover:border-[#0D2B44] hover:shadow-xl hover:shadow-[#0B1F33]/10"
                 id={brand.id}
                 key={brand.id}
               >

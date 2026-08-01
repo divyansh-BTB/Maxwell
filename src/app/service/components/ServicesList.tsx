@@ -34,8 +34,8 @@ const services = [
     ],
   },
   {
-    id: "catering-solutions-overview",
-    title: "Catering Solutions",
+    id: "institutional-solutions-overview",
+    title: "Institutional Solutions",
     description:
       "Catering for corporate, healthcare, social, and institutional occasions.",
     image:
@@ -43,8 +43,8 @@ const services = [
     items: [
       "Office Events",
       "Conferences",
-      "Healthcare Catering",
-      "Weddings",
+      "Student Welfare events",
+      "Mess and Cafeteria",
       "Family Celebrations",
       "Industrial Facilities",
     ],
@@ -61,24 +61,8 @@ const services = [
       "Annual Day Celebrations",
       "Product Launches",
       "Award Functions",
-      "Weddings",
+      "Outdoor catering",
       "Community Festivals",
-    ],
-  },
-  {
-    id: "brands-retail-food-outlets",
-    title: "Brands & Retail Food Outlets",
-    description:
-      "Food court, cafe, bakery, and nutrition-led brand operations under the Maxwell ecosystem.",
-    image: "/Dice-n-sip.png",
-    items: [
-      "Street Hub",
-      "Dice N Sip",
-      "Street Cafe",
-      "Baker Street",
-      "Nutriverse",
-      "Food Court Management",
-      "Restaurant Operations",
     ],
   },
 ];
