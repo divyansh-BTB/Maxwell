@@ -9,7 +9,7 @@ const services = [
     description:
       "A vibrant food destination offering multi-cuisine experiences with quality and convenience.",
     image:
-      "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=900&q=80",
+      "/street-hub-new.png",
   },
   {
     title: "Street Cafe",
@@ -29,22 +29,21 @@ const services = [
     title: "Nutriverse",
     description:
       "Nutrition-focused food solutions for hospitals, wellness programs, and health-conscious consumers.",
-    image:
-      "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=900&q=80",
+    image: "/Nutriverse.jpg",
   },
   {
     title: "Maxwell Banquets",
     description:
       "Premium banquet services for weddings, celebrations, corporate gatherings, and social events.",
     image:
-      "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=900&q=80",
+      "/ban.png",
   },
   {
     title: "Maxwell Events",
     description:
       "End-to-end event planning and execution services for corporate and social events.",
     image:
-      "https://images.unsplash.com/photo-1505236858219-8359eb29e329?auto=format&fit=crop&w=900&q=80",
+      "/events.jpg",
   },
 ];
 
@@ -103,19 +102,15 @@ export function ServiceVerticals() {
                   height: `${cardHeight}px`,
                   flex: cardFlex,
                 }}
-                className={`group relative overflow-hidden rounded-[2rem] text-left transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] ${
-                  service.image.startsWith("/") ? "bg-white" : "bg-[#0B1F33]"
-                }`}
+                className="group relative overflow-hidden rounded-[2rem] bg-[#0B1F33] text-left transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]"
               >
                 <Image
                   src={service.image}
                   alt={service.title}
                   fill
-                  className={`transition-transform duration-1000 ease-out ${
-                    service.image.startsWith("/")
-                      ? "object-contain p-8"
-                      : "object-cover"
-                  } ${isActive ? "scale-105" : "scale-100"}`}
+                  className={`object-cover transition-transform duration-1000 ease-out ${
+                    isActive ? "scale-105" : "scale-100"
+                  }`}
                   sizes="(max-width: 1024px) 100vw, 33vw"
                 />
 
@@ -135,7 +130,7 @@ export function ServiceVerticals() {
                   <h3 className="mb-3 text-3xl font-bold leading-tight">
                     {service.title}
                   </h3>
-                  <p className="text-sm leading-[1.6] text-white/90 max-w-[85%]">
+                  <p className="max-w-[85%] text-sm leading-[1.6] text-white/90">
                     {service.description}
                   </p>
                 </div>
@@ -149,19 +144,13 @@ export function ServiceVerticals() {
           {services.map((service) => (
             <div
               key={service.title}
-              className={`relative h-[350px] w-full overflow-hidden rounded-[1.5rem] ${
-                service.image.startsWith("/") ? "bg-white" : "bg-[#0B1F33]"
-              }`}
+              className="relative h-[350px] w-full overflow-hidden rounded-[1.5rem] bg-[#0B1F33]"
             >
               <Image
                 src={service.image}
                 alt={service.title}
                 fill
-                className={
-                  service.image.startsWith("/")
-                    ? "object-contain p-8"
-                    : "object-cover"
-                }
+                className="object-cover"
                 sizes="100vw"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/78 via-transparent to-transparent" />

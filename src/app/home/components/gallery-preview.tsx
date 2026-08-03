@@ -12,8 +12,7 @@ const galleryItems = [
   },
   {
     title: "Banquets",
-    image:
-      "/ban.png",
+    image: "/ban.png",
   },
   {
     title: "Catering Services",

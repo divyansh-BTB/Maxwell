@@ -16,7 +16,7 @@ export default function HomePage() {
       <SiteHeader />
       <HeroSection />
       <AboutPreview />
-      <ServiceVerticals />
+      <ServiceVerticals />  
       <NumbersSection />
       <CorporateSolutions />
       {/* <HealthcareExcellence /> */}
