@@ -13,7 +13,7 @@ const galleryItems = [
   {
     title: "Banquets",
     image:
-      "https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=900&q=80",
+      "/ban.png",
   },
   {
     title: "Catering Services",
