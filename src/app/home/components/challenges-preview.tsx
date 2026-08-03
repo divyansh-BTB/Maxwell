@@ -235,7 +235,7 @@ export function ChallengesPreviewBento() {
         </div>
 
         {/* Bento Grid */}
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-4 md:auto-rows-[220px]">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-4 md:auto-rows-[minmax(220px,auto)]">
           {challenges.map((challenge, index) => (
             <TiltCard
               key={challenge.title}

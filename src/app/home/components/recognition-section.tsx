@@ -8,25 +8,25 @@ const recognitionItems = [
     title: "Sharda Care Healthcity",
     // Represents quality and clinical precision
     image:
-      "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=1200&auto=format&fit=crop",
+      "/sharda-care.jpeg",
   },
   {
     title: "Sharda University",
     // Represents trust, partnership, and professional relationships
     image:
-      "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?q=80&w=1200&auto=format&fit=crop",
+      "/sharda-university.jpeg",
   },
   {
     title: "Sharda Hospital",
     // Represents official documentation, quality seals, premium paper
     image:
-      "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?q=80&w=1200&auto=format&fit=crop",
+      "/sharda-hospital.jpeg",
   },
   {
     title: "Sharda Group",
     // Represents celebration, galas, excellence
     image:
-      "https://images.unsplash.com/photo-1530103862676-de8892b07439?q=80&w=1200&auto=format&fit=crop",
+      "/sharda-group.jpeg",
   },
   {
     title: "Healthcare & Institutional Clients",
