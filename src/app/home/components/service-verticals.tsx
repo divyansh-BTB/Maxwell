@@ -9,7 +9,7 @@ const services = [
     description:
       "A vibrant food destination offering multi-cuisine experiences with quality and convenience.",
     image:
-      "/street-hub-new.png",
+      "/Street-hub-new.png",
   },
   {
     title: "Street Cafe",
