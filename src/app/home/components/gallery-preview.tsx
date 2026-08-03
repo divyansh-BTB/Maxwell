@@ -26,11 +26,11 @@ const galleryItems = [
   },
   {
     title: "Baker Street",
-    image: "/baker-street-logo.png",
+    image: "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=80",
   },
   {
     title: "Nutriverse",
-    image: "/nutriverse.jpg",
+    image: "/Nutriverse.jpg",
   },
   {
     title: "Kitchen Operations",

@@ -26,7 +26,7 @@ export const brands = [
     title: "Baker Street",
     description:
       "Fresh bakery products, artisan breads, cakes, desserts, and customized corporate gifting solutions.",
-    image: "/baker-street-logo.png",
+    image: "/Baker-street-logo.png",
   },
   {
     id: "nutriverse",
