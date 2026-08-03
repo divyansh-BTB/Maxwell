@@ -12,7 +12,7 @@ const stats = [
 export function HealthcareExcellence() {
   return (
     <section
-      className="overflow-hidden bg-white px-[clamp(20px,5vw,72px)] py-[clamp(72px,10vw,132px)]"
+      className="overflow-hidden bg-white px-[clamp(20px,5vw,72px)] py-[clamp(40px,5vw,76px)]"
       id="healthcare"
     >
       <div className="mx-auto grid max-w-[1280px] grid-cols-1 items-center gap-[clamp(40px,8vw,100px)] lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]">

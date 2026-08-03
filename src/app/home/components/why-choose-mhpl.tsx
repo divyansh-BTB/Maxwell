@@ -1,5 +1,4 @@
 "use client";
-
 import Image from "next/image";
 
 const pillars = [
@@ -8,42 +7,34 @@ const pillars = [
     description:
       "Hospitality programs for healthcare, corporates, banquets, cafeterias, cafes, bakeries, and events.",
     bentoClass: "md:col-span-1 md:row-span-2",
-    // UPDATED IMAGE: Professional chef plating with precision (screams controlled, hygienic, and premium)
-    image:
-      "https://images.unsplash.com/photo-1581349485608-9469926a8e5e?q=80&w=800&auto=format&fit=crop",
+    image: "/images/why-choose/multi-sector.jpg",
   },
   {
     title: "Food safety first approach",
     description:
       "Controlled kitchens, hygiene routines, temperature monitoring, and quality checks guide every operation.",
     bentoClass: "md:col-span-2 md:row-span-1",
-    // Warm, comforting nutritious food layout
-    image:
-      "https://images.unsplash.com/photo-1505576399279-565b52d4ac71?q=80&w=1200&auto=format&fit=crop",
+    image: "/images/why-choose/food-safety.jpg",
   },
   {
     title: "Customized menu planning",
     description:
       "Menus are shaped around audience needs, nutrition goals, event formats, and service volume.",
     bentoClass: "md:col-span-1 md:row-span-1",
-    // Premium dining/restaurant setup
-    image:
-      "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=800&auto=format&fit=crop",
+    image: "/images/why-choose/custom-menu.jpg",
   },
   {
     title: "End-to-end event management",
     description:
       "Experienced culinary and hospitality teams support planning, setup, service delivery, and improvement.",
     bentoClass: "md:col-span-1 md:row-span-1",
-    // Dedicated hospitality team member
-    image:
-      "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?q=80&w=800&auto=format&fit=crop",
+    image: "/images/why-choose/event-mgmt.jpg",
   },
 ];
 
 export function WhyChooseMhpl() {
   return (
-    <section className="bg-[#F6F7F8] px-[clamp(20px,5vw,72px)] py-[clamp(72px,10vw,120px)] overflow-hidden">
+    <section className="bg-[#F6F7F8] px-[clamp(20px,5vw,72px)] py-[clamp(40px,5vw,76px)] overflow-hidden">
       <div className="mx-auto max-w-[1280px]">
         {/* --- BALANCED & REFINED HEADER --- */}
         <div className="mb-[clamp(40px,6vw,80px)] flex flex-col items-start justify-between gap-6 lg:flex-row lg:items-end">
@@ -65,64 +56,69 @@ export function WhyChooseMhpl() {
           </div>
         </div>
 
-        {/* --- PHOTOGRAPHIC BENTO GRID WITH IMPRINTS --- */}
-        <div className="grid grid-cols-1 gap-5 md:auto-rows-[300px] md:grid-cols-3 md:gap-6">
+        {/* --- CONTEXTUAL PHOTOGRAPHY BENTO GRID --- */}
+        <div className="grid grid-cols-1 gap-5 md:auto-rows-[320px] md:grid-cols-3 md:gap-6">
           {pillars.map((pillar, index) => (
             <article
               key={pillar.title}
-              className={`group relative flex flex-col justify-between overflow-hidden rounded-[1.5rem] border border-white/10 p-8 text-white transition-all duration-500 hover:-translate-y-1 hover:border-white/35 hover:shadow-2xl hover:shadow-black/30 ${pillar.bentoClass}`}
+              className={`group relative flex flex-col justify-between overflow-hidden rounded-[1.5rem] border border-[#0B1F33]/15 bg-[#0B1F33] p-8 text-white shadow-xl shadow-[#0B1F33]/10 transition-all duration-500 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-[#0B1F33]/25 ${pillar.bentoClass}`}
             >
-              {/* 1. Full Cover Image */}
-              <div className="absolute inset-0 z-0">
+              {/* 1. Contextual Image Background with Hover Zoom */}
+              <div className="absolute inset-0 z-0 overflow-hidden">
                 <Image
                   src={pillar.image}
                   alt={pillar.title}
                   fill
-                  className="object-cover transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-110 group-hover:opacity-80"
-                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>
 
-              {/* 2. Gradient Overlay for Text Readability */}
-              <div className="absolute inset-0 z-10 bg-gradient-to-t from-black/82 via-black/35 to-transparent transition-opacity duration-500 group-hover:opacity-90" />
+              {/* 2. Legibility Vignette Overlay */}
+              <div
+                aria-hidden="true"
+                className="pointer-events-none absolute inset-0 z-0 bg-gradient-to-t from-[#0B1F33] via-[#0B1F33]/60 to-[#0B1F33]/25 opacity-90 transition-opacity duration-500 group-hover:opacity-80"
+              />
 
               {/* 3. Massive Background Imprint Number */}
-              <span className="absolute -bottom-10 -right-4 z-20 select-none text-[10rem] font-black leading-none text-white/10 transition-all duration-700 ease-out group-hover:scale-105 group-hover:text-white/20 md:text-[12rem]">
+              <span className="absolute -bottom-10 -right-4 z-0 select-none text-[10rem] font-black leading-none text-white/[0.08] transition-all duration-700 ease-out group-hover:scale-105 group-hover:text-white/[0.14] md:text-[12rem]">
                 0{index + 1}
               </span>
 
               {/* Top Row: Small Number Badge & Arrow */}
-              <div className="relative z-30 flex items-start justify-between">
-                <span className="flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-black/30 text-sm font-bold text-white backdrop-blur-md transition-colors duration-500 group-hover:border-white/70">
+              <div className="relative z-10 flex items-start justify-between">
+                <span className="flex h-10 w-10 items-center justify-center rounded-full border border-white/30 bg-white/90 text-sm font-bold text-[#0B1F33] shadow-md backdrop-blur-md transition-all duration-500 group-hover:border-white group-hover:bg-white">
                   0{index + 1}
                 </span>
 
-                <svg
-                  aria-hidden="true"
-                  className="h-6 w-6 text-white/40 transition-all duration-500 group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:text-white"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
+                <span className="flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-[#0B1F33]/60 text-white backdrop-blur-md transition-all duration-500 group-hover:scale-110 group-hover:bg-white group-hover:text-[#0B1F33]">
+                  <svg
+                    aria-hidden="true"
+                    className="h-5 w-5 transition-transform duration-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
+                  </svg>
+                </span>
               </div>
 
               {/* Bottom Content Area */}
-              <div className="relative z-30 mt-12 md:mt-0">
+              <div className="relative z-10 mt-12 md:mt-0">
                 <h3
-                  className={`mb-3 font-bold leading-tight drop-shadow-lg transition-transform duration-500 group-hover:-translate-y-1 ${
+                  className={`mb-3 font-bold leading-tight text-white drop-shadow-md transition-transform duration-500 group-hover:-translate-y-1 ${
                     index === 0 ? "text-3xl" : "text-2xl"
                   }`}
                 >
                   {pillar.title}
                 </h3>
-                <p className="max-w-[90%] section-copy text-white/80 drop-shadow-md transition-all duration-500 group-hover:-translate-y-1 group-hover:text-white">
+                <p className="max-w-[90%] section-copy text-white/90 transition-all duration-500 group-hover:-translate-y-1 group-hover:text-white">
                   {pillar.description}
                 </p>
               </div>

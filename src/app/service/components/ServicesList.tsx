@@ -70,7 +70,7 @@ const services = [
 export function ServicesList() {
   return (
     <section
-      className="bg-white px-[clamp(20px,5vw,72px)] py-[clamp(72px,9vw,116px)]"
+      className="bg-white px-[clamp(20px,5vw,72px)] py-[clamp(40px,5vw,76px)]"
       id="solutions-overview"
     >
       <div className="mx-auto max-w-[1280px]">

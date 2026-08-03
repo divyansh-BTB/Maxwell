@@ -53,8 +53,7 @@ export function ServiceVerticals() {
 
   return (
     <section
-      // UPDATED: min-h-screen and flex-col ensure it acts as a perfect full-screen section
-      className="bg-white px-[clamp(20px,5vw,72px)] py-16 lg:min-h-screen lg:py-20 flex flex-col justify-center"
+      className="flex flex-col bg-white px-[clamp(20px,5vw,72px)] py-[clamp(40px,5vw,76px)]"
       id="brands"
     >
       <div className="mx-auto w-full max-w-[1280px]">

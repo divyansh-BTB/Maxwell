@@ -36,7 +36,7 @@ const features = [
 export function AboutPreview() {
   return (
     <section
-      className="bg-white px-[clamp(20px,5vw,72px)] py-[clamp(72px,10vw,132px)]"
+      className="bg-white px-[clamp(20px,5vw,72px)] py-[clamp(40px,5vw,76px)]"
       id="about"
     >
       <div className="mx-auto max-w-[1280px]">

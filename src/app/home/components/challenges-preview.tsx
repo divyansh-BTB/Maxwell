@@ -215,7 +215,7 @@ function TiltCard({ className, dark, children }: TiltCardProps) {
 
 export function ChallengesPreviewBento() {
   return (
-    <section className="bg-white px-[clamp(20px,5vw,72px)] py-[clamp(72px,9vw,112px)]">
+    <section className="bg-white px-[clamp(20px,5vw,72px)] py-[clamp(40px,5vw,76px)]">
       <div className="mx-auto max-w-[1280px]">
         {/* Header Section */}
         <div className="mb-12 flex flex-col justify-between gap-6 lg:flex-row lg:items-end">

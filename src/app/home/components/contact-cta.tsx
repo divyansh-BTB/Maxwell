@@ -7,7 +7,7 @@ import { ArrowCircle } from "@/components/ArrowCircle";
 export function ContactCta() {
   return (
     <section
-      className="bg-white px-[clamp(20px,5vw,72px)] py-[clamp(60px,8vw,120px)]"
+      className="bg-white px-[clamp(20px,5vw,72px)] py-[clamp(36px,4.5vw,68px)]"
       id="contact"
     >
       {/* --- THE COMPACT FLOATING CARD --- */}

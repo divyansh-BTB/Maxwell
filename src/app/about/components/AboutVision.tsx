@@ -7,7 +7,7 @@ const visionPillars = ["Quality", "Innovation", "Care"];
 export function AboutVision() {
   return (
     <section
-      className="relative overflow-hidden bg-white px-[clamp(20px,5vw,72px)] py-[clamp(80px,11vw,132px)] text-[#0B1F33]"
+      className="relative overflow-hidden bg-white px-[clamp(20px,5vw,72px)] py-[clamp(40px,5vw,76px)] text-[#0B1F33]"
       id="vision"
     >
       <div className="absolute inset-x-0 top-0 h-px bg-[#D9D9D9]" />

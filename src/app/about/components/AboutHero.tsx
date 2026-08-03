@@ -46,7 +46,7 @@ export function AboutHero() {
       </div>
 
       {/* --- REVAMPED EDITORIAL OVERVIEW --- */}
-      <div className="mx-auto max-w-[1280px] px-[clamp(20px,5vw,72px)] py-[clamp(80px,10vw,140px)]">
+      <div className="mx-auto max-w-[1280px] px-[clamp(20px,5vw,72px)] py-[clamp(44px,5vw,84px)]">
         {/* 1. Magazine-Style Header Split */}
         <div className="mb-[clamp(60px,8vw,100px)] grid grid-cols-1 gap-10 lg:grid-cols-[1fr_1fr] lg:items-center lg:gap-20">
           <div>

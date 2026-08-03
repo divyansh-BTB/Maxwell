@@ -67,7 +67,7 @@ export function AboutValues() {
 
   return (
     <section
-      className="border-b border-[#D9D9D9] bg-[#F6F7F8] px-[clamp(20px,5vw,72px)] py-[clamp(72px,9vw,112px)]"
+      className="border-b border-[#D9D9D9] bg-[#F6F7F8] px-[clamp(20px,5vw,72px)] py-[clamp(40px,5vw,76px)]"
       id="values"
     >
       <div className="mx-auto max-w-[1280px]">

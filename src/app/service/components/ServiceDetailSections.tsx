@@ -94,7 +94,7 @@ export function ServiceDetailSections() {
   return (
     <>
       <section
-        className="bg-[#F6F7F8] px-[clamp(20px,5vw,72px)] py-[clamp(72px,9vw,112px)]"
+        className="bg-[#F6F7F8] px-[clamp(20px,5vw,72px)] py-[clamp(40px,5vw,76px)]"
         id="challenges-we-solve"
       >
         <div className="mx-auto max-w-[1280px]">
@@ -137,7 +137,7 @@ export function ServiceDetailSections() {
       </section>
 
       <section
-        className="bg-white px-[clamp(20px,5vw,72px)] py-[clamp(72px,9vw,112px)]"
+        className="bg-white px-[clamp(20px,5vw,72px)] py-[clamp(40px,5vw,76px)]"
         id="catering-solutions"
       >
         <div className="mx-auto grid max-w-[1280px] grid-cols-1 gap-[clamp(40px,7vw,90px)] lg:grid-cols-[0.92fr_1.08fr] lg:items-start">
@@ -211,7 +211,7 @@ export function ServiceDetailSections() {
       </section>
 
       <section
-        className="bg-white px-[clamp(20px,5vw,72px)] pb-[clamp(72px,9vw,112px)]"
+        className="bg-white px-[clamp(20px,5vw,72px)] pb-[clamp(40px,5vw,76px)]"
         id="packages-section"
       >
         <div className="mx-auto max-w-[1280px] rounded-[1.75rem] border border-[#D9D9D9] bg-[#0B1F33] p-[clamp(24px,4vw,48px)] text-white">

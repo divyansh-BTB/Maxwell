@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function ServicesHero() {
   return (
-    <section className="relative min-h-[78vh] overflow-hidden bg-[#0D2B44] px-[clamp(20px,5vw,72px)] pt-[clamp(150px,16vw,210px)] pb-[clamp(72px,10vw,124px)] text-white">
+    <section className="relative min-h-[78vh] overflow-hidden bg-[#0D2B44] px-[clamp(20px,5vw,72px)] pt-[clamp(150px,16vw,210px)] pb-[clamp(40px,5vw,76px)] text-white">
       <Image
         src="https://images.unsplash.com/photo-1555244162-803834f70033?q=80&w=2200&auto=format&fit=crop"
         alt="Premium hospitality food service"

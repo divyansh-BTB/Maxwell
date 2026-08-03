@@ -3,7 +3,7 @@ import { ArrowCircle } from "@/components/ArrowCircle";
 
 export function ServicesCta() {
   return (
-    <section className="bg-white px-[clamp(20px,5vw,72px)] py-[clamp(72px,9vw,112px)]">
+    <section className="bg-white px-[clamp(20px,5vw,72px)] py-[clamp(40px,5vw,76px)]">
       <div className="relative mx-auto overflow-hidden rounded-[1.75rem] bg-[#0D2B44] px-6 py-[clamp(56px,8vw,92px)] text-center text-white shadow-2xl shadow-[#0B1F33]/12 md:px-12">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_10%,rgb(255_255_255_/_0.12),transparent_34%)]" />
         <div className="relative z-10 mx-auto max-w-[860px]">

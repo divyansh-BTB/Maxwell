@@ -11,7 +11,7 @@ const kitchenHighlights = [
 export function KitchenExcellenceSection() {
   return (
     <section
-      className="bg-white px-[clamp(20px,5vw,72px)] pb-[clamp(72px,9vw,112px)]"
+      className="bg-white px-[clamp(20px,5vw,72px)] pb-[clamp(40px,5vw,76px)]"
       id="kitchen-excellence"
     >
       <div className="mx-auto grid max-w-[1280px] grid-cols-1 overflow-hidden rounded-[1.75rem] border border-[#D9D9D9] bg-white shadow-2xl shadow-[#0B1F33]/8 lg:grid-cols-[1.1fr_0.9fr]">

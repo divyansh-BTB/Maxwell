@@ -7,32 +7,27 @@ const recognitionItems = [
   {
     title: "Sharda Care Healthcity",
     // Represents quality and clinical precision
-    image:
-      "/sharda-care.jpeg",
+    image: "/sharda-care.jpeg",
   },
   {
     title: "Sharda University",
     // Represents trust, partnership, and professional relationships
-    image:
-      "/sharda-university.jpeg",
+    image: "/sharda-university.jpeg",
   },
   {
     title: "Sharda Hospital",
     // Represents official documentation, quality seals, premium paper
-    image:
-      "/sharda-hospital.jpeg",
+    image: "/sharda-hospital.jpeg",
   },
   {
     title: "Sharda Group",
     // Represents celebration, galas, excellence
-    image:
-      "/sharda-group.jpeg",
+    image: "/sharda-group.jpeg",
   },
   {
     title: "Healthcare & Institutional Clients",
     // Represents a glowing, premium hospitality team or establishment
-    image:
-      "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200&auto=format&fit=crop",
+    image: "/sharda-group.jpeg",
   },
 ];
 
@@ -42,7 +37,7 @@ export function RecognitionSection() {
 
   return (
     <section
-      className="bg-white px-[clamp(20px,5vw,72px)] py-[clamp(72px,10vw,132px)] text-[#0B1F33]"
+      className="bg-white px-[clamp(20px,5vw,72px)] py-[clamp(40px,5vw,76px)] text-[#0B1F33]"
       id="recognition"
     >
       <div className="mx-auto max-w-[1280px]">

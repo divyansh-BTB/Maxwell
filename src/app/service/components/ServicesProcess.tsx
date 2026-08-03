@@ -30,7 +30,7 @@ const processSteps = [
 export function ServicesProcess() {
   return (
     <section
-      className="relative overflow-hidden bg-white px-[clamp(20px,5vw,72px)] py-[clamp(72px,9vw,112px)] text-[#0B1F33]"
+      className="relative overflow-hidden bg-white px-[clamp(20px,5vw,72px)] py-[clamp(40px,5vw,76px)] text-[#0B1F33]"
       id="process"
     >
       <div className="absolute inset-0 bg-[linear-gradient(180deg,#ffffff_0%,#F6F7F8_100%)]" />

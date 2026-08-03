@@ -47,7 +47,7 @@ export function AboutGallery() {
 
   return (
     <section
-      className="bg-white px-[clamp(20px,5vw,72px)] py-[clamp(72px,10vw,120px)]"
+      className="bg-white px-[clamp(20px,5vw,72px)] py-[clamp(40px,5vw,76px)]"
       id="about-gallery"
     >
       <div className="mx-auto max-w-[1280px]">

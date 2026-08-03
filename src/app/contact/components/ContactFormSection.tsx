@@ -20,7 +20,7 @@ const serviceOptions = [
 
 export function ContactFormSection() {
   return (
-    <section className="bg-white px-[clamp(20px,5vw,72px)] pb-[clamp(72px,9vw,112px)]">
+    <section className="bg-white px-[clamp(20px,5vw,72px)] pb-[clamp(40px,5vw,76px)]">
       <div className="mx-auto grid max-w-[1280px] grid-cols-1 gap-8 rounded-[1.75rem] border border-[#D9D9D9] bg-white p-[clamp(24px,4vw,48px)] shadow-2xl shadow-[#0B1F33]/8 lg:grid-cols-[0.72fr_1.28fr]">
         <div className="flex flex-col justify-between text-[#0B1F33]">
           <div>

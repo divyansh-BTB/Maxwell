@@ -26,17 +26,12 @@ const galleryItems = [
       "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=80",
   },
   {
-    title: "Dice N Sip",
-    image: "/Dice-n-sip.png",
-  },
-  {
     title: "Baker Street",
-    image:
-      "https://images.unsplash.com/photo-1606900136270-2a2a07c9d1c9?auto=format&fit=crop&w=900&q=80",
+    image: "/baker-street-logo.png",
   },
   {
     title: "Nutriverse",
-    image: "/nutriverse.png",
+    image: "/nutriverse.jpg",
   },
   {
     title: "Kitchen Operations",
@@ -50,8 +45,7 @@ const galleryItems = [
   },
   {
     title: "Client Events",
-    image:
-      "https://images.unsplash.com/photo-1544025162-8315ea07fc7a?auto=format&fit=crop&w=900&q=80",
+    image: "/events.jpg",
   },
 ];
 
@@ -73,7 +67,7 @@ export function GalleryPreview() {
 
   return (
     <section
-      className="bg-white px-[clamp(20px,5vw,72px)] py-[clamp(72px,10vw,120px)] overflow-hidden"
+      className="bg-white px-[clamp(20px,5vw,72px)] py-[clamp(40px,5vw,76px)] overflow-hidden"
       id="gallery"
     >
       <div className="mx-auto w-full max-w-[1280px]">

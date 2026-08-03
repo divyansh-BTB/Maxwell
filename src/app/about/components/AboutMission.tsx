@@ -106,7 +106,7 @@ const commitments = [
 export function AboutMission() {
   return (
     <section
-      className="bg-white px-[clamp(20px,5vw,72px)] py-[clamp(72px,10vw,120px)]"
+      className="bg-white px-[clamp(20px,5vw,72px)] py-[clamp(40px,5vw,76px)]"
       id="mission"
     >
       <div className="mx-auto grid max-w-[1280px] grid-cols-1 gap-[clamp(44px,6vw,80px)] lg:grid-cols-[0.82fr_1.18fr]">

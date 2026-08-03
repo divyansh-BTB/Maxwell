@@ -6,7 +6,7 @@ export default function OurBrandsPage() {
   return (
     <main>
       <SiteHeader />
-      <section className="bg-white px-[clamp(20px,5vw,72px)] pt-[clamp(150px,16vw,210px)] pb-[clamp(72px,10vw,120px)]">
+      <section className="bg-white px-[clamp(20px,5vw,72px)] pt-[clamp(150px,16vw,210px)] pb-[clamp(40px,5vw,76px)]">
         <div className="mx-auto max-w-[1280px]">
           <div className="mb-[clamp(40px,7vw,84px)] grid grid-cols-1 gap-6 lg:grid-cols-[0.82fr_1fr] lg:items-end">
             <div>

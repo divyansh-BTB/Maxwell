@@ -87,7 +87,7 @@ const stats = [
 export function NumbersSection() {
   return (
     <section
-      className="relative overflow-hidden bg-[#0B1F33] px-[clamp(20px,5vw,72px)] py-[clamp(80px,10vw,128px)]"
+      className="relative overflow-hidden bg-[#0B1F33] px-[clamp(20px,5vw,72px)] py-[clamp(40px,5vw,76px)]"
       id="numbers"
     >
       {/* Immersive background */}

@@ -1,6 +1,6 @@
 export function ContactMap() {
   return (
-    <section className="bg-white px-[clamp(20px,5vw,72px)] pb-[clamp(72px,9vw,112px)]">
+    <section className="bg-white px-[clamp(20px,5vw,72px)] pb-[clamp(40px,5vw,76px)]">
       <div className="mx-auto max-w-[1280px]">
         <div className="mb-8">
           <span className="mb-4 flex items-center gap-3 text-sm font-bold tracking-[0.15em] text-[#758696] uppercase">

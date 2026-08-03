@@ -107,7 +107,7 @@ export function GalleryCollection({ categories }: GalleryCollectionProps) {
 
   return (
     <>
-      <div className="bg-white px-[clamp(20px,5vw,72px)] pt-[clamp(154px,16vw,210px)] pb-[clamp(72px,9vw,120px)]">
+      <div className="bg-white px-[clamp(20px,5vw,72px)] pt-[clamp(154px,16vw,210px)] pb-[clamp(40px,5vw,76px)]">
         <h1 className="sr-only">Maxwell Hospitality Gallery</h1>
         <div className="mx-auto max-w-[1280px] space-y-[clamp(88px,11vw,150px)]">
           {categories.map((category, categoryIndex) => (
