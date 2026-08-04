@@ -74,10 +74,10 @@ const challenges = [
     description:
       "Ensuring uninterrupted availability of quality ingredients through robust procurement systems and predictive analytics.",
     // A large feature block to anchor the bento grid
-    gridClass: "md:col-span-2 md:row-span-2 bg-[#0B1F33] text-white",
-    textClass: "text-[#9CB3C9]",
-    titleClass: "text-white text-2xl lg:text-3xl",
-    dark: true,
+    gridClass: "md:col-span-2 md:row-span-2 bg-[#F6F7F8] border-[#E2E8F0]",
+    textClass: "text-[#5D6C7B]",
+    titleClass: "text-[#0B1F33] text-xl",
+    dark: false,
     Icon: IconSupplyChain,
   },
   {

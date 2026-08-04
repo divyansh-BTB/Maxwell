@@ -50,7 +50,7 @@ export function ContactCta() {
 
           {/* Animated Pill Button */}
           <Link
-            href="/contact-us#inquiry-form"
+            href="/contact#inquiry-form"
             className="group relative inline-flex min-h-[58px] items-center justify-center gap-4 overflow-hidden rounded-full border border-white bg-white py-2 pr-2 pl-7 font-bold tracking-[0.1em] text-[#0B1F33] uppercase transition-all duration-500 hover:-translate-y-1 hover:bg-[#0B1F33] hover:text-white max-[640px]:w-full"
           >
             <span className="relative z-10 flex items-center gap-3">

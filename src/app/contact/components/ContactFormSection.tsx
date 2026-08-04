@@ -11,7 +11,6 @@ const serviceOptions = [
   "Food Court Management",
   "Restaurant Operations",
   "Events & Banquets",
-  "Dice N Sip",
   "Baker Street",
   "Street Cafe",
   "Nutriverse",
@@ -26,7 +25,7 @@ export function ContactFormSection() {
           <div>
             <span className="mb-4 flex items-center gap-3 text-sm font-bold tracking-[0.15em] text-[#758696] uppercase">
               <span className="h-[2px] w-8 bg-[#758696]" />
-              Contact Form
+              Contact Us
             </span>
             <h2 className="max-w-[460px] section-title text-[#0B1F33]">
               Request a proposal.

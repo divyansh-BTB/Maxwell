@@ -74,20 +74,14 @@ export function ServicesList() {
       id="solutions-overview"
     >
       <div className="mx-auto max-w-[1280px]">
-        <div className="mb-[clamp(36px,6vw,72px)] grid grid-cols-1 gap-6 lg:grid-cols-[0.86fr_1fr] lg:items-end">
-          <div>
-            <span className="mb-4 flex items-center gap-3 text-sm font-bold tracking-[0.15em] text-[#758696] uppercase">
-              <span className="h-[2px] w-8 bg-[#758696]" />
-              Complete Service Map
-            </span>
-            <h2 className="max-w-[680px] section-title text-[#0B1F33]">
-              Solutions mapped to the new Maxwell structure.
-            </h2>
-          </div>
-          <p className="max-w-[640px] section-copy text-[#5D6C7B] lg:justify-self-end">
-            This page now covers corporate solutions, hospital food services,
-            catering, events, banquets, brands, and retail food operations.
-          </p>
+        <div className="mb-[clamp(36px,6vw,72px)]">
+          <span className="mb-4 flex items-center gap-3 text-sm font-bold tracking-[0.15em] text-[#758696] uppercase">
+            <span className="h-[2px] w-8 bg-[#758696]" />
+            Complete Service Map
+          </span>
+          <h2 className="max-w-[680px] section-title text-[#0B1F33]">
+            Solutions mapped to the new Maxwell structure.
+          </h2>
         </div>
 
         <div className="grid grid-cols-1 gap-10">

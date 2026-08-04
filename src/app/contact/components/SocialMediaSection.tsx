@@ -3,23 +3,18 @@ import Link from "next/link";
 const channels = [
   {
     title: "Instagram",
-    description: "Showcase Banquets, Catering, Baker Street, and Dice N Sip.",
-    href: "/contact-us",
-  },
-  {
-    title: "Facebook",
-    description: "Share Maxwell Hospitality updates and community moments.",
-    href: "/contact-us",
+    description: "Showcase Banquets, Catering, and Baker Street.",
+    href: "/contact",
   },
   {
     title: "LinkedIn",
     description: "Corporate, healthcare, hiring, and partnership updates.",
-    href: "/contact-us",
+    href: "/contact",
   },
   {
     title: "YouTube",
     description: "Kitchen tours, food preparation, quality checks, and events.",
-    href: "/contact-us",
+    href: "/contact",
   },
 ];
 
@@ -37,10 +32,10 @@ export function SocialMediaSection() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
           {channels.map((channel) => (
             <Link
-              className="group min-h-[210px] rounded-[1.35rem] border border-[#F6F7F8] bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:border-[#0D2B44] hover:bg-[#0D2B44]"
+              className="group min-h-[210px] rounded-[1.35rem] border border-[#D9D9D9] bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:border-[#0D2B44] hover:bg-[#0D2B44]"
               href={channel.href}
               key={channel.title}
             >

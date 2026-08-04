@@ -72,7 +72,6 @@ export const galleryCategories = [
   "Banquets",
   "Catering Services",
   "Hospital Catering",
-  "Dice N Sip",
   "Street Cafe",
   "Baker Street",
   "Nutriverse",

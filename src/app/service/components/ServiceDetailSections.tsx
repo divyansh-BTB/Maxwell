@@ -63,7 +63,6 @@ const eventTypes = [
   "Medical Conferences",
   "Healthcare Events",
   "Award Functions",
-  "Weddings",
   "Social Gatherings",
   "Cultural Events",
   "Community Festivals",

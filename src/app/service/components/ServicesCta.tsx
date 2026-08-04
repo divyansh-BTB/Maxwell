@@ -18,7 +18,7 @@ export function ServicesCta() {
           <div className="mt-8">
             <Link
               className="group inline-flex min-h-[58px] items-center justify-center gap-4 rounded-full border border-white bg-white py-2 pr-2 pl-7 text-sm font-black tracking-[0.08em] text-[#0B1F33] uppercase transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#0B1F33] hover:text-white"
-              href="/contact-us#inquiry-form"
+              href="/contact#inquiry-form"
             >
               <span>Contact MHPL Today</span>
               <ArrowCircle dark />

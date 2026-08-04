@@ -11,6 +11,7 @@ const navItems = [
   { label: "About", href: "/about" },
   { label: "Brands", href: "/our-brands" },
   { label: "Solutions", href: "/solutions" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export function SiteHeader() {
@@ -101,7 +102,7 @@ export function SiteHeader() {
         <div className="hidden items-center gap-3 min-[901px]:flex">
           <Link
             className="group inline-flex min-h-12 items-center justify-center gap-3 rounded-full border border-[#0D2B44] bg-[#0D2B44] py-1.5 pr-1.5 pl-5 text-[0.72rem] font-black tracking-[0.12em] text-white uppercase transition-colors duration-300 hover:bg-white hover:text-[#0D2B44]"
-            href="/contact-us#inquiry-form"
+            href="/contact#inquiry-form"
           >
             <span>Request a Proposal</span>
             <ArrowCircle />

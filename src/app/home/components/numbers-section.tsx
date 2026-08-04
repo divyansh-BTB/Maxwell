@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 const iconClass = "h-7 w-7";
 const iconProps = {
   className: iconClass,
@@ -87,62 +85,63 @@ const stats = [
 export function NumbersSection() {
   return (
     <section
-      className="relative overflow-hidden bg-[#0B1F33] px-[clamp(20px,5vw,72px)] py-[clamp(40px,5vw,76px)]"
+      className="relative overflow-hidden bg-gradient-to-br from-[#F6F7F8] via-[#E2E8F0]/40 to-[#F6F7F8] px-[clamp(20px,5vw,72px)] py-[clamp(50px,6vw,84px)]"
       id="numbers"
     >
-      {/* Immersive background */}
-      <Image
-        src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=2000&auto=format&fit=crop"
-        alt=""
-        fill
-        className="object-cover opacity-70"
-        sizes="100vw"
+      {/* Soft Ambient Mesh Background for Optical Glass Refraction */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-sky-200/40 via-transparent to-amber-100/50 opacity-80"
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-[#0B1F33]/80 via-[#0B1F33]/60 to-[#0B1F33]/85" />
 
       <div className="relative z-10 mx-auto max-w-[1280px]">
+        {/* --- SECTION HEADER --- */}
         <div className="mb-[clamp(40px,6vw,72px)] flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
           <div>
-            <span className="mb-5 flex items-center gap-3 text-sm font-bold tracking-[0.15em] text-white/55 uppercase">
-              <span className="h-[2px] w-8 bg-white/45" />
+            <span className="mb-4 flex items-center gap-3 text-sm font-bold tracking-[0.15em] text-[#758696] uppercase">
+              <span className="h-[2px] w-8 bg-[#758696]" />
               By The Numbers
             </span>
-            <h2 className="max-w-[620px] section-title text-white">
+            <h2 className="max-w-[620px] section-title text-[#0B1F33]">
               Trusted scale, delivered every single day.
             </h2>
           </div>
-          <p className="max-w-[560px] section-copy text-white/65 lg:justify-self-end">
+          <p className="max-w-[560px] section-copy text-[#5D6C7B] lg:justify-self-end">
             Consistent, high-volume food service across corporate workplaces and
             healthcare institutions — thousands of meals prepared and served
             daily with disciplined quality.
           </p>
         </div>
 
+        {/* --- TRUE LIGHT GLASSMORPHISM CARDS GRID --- */}
         <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-5">
           {stats.map((stat, index) => (
             <div
-              className={`group relative flex min-h-[clamp(240px,23vw,320px)] flex-col justify-between overflow-hidden rounded-[1.5rem] border border-white/15 bg-white/[0.04] p-[clamp(20px,2vw,30px)] text-left backdrop-blur-sm transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-1.5 hover:border-[#C6A15B] hover:bg-[#C6A15B] hover:shadow-[0_28px_60px_rgba(198,161,91,0.3)] ${
+              className={`group relative flex flex-col justify-between overflow-hidden rounded-[1.5rem] border border-white/80 bg-white/50 p-6 text-left shadow-[0_8px_32px_0_rgba(11,31,51,0.08)] backdrop-blur-xl backdrop-saturate-150 transition-all duration-500 ease-out hover:-translate-y-1.5 hover:border-[#C6A15B]/70 hover:bg-white/80 hover:shadow-[0_20px_45px_rgba(198,161,91,0.2)] ${
                 index === stats.length - 1 && stats.length % 2 !== 0
                   ? "col-span-2 md:col-span-1"
                   : ""
               }`}
               key={stat.label}
             >
-              <span className="flex h-14 w-14 items-center justify-center rounded-full border border-white/15 bg-white/5 text-white transition-colors duration-500 group-hover:border-[#0B1F33]/25 group-hover:bg-[#0B1F33]/10 group-hover:text-[#0B1F33]">
-                <stat.Icon />
-              </span>
+              {/* Top Row: Icon Badge & Gold Unit Pill (No dot/blob) */}
+              <div className="flex items-center justify-between">
+                <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#0B1F33] text-white shadow-md transition-colors duration-500 group-hover:bg-[#C6A15B]">
+                  <stat.Icon />
+                </span>
+                {stat.unit ? (
+                  <span className="rounded-md border border-[#C6A15B]/40 bg-[#C6A15B]/15 px-2 py-0.5 text-[0.62rem] font-black tracking-[0.1em] text-[#B38D46] uppercase backdrop-blur-sm">
+                    {stat.unit}
+                  </span>
+                ) : null}
+              </div>
 
-              <div>
-                <p className="flex flex-wrap items-baseline font-heading text-[clamp(1.7rem,6vw,3rem)] leading-none tracking-[-0.01em] text-white transition-colors duration-500 group-hover:text-[#0B1F33]">
+              {/* Middle & Bottom: Stat Number & Label */}
+              <div className="mt-8">
+                <p className="font-heading text-[clamp(2.1rem,3vw,2.75rem)] font-extrabold leading-none tracking-tight text-[#0B1F33]">
                   {stat.value}
-                  {stat.unit && (
-                    <span className="ml-1.5 font-sans text-[0.72rem] font-bold tracking-[0.06em] text-white/50 uppercase transition-colors duration-500 group-hover:text-[#0B1F33]/65">
-                      {stat.unit}
-                    </span>
-                  )}
                 </p>
-
-                <p className="mt-4 text-[0.64rem] font-black tracking-[0.08em] text-white/60 uppercase transition-colors duration-500 group-hover:text-[#0B1F33]/80 md:whitespace-nowrap">
+                <p className="mt-3 text-[0.72rem] font-bold leading-[1.35] tracking-[0.08em] text-[#5D6C7B] uppercase transition-colors duration-300 group-hover:text-[#0B1F33]">
                   {stat.label}
                 </p>
               </div>

@@ -8,8 +8,7 @@ const services = [
     title: "Street Hub",
     description:
       "A vibrant food destination offering multi-cuisine experiences with quality and convenience.",
-    image:
-      "/Street-hub-new.png",
+    image: "/Street-hub-new.png",
   },
   {
     title: "Street Cafe",
@@ -35,15 +34,13 @@ const services = [
     title: "Maxwell Banquets",
     description:
       "Premium banquet services for weddings, celebrations, corporate gatherings, and social events.",
-    image:
-      "/ban.png",
+    image: "/ban.png",
   },
   {
     title: "Maxwell Events",
     description:
       "End-to-end event planning and execution services for corporate and social events.",
-    image:
-      "/events.jpg",
+    image: "/events.jpg",
   },
 ];
 

@@ -26,7 +26,8 @@ const galleryItems = [
   },
   {
     title: "Baker Street",
-    image: "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=80",
+    image:
+      "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=80",
   },
   {
     title: "Nutriverse",

@@ -10,7 +10,7 @@ const footerColumns = [
       { label: "Our Brands", href: "/our-brands" },
       { label: "Solutions", href: "/solutions" },
       { label: "Gallery", href: "/gallery" },
-      { label: "Contact Us", href: "/contact-us" },
+      { label: "Contact Us", href: "/contact" },
     ],
   },
   {
@@ -31,7 +31,6 @@ const footerColumns = [
     title: "Our Brands",
     links: [
       { label: "Street Hub", href: "/our-brands#street-hub" },
-      { label: "Dice N Sip", href: "/our-brands#dice-n-sip" },
       { label: "Street Cafe", href: "/our-brands#street-cafe" },
       { label: "Baker Street", href: "/our-brands#baker-street" },
       { label: "Nutriverse", href: "/our-brands#nutriverse" },
@@ -53,23 +52,23 @@ const footerColumns = [
   {
     title: "Contact Us",
     links: [
-      { label: "Maxwell Hospitality Services", href: "/contact-us" },
-      { label: "Phone Number", href: "/contact-us" },
+      { label: "Maxwell Hospitality Services", href: "/contact" },
+      { label: "Phone Number", href: "/contact" },
       {
         label: "Services@maxwellhotels.in",
         href: "mailto:Services@maxwellhotels.in",
       },
       { label: "Website", href: "/" },
-      { label: "Office Address", href: "/contact-us" },
+      { label: "Office Address", href: "/contact" },
     ],
   },
   {
     title: "Social Media",
     links: [
-      { label: "Instagram", href: "/contact-us" },
-      { label: "Facebook", href: "/contact-us" },
-      { label: "LinkedIn", href: "/contact-us" },
-      { label: "YouTube", href: "/contact-us" },
+      { label: "Instagram", href: "/contact" },
+      { label: "Facebook", href: "/contact" },
+      { label: "LinkedIn", href: "/contact" },
+      { label: "YouTube", href: "/contact" },
     ],
   },
 ];
@@ -145,7 +144,7 @@ export function SiteFooter() {
           <div className="flex flex-wrap gap-x-7 gap-y-2">
             <Link
               className="underline-offset-4 hover:underline"
-              href="/contact-us"
+              href="/contact"
             >
               Contact
             </Link>
