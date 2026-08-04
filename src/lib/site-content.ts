@@ -19,7 +19,7 @@ export const brands = [
     description:
       "Modern cafe concept serving beverages, snacks, quick meals, and social dining experiences.",
     image:
-      "https://images.unsplash.com/photo-1559925393-8be0ec4767c8?auto=format&fit=crop&w=1200&q=80",
+      "/street-cafe.png",
   },
   {
     id: "baker-street",
@@ -72,6 +72,7 @@ export const galleryCategories = [
   "Banquets",
   "Catering Services",
   "Hospital Catering",
+  "Dice N Sip",
   "Street Cafe",
   "Baker Street",
   "Nutriverse",
