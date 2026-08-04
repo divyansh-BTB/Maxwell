@@ -20,7 +20,7 @@ export default function SolutionsPage() {
       </section>
       <ServicesList />
       <ServiceDetailSections />
-      <ServicesCta /> 
+      <ServicesCta />
     </main>
   );
 }
