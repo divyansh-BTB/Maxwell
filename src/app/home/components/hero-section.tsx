@@ -4,8 +4,8 @@ import { ArrowCircle } from "@/components/ArrowCircle";
 
 export function HeroSection() {
   return (
-    <section className="relative h-screen overflow-hidden bg-white px-[clamp(20px,5vw,72px)] pt-[clamp(96px,9vw,128px)] pb-[clamp(24px,4vw,44px)]">
-      <div className="mx-auto grid h-full max-w-[1320px] grid-cols-1 gap-[clamp(28px,4vw,64px)] lg:grid-cols-[0.86fr_1.14fr] lg:items-center">
+    <section className="relative overflow-hidden bg-white px-[clamp(20px,5vw,72px)] pt-[clamp(96px,9vw,128px)] pb-[clamp(24px,4vw,44px)] lg:h-screen">
+      <div className="mx-auto grid max-w-[1320px] grid-cols-1 gap-[clamp(28px,4vw,64px)] lg:h-full lg:grid-cols-[0.86fr_1.14fr] lg:items-center">
         <div className="relative z-10 max-w-[780px]">
           <span className="mb-5 flex items-center gap-3 text-sm font-black tracking-[0.18em] text-[#758696] uppercase">
             <span className="h-[2px] w-9 bg-[#758696]" />

@@ -48,7 +48,7 @@ export function AboutVision() {
           <div className="absolute -right-5 -bottom-5 h-full w-full rounded-[1.5rem] border border-[#0D2B44]/35" />
           <div className="relative min-h-[520px] overflow-hidden rounded-[1.5rem] bg-[#0B1F33] shadow-2xl shadow-black/16 max-sm:min-h-[380px]">
             <Image
-              src="/indian.avif"
+              src="/maxwell-vision-image.png"
               alt="Guest enjoying a meal in a warm restaurant setting"
               fill
               className="object-cover"

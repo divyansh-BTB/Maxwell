@@ -86,7 +86,7 @@ export function AboutHero() {
             {/* Main Image Container */}
             <div className="group relative aspect-[4/5] w-full overflow-hidden rounded-[2rem] bg-[#0D2B44] shadow-2xl">
               <Image
-                src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1400&auto=format&fit=crop"
+                src="/maxwell-core-service-areas-image.png"
                 alt="Chef-plated dish reflecting quality and care"
                 fill
                 className="object-cover transition-transform duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-105"
