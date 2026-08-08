@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowCircle } from "@/components/ArrowCircle";
+import { InsideMaxwellVideo } from "./inside-maxwell-video";
 
 export function HeroSection() {
   return (
@@ -24,7 +25,9 @@ export function HeroSection() {
             brings hospitality excellence under one roof.
           </p>
 
-          <div className="mt-7 grid max-w-[540px] grid-cols-1 gap-3 sm:grid-cols-2">
+          <InsideMaxwellVideo />
+
+          <div className="mt-16 grid max-w-[540px] grid-cols-1 gap-3 sm:grid-cols-2">
             <Link
               className="group inline-flex min-h-[58px] items-center justify-center gap-4 rounded-full border border-[#0D2B44] bg-[#0D2B44] py-2 pr-2 pl-7 text-[0.76rem] font-extrabold tracking-[0.1em] text-white uppercase shadow-[0_10px_30px_rgba(11,31,51,0.12)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:text-[#0D2B44]"
               href="/contact#inquiry-form"
