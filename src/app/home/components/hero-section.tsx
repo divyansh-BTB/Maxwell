@@ -5,65 +5,71 @@ import { InsideMaxwellVideo } from "./inside-maxwell-video";
 
 export function HeroSection() {
   return (
-    <section className="relative overflow-hidden bg-white px-[clamp(20px,5vw,72px)] pt-[clamp(96px,9vw,128px)] pb-[clamp(24px,4vw,44px)] lg:h-screen">
-      <div className="mx-auto grid max-w-[1320px] grid-cols-1 gap-[clamp(28px,4vw,64px)] lg:h-full lg:grid-cols-[0.86fr_1.14fr] lg:items-center">
-        <div className="relative z-10 max-w-[780px]">
-          <span className="mb-5 flex items-center gap-3 text-sm font-black tracking-[0.18em] text-[#758696] uppercase">
-            <span className="h-[2px] w-9 bg-[#758696]" />
+    <section className="relative overflow-hidden bg-white px-[clamp(20px,5vw,72px)] pt-[clamp(104px,10vw,132px)] pb-[clamp(56px,7vw,96px)] lg:flex lg:min-h-screen lg:items-center lg:py-[clamp(96px,9vw,128px)]">
+      <div className="mx-auto grid w-full max-w-[1320px] grid-cols-1 items-center gap-[clamp(44px,5vw,72px)] lg:grid-cols-[1.24fr_0.76fr]">
+        <div className="max-w-[820px]">
+          <span
+            className="hero-rise mb-7 flex items-center gap-3 text-[0.68rem] font-black tracking-[0.24em] text-[#5D6C7B] uppercase"
+            style={{ animationDelay: "60ms" }}
+          >
+            <span className="h-px w-10 bg-[#758696]" />
             Maxwell Hospitality
           </span>
 
-          <h1 className="max-w-[680px] page-title text-[#0B1F33]">
-            One Partner. Multiple
-            <br />
-            Hospitality Solutions.
-          </h1>
+          <div className="hero-title-wrap">
+            <h1
+              className="hero-rise hero-title text-[#0B1F33]"
+              style={{ animationDelay: "140ms" }}
+            >
+              One Partner. Multiple
+              <br className="hidden md:block" />
+              {" Hospitality Solutions."}
+            </h1>
+          </div>
 
-          <p className="mt-6 max-w-[600px] border-l border-[#D9D9D9] pl-6 section-copy text-[#5D6C7B]">
+          <p
+            className="hero-rise mt-8 max-w-[540px] text-[1.02rem] leading-[1.75] text-[#5D6C7B]"
+            style={{ animationDelay: "220ms" }}
+          >
             From corporate catering and hospital food services to premium
             banquets, cafes, bakeries, and large-scale event management, Maxwell
             brings hospitality excellence under one roof.
           </p>
 
-          <InsideMaxwellVideo />
-
-          <div className="mt-16 grid max-w-[540px] grid-cols-1 gap-3 sm:grid-cols-2">
+          <div
+            className="hero-rise mt-11 flex flex-wrap items-center gap-3"
+            style={{ animationDelay: "300ms" }}
+          >
             <Link
-              className="group inline-flex min-h-[58px] items-center justify-center gap-4 rounded-full border border-[#0D2B44] bg-[#0D2B44] py-2 pr-2 pl-7 text-[0.76rem] font-extrabold tracking-[0.1em] text-white uppercase shadow-[0_10px_30px_rgba(11,31,51,0.12)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:text-[#0D2B44]"
+              className="group inline-flex min-h-[54px] items-center gap-4 rounded-full border border-[#0D2B44] bg-[#0D2B44] py-2 pr-2 pl-7 text-[0.72rem] font-extrabold tracking-[0.12em] text-white uppercase transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:text-[#0D2B44]"
               href="/contact#inquiry-form"
             >
               <span>Request a Proposal</span>
               <ArrowCircle />
             </Link>
             <Link
-              className="group inline-flex min-h-[58px] items-center justify-center gap-4 rounded-full border border-[#D9D9D9] bg-white py-2 pr-2 pl-7 text-[0.76rem] font-black tracking-[0.1em] text-[#0B1F33] uppercase transition-all duration-300 hover:-translate-y-0.5 hover:border-[#0D2B44] hover:bg-[#0D2B44] hover:text-white"
-              href="/contact#inquiry-form"
-            >
-              <span>Book a Consultation</span>
-              <ArrowCircle dark />
-            </Link>
-            <Link
-              className="group inline-flex min-h-[58px] items-center justify-center gap-4 rounded-full border border-[#D9D9D9] bg-white py-2 pr-2 pl-7 text-[0.76rem] font-black tracking-[0.1em] text-[#0B1F33] uppercase transition-all duration-300 hover:-translate-y-0.5 hover:border-[#0D2B44] hover:bg-[#0D2B44] hover:text-white sm:col-span-2 sm:justify-self-center"
+              className="inline-flex min-h-[54px] items-center rounded-full border border-[#0B1F33]/20 px-8 text-[0.72rem] font-extrabold tracking-[0.12em] text-[#0B1F33] uppercase transition-all duration-300 hover:-translate-y-0.5 hover:border-[#0B1F33] hover:bg-[#0B1F33] hover:text-white"
               href="/our-brands"
             >
-              <span>Explore Our Brands</span>
-              <ArrowCircle dark />
+              Explore Our Brands
             </Link>
+          </div>
+
+          <div className="hero-rise" style={{ animationDelay: "380ms" }}>
+            <InsideMaxwellVideo />
           </div>
         </div>
 
-        <div className="relative min-h-0 lg:-mr-[clamp(0px,4vw,56px)]">
-          <div className="absolute -left-5 top-5 h-full w-full rounded-[2.25rem] border border-[#D9D9D9] bg-white/35 max-sm:hidden" />
-          <div className="relative h-[min(62vh,560px)] min-h-[360px] overflow-hidden rounded-[2.25rem] bg-[#0B1F33] shadow-2xl shadow-[#0B1F33]/10 lg:h-[min(72vh,640px)]">
+        <div className="hero-rise relative" style={{ animationDelay: "260ms" }}>
+          <div className="relative h-[clamp(340px,52vw,420px)] w-full overflow-hidden rounded-[1.5rem] bg-[#0B1F33] shadow-[0_30px_80px_-40px_rgba(11,31,51,0.55)] lg:h-[min(74vh,640px)]">
             <Image
-              alt="Professional hospitality kitchen service"
-              className="object-cover grayscale-[8%] contrast-105"
+              alt="Maxwell hospitality team serving guests in a professional kitchen"
+              className="object-cover"
               fill
               priority
-              sizes="(max-width: 1024px) 100vw, 52vw"
+              sizes="(max-width: 1024px) 100vw, 40vw"
               src="/hero.png"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/34 via-transparent to-transparent" />
           </div>
         </div>
       </div>

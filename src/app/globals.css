@@ -60,4 +60,37 @@ section h3 {
     line-height: 1.15;
     letter-spacing: -0.02em;
   }
+
+  .hero-title-wrap {
+    container-type: inline-size;
+  }
+
+  .hero-title {
+    /* Sized against the column, not the viewport, so "Hospitality Solutions."
+       always fits on one line and the headline stays exactly two lines. */
+    font-size: clamp(2.4rem, 9cqw, 5.25rem);
+    line-height: 1.02;
+    letter-spacing: -0.02em;
+  }
+}
+
+@keyframes hero-rise {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-rise {
+  animation: hero-rise 0.7s cubic-bezier(0.16, 0.84, 0.44, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-rise {
+    animation: none;
+  }
 }
